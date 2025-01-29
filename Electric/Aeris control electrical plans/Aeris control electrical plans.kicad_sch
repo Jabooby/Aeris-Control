@@ -49,16 +49,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "MF" "Pololu"
+			(property "Description" "Stepper motor controler; IC: A4988; 1A; Uin mot: 8÷35V"
 				(at 0 0 0)
 				(effects
 					(font
@@ -68,7 +59,7 @@
 					(hide yes)
 				)
 			)
-			(property "DESCRIPTION" "Stepper motor controler; IC: A4988; 1A; Uin mot: 8÷35V"
+			(property "MF" "Pololu"
 				(at 0 0 0)
 				(effects
 					(font
@@ -480,6 +471,141 @@
 				)
 			)
 		)
+		(symbol "Buck_converter_modules:LM2596_Module"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 4.318 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LM2596_Module_0_1"
+				(rectangle
+					(start -8.89 2.54)
+					(end 8.89 -7.62)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "LM2596_Module_1_1"
+				(pin power_in line
+					(at -11.43 1.27 0)
+					(length 2.54)
+					(name "In+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -11.43 -6.35 0)
+					(length 2.54)
+					(name "In-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 11.43 1.27 180)
+					(length 2.54)
+					(name "Out+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 11.43 -6.35 180)
+					(length 2.54)
+					(name "Out-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector:Barrel_Jack"
 			(pin_names
 				(offset 1.016)
@@ -643,6 +769,166 @@
 					(at 7.62 -2.54 180)
 					(length 2.54)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Connector:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2162,6 +2448,246 @@
 				)
 			)
 		)
+		(symbol "power:+3V3"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -2260,10 +2786,46 @@
 		)
 	)
 	(junction
+		(at 39.37 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08e5dd98-91f6-45ba-95e6-457076f20020")
+	)
+	(junction
+		(at 72.39 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "714ad584-0fd2-4270-85bd-89fcd689fd37")
+	)
+	(junction
 		(at 22.86 20.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "89869f27-a72f-48ae-abb0-c533476689f1")
+	)
+	(junction
+		(at 39.37 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "90fcbdaa-41d6-4961-a1b5-05b4237a7d0c")
+	)
+	(junction
+		(at 72.39 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97c5eedf-76a5-44ac-b48a-f5f0b317ce89")
+	)
+	(junction
+		(at 41.91 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98bb07a0-6171-43b1-847b-b00e49c69d67")
+	)
+	(junction
+		(at 39.37 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a74acc50-4253-4e61-bb25-c315c8952940")
 	)
 	(junction
 		(at 22.86 30.48)
@@ -2271,9 +2833,261 @@
 		(color 0 0 0 0)
 		(uuid "adf03e49-dcfb-48c4-9887-be5e50af9fd8")
 	)
+	(junction
+		(at 41.91 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cda7f8f9-28fa-476e-be87-36137420d395")
+	)
+	(junction
+		(at 72.39 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d869fc7c-728d-4785-8ada-cb371ab061bf")
+	)
+	(junction
+		(at 72.39 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eef7c521-1eb2-49d7-87a4-ea9c8744df19")
+	)
+	(no_connect
+		(at 139.7 54.61)
+		(uuid "0fae33e1-0502-4900-9854-4c40e6d8d0eb")
+	)
+	(no_connect
+		(at 210.82 57.15)
+		(uuid "451fdf3c-d800-42b0-8218-121281c41d8a")
+	)
+	(no_connect
+		(at 88.9 130.81)
+		(uuid "5214fa61-6012-46d8-8888-076dc3896a8b")
+	)
+	(no_connect
+		(at 68.58 184.15)
+		(uuid "6fab1d93-eec9-441d-a1f3-cf236c8844f6")
+	)
+	(no_connect
+		(at 139.7 52.07)
+		(uuid "7c0ac4de-b437-4e6b-9f01-a06271fafe2f")
+	)
+	(no_connect
+		(at 210.82 36.83)
+		(uuid "9b04c507-5d2f-418e-a390-16a5021635d0")
+	)
+	(no_connect
+		(at 139.7 36.83)
+		(uuid "9f86d67f-6b58-4171-96ed-b13aea3deca9")
+	)
+	(no_connect
+		(at 73.66 184.15)
+		(uuid "a81f6549-aec8-4d65-b50b-a1117ec1f990")
+	)
+	(no_connect
+		(at 210.82 52.07)
+		(uuid "af8d0a5c-a89b-4d20-85c7-19245ec6047b")
+	)
+	(no_connect
+		(at 139.7 57.15)
+		(uuid "dc626353-2e73-4186-a222-b7af67e5e394")
+	)
+	(no_connect
+		(at 210.82 54.61)
+		(uuid "fb888cad-6c7f-4079-8476-3de4b5142a5b")
+	)
 	(wire
 		(pts
-			(xy 22.86 30.48) (xy 52.07 30.48)
+			(xy 41.91 59.69) (xy 45.72 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02e74001-9c72-42fe-8e1d-08264bea34fe")
+	)
+	(wire
+		(pts
+			(xy 209.55 41.91) (xy 210.82 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0612c932-df3f-48fa-9646-0b78975fcc29")
+	)
+	(wire
+		(pts
+			(xy 110.49 148.59) (xy 88.9 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09e93dc1-545d-4681-a2b8-f5270844630f")
+	)
+	(wire
+		(pts
+			(xy 39.37 85.09) (xy 45.72 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0aa0158d-8fad-4790-877f-fefafbb79076")
+	)
+	(wire
+		(pts
+			(xy 182.88 29.21) (xy 203.2 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cbaf30c-866b-4dfb-9728-8f7d3d050a6a")
+	)
+	(wire
+		(pts
+			(xy 175.26 60.96) (xy 175.26 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d9abb40-b78e-4881-b21c-c15fb2c1f6ef")
+	)
+	(wire
+		(pts
+			(xy 110.49 135.89) (xy 88.9 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dc826e3-0413-43bb-888a-dd68f4a80e18")
+	)
+	(wire
+		(pts
+			(xy 34.29 53.34) (xy 39.37 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f80d209-6679-4d86-a84a-268b0d930ec8")
+	)
+	(wire
+		(pts
+			(xy 68.58 85.09) (xy 72.39 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "109a5382-32de-43c8-94f7-29c76bfea8d9")
+	)
+	(wire
+		(pts
+			(xy 80.01 50.8) (xy 39.37 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "155cf102-4034-4fef-9b9a-43b8d5db6b68")
+	)
+	(wire
+		(pts
+			(xy 72.39 85.09) (xy 80.01 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15e3d15c-d7f7-4615-aab7-8fbf1aa33799")
+	)
+	(wire
+		(pts
+			(xy 256.54 39.37) (xy 256.54 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e60d191-e625-44db-80e5-e41de37677a3")
+	)
+	(wire
+		(pts
+			(xy 175.26 31.75) (xy 181.61 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fff8abf-3be2-4d73-9796-34890c6ff012")
+	)
+	(wire
+		(pts
+			(xy 261.62 41.91) (xy 262.89 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2144b88d-348e-48af-933d-7605a362359e")
+	)
+	(wire
+		(pts
+			(xy 190.5 44.45) (xy 190.5 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "263d9ba7-04e9-461b-8a53-9d41f2643b2c")
+	)
+	(wire
+		(pts
+			(xy 68.58 67.31) (xy 72.39 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b4136c4-54c4-48c6-9c40-d61d35371550")
+	)
+	(wire
+		(pts
+			(xy 175.26 27.94) (xy 175.26 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2be4b818-a1db-429d-9e30-85165683bbca")
+	)
+	(wire
+		(pts
+			(xy 72.39 86.36) (xy 72.39 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cfca856-c95d-4346-a8a3-2c8c6b656dc4")
+	)
+	(wire
+		(pts
+			(xy 246.38 31.75) (xy 252.73 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d38ff16-15e3-40bc-ab88-4b837f5dac0f")
+	)
+	(wire
+		(pts
+			(xy 22.86 30.48) (xy 45.72 30.48)
 		)
 		(stroke
 			(width 0)
@@ -2283,17 +3097,467 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 25.4) (xy 53.34 25.4)
+			(xy 175.26 36.83) (xy 182.88 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7c981c27-a0a7-4638-939e-62fc94e3e842")
+		(uuid "3a643571-4957-4702-92c9-e8319d01c8b8")
 	)
 	(wire
 		(pts
-			(xy 52.07 30.48) (xy 52.07 25.4)
+			(xy 261.62 44.45) (xy 261.62 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e815459-b329-4938-a3a6-f79c80490894")
+	)
+	(wire
+		(pts
+			(xy 252.73 31.75) (xy 252.73 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "473960a3-08c8-41bb-b064-36e676e1065a")
+	)
+	(wire
+		(pts
+			(xy 139.7 39.37) (xy 138.43 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4823df8e-36db-477a-9aaf-1ddd2b4a6f9f")
+	)
+	(wire
+		(pts
+			(xy 34.29 48.26) (xy 41.91 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a06299c-f48c-4cda-b2cf-884db7a5eed9")
+	)
+	(wire
+		(pts
+			(xy 246.38 39.37) (xy 256.54 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ed2ff6b-5640-4197-bebf-d498eaddaad9")
+	)
+	(wire
+		(pts
+			(xy 256.54 31.75) (xy 267.97 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5703d2dd-4314-4f01-a6b0-fbd4d0b81a3f")
+	)
+	(wire
+		(pts
+			(xy 210.82 39.37) (xy 209.55 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57345bd8-2006-4ef8-b1b5-8eaae4e00fb6")
+	)
+	(wire
+		(pts
+			(xy 246.38 44.45) (xy 261.62 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58c195bf-72f9-41d6-b4c3-d55bed53901e")
+	)
+	(wire
+		(pts
+			(xy 185.42 31.75) (xy 198.12 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b130d7f-378c-4278-8e0a-d46926327b56")
+	)
+	(wire
+		(pts
+			(xy 72.39 59.69) (xy 80.01 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fce5c69-ad00-4e71-aa0c-cfbe09a90d39")
+	)
+	(wire
+		(pts
+			(xy 185.42 39.37) (xy 185.42 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62070ccf-feef-43ec-958a-aebb2db1b264")
+	)
+	(wire
+		(pts
+			(xy 175.26 44.45) (xy 190.5 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6618101d-dbeb-4053-9f66-9be350cb0085")
+	)
+	(wire
+		(pts
+			(xy 72.39 67.31) (xy 80.01 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66561c37-35b2-4604-a6e1-0e57d8faa461")
+	)
+	(wire
+		(pts
+			(xy 187.96 41.91) (xy 187.96 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6819f65c-3b38-4cfa-a347-bccdf0c1fed5")
+	)
+	(wire
+		(pts
+			(xy 259.08 36.83) (xy 262.89 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c6e0112-b83b-4494-b5e5-53fc174b05e2")
+	)
+	(wire
+		(pts
+			(xy 68.58 77.47) (xy 72.39 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7451f4ac-cd7a-4f33-bda3-6cb3d51b54f2")
+	)
+	(wire
+		(pts
+			(xy 254 36.83) (xy 254 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7610d674-1db9-4880-a92d-2da7aa09ed15")
+	)
+	(wire
+		(pts
+			(xy 138.43 41.91) (xy 139.7 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8baf783b-e2eb-410c-ab69-ae55f7456ae1")
+	)
+	(wire
+		(pts
+			(xy 110.49 173.99) (xy 88.9 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90b14080-0f61-4f72-99a8-ba272f6fdf15")
+	)
+	(wire
+		(pts
+			(xy 132.08 35.56) (xy 133.35 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9506e862-64cd-40d7-8846-75d9824f05f8")
+	)
+	(wire
+		(pts
+			(xy 175.26 39.37) (xy 185.42 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96a3b1ab-c320-49e4-911b-7c32db3c3696")
+	)
+	(wire
+		(pts
+			(xy 39.37 86.36) (xy 39.37 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96f7fc95-451f-4339-a8a1-8fa978733657")
+	)
+	(wire
+		(pts
+			(xy 132.08 21.59) (xy 133.35 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ef7c70b-77ae-4925-92ed-85e71b8e467b")
+	)
+	(wire
+		(pts
+			(xy 110.49 161.29) (xy 88.9 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fe697ba-3376-4b54-8fd3-7482bb08968a")
+	)
+	(wire
+		(pts
+			(xy 273.05 29.21) (xy 273.05 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a29c9568-a1b6-44ce-915b-aeda64e537b1")
+	)
+	(wire
+		(pts
+			(xy 246.38 36.83) (xy 254 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3daeaf6-7705-4152-b12e-08995a55ec7d")
+	)
+	(wire
+		(pts
+			(xy 41.91 48.26) (xy 80.01 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3fbc51d-13e3-4004-b125-9a4a0ba9978b")
+	)
+	(wire
+		(pts
+			(xy 41.91 59.69) (xy 41.91 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a48b8e9a-a74a-4952-be58-f48b6f7a5826")
+	)
+	(wire
+		(pts
+			(xy 39.37 50.8) (xy 39.37 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5baa16c-b1fe-4817-af45-61265df2e61f")
+	)
+	(wire
+		(pts
+			(xy 209.55 39.37) (xy 209.55 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7ab1687-4983-4edd-9de3-feb617cbdcfc")
+	)
+	(wire
+		(pts
+			(xy 31.75 148.59) (xy 53.34 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9797a77-1b16-4459-b5af-013f49937122")
+	)
+	(wire
+		(pts
+			(xy 68.58 59.69) (xy 72.39 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a980ef06-083e-43df-afe6-9064fdc6209c")
+	)
+	(wire
+		(pts
+			(xy 246.38 27.94) (xy 246.38 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa3dc5f4-5d40-475a-a65c-9c2951ce5302")
+	)
+	(wire
+		(pts
+			(xy 39.37 67.31) (xy 45.72 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abb5bba3-0f15-4155-b154-a49d4b253b46")
+	)
+	(wire
+		(pts
+			(xy 190.5 41.91) (xy 193.04 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b209f4c8-c87c-4cc0-b649-e2270a105e0a")
+	)
+	(wire
+		(pts
+			(xy 41.91 48.26) (xy 41.91 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b25f3cc3-9f9d-4749-bf32-1e3b0f46bc35")
+	)
+	(wire
+		(pts
+			(xy 187.96 36.83) (xy 193.04 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b56e314b-b98d-4534-9528-fff3bcd261a7")
+	)
+	(wire
+		(pts
+			(xy 72.39 77.47) (xy 80.01 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba097ce8-d6da-4b78-b9bb-c8c120d2707a")
+	)
+	(wire
+		(pts
+			(xy 254 29.21) (xy 273.05 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb1d58a1-0717-4450-99c2-a63d1f1a467a")
+	)
+	(wire
+		(pts
+			(xy 182.88 36.83) (xy 182.88 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc7d698a-96d5-416b-97ae-8b2f251b041a")
+	)
+	(wire
+		(pts
+			(xy 39.37 67.31) (xy 39.37 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf8fa927-6090-4b58-a9a8-374bb2a16ae4")
+	)
+	(wire
+		(pts
+			(xy 203.2 29.21) (xy 203.2 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1df2a18-1c83-487b-bc4f-8bc6763e2358")
+	)
+	(wire
+		(pts
+			(xy 80.01 67.31) (xy 80.01 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c305ecc8-2b4f-47d5-bd4b-e44845065170")
+	)
+	(wire
+		(pts
+			(xy 31.75 173.99) (xy 53.34 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5f4336d-5417-4195-b2da-b9d2d0bc2020")
+	)
+	(wire
+		(pts
+			(xy 132.08 19.05) (xy 133.35 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c90688a4-63f6-40af-8858-63a025f52097")
+	)
+	(wire
+		(pts
+			(xy 45.72 30.48) (xy 45.72 25.4)
 		)
 		(stroke
 			(width 0)
@@ -2303,7 +3567,27 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 20.32) (xy 53.34 20.32)
+			(xy 259.08 41.91) (xy 259.08 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5af9b06-dd95-4fac-be19-ca06e8dd80a2")
+	)
+	(wire
+		(pts
+			(xy 246.38 60.96) (xy 246.38 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7667372-a53f-45a5-b618-07e55478c06d")
+	)
+	(wire
+		(pts
+			(xy 22.86 20.32) (xy 45.72 20.32)
 		)
 		(stroke
 			(width 0)
@@ -2311,9 +3595,129 @@
 		)
 		(uuid "e243661a-677b-4540-89e6-631044c6622c")
 	)
+	(wire
+		(pts
+			(xy 39.37 53.34) (xy 39.37 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e276a2fd-ea5e-4bac-a7cd-cf7d131432cd")
+	)
+	(wire
+		(pts
+			(xy 72.39 68.58) (xy 72.39 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4bdc32e-9295-4e3d-b524-09bfda4d8c2f")
+	)
+	(wire
+		(pts
+			(xy 138.43 39.37) (xy 138.43 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e523ff12-68d8-447e-b62e-c78994c97676")
+	)
+	(wire
+		(pts
+			(xy 181.61 31.75) (xy 181.61 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7456e1c-a961-43f4-ad55-16e39e4d82d5")
+	)
+	(wire
+		(pts
+			(xy 88.9 133.35) (xy 93.98 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eefd730b-52d5-47b8-9963-e9919549f802")
+	)
+	(wire
+		(pts
+			(xy 41.91 77.47) (xy 45.72 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef1378a0-f7ad-46fa-a15b-e166ce254247")
+	)
+	(wire
+		(pts
+			(xy 175.26 41.91) (xy 187.96 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efa6ff63-37ad-4b9b-91c1-49d0a7bd39d5")
+	)
+	(wire
+		(pts
+			(xy 31.75 161.29) (xy 53.34 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0a8b5f7-f3df-4e81-b7b4-6ce0437f42e5")
+	)
+	(wire
+		(pts
+			(xy 80.01 85.09) (xy 80.01 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1bea38c-898c-4b41-a03e-4a1ae739fe18")
+	)
+	(wire
+		(pts
+			(xy 31.75 135.89) (xy 53.34 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f62621bd-ab13-4f1a-90e0-da7004285cb1")
+	)
+	(wire
+		(pts
+			(xy 246.38 41.91) (xy 259.08 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f93712e2-8d00-4318-bb77-c61a869cab7a")
+	)
+	(wire
+		(pts
+			(xy 132.08 33.02) (xy 133.35 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdaf5aea-4344-4e04-a19b-f063f8afda97")
+	)
 	(rectangle
 		(start 12.7 12.7)
-		(end 86.36 40.64)
+		(end 73.66 40.64)
 		(stroke
 			(width 1)
 			(type default)
@@ -2322,6 +3726,42 @@
 			(type none)
 		)
 		(uuid 0cebccdd-57db-4928-b03b-2691ffba259b)
+	)
+	(rectangle
+		(start 12.7 41.91)
+		(end 101.6 93.98)
+		(stroke
+			(width 1)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a9742667-fa34-4f45-80fa-2ba5ef6d05c7)
+	)
+	(text "+3V3"
+		(exclude_from_sim no)
+		(at 56.642 81.788 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "206bc4f6-abba-4cc5-a602-ef7cf5ed5455")
+	)
+	(text "Buck converters modules"
+		(exclude_from_sim no)
+		(at 27.686 92.71 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+		)
+		(uuid "4187a3ac-6ab0-4c6b-9f49-c1d450dffcdd")
 	)
 	(text "Battery"
 		(exclude_from_sim no)
@@ -2334,6 +3774,18 @@
 			)
 		)
 		(uuid "4cb23c5b-b5f6-4e19-b4e8-a9b163f9f046")
+	)
+	(text "+5V"
+		(exclude_from_sim no)
+		(at 56.388 64.008 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "f61f6cc6-ee79-44b5-a089-054bc7957779")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -2402,25 +3854,160 @@
 		)
 	)
 	(symbol
-		(lib_id "A4988:A4988_STEPPER_MOTOR_DRIVER_CARRIER")
-		(at 198.12 44.45 0)
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 85.09 59.69 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0f818ff1-568a-4d7a-8e72-9056fda629ab")
-		(property "Reference" "U2"
-			(at 198.12 21.59 0)
+		(uuid "05a4adbb-c0a9-4a17-a26d-ceb38ec5be18")
+		(property "Reference" "J3"
+			(at 86.36 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_+5V"
+			(at 86.36 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 85.09 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e112dfd-55e5-4a2e-8d32-5a3c21163eb0")
+		)
+		(pin "2"
+			(uuid "d81b0ec3-a3b0-480a-9279-16682023a6fe")
+		)
+		(instances
+			(project ""
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 181.61 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0dbce48f-1e89-462d-a307-bf625ec0267a")
+		(property "Reference" "#PWR03"
+			(at 181.61 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 181.61 24.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "A4988_STEPPER_MOTOR_DRIVER_CARRIER"
-			(at 198.12 24.13 0)
+		(property "Footprint" ""
+			(at 181.61 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 181.61 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bd58b614-072a-4d3b-8840-3e17e702ad1e")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "A4988:A4988_STEPPER_MOTOR_DRIVER_CARRIER")
+		(at 157.48 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f818ff1-568a-4d7a-8e72-9056fda629ab")
+		(property "Reference" "U2"
+			(at 169.164 23.368 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A4988_DRIVER_CARRIER"
+			(at 156.718 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2428,7 +4015,7 @@
 			)
 		)
 		(property "Footprint" "A4988_STEPPER_MOTOR_DRIVER_CARRIER:MODULE_A4988_STEPPER_MOTOR_DRIVER_CARRIER"
-			(at 198.12 44.45 0)
+			(at 157.48 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2438,7 +4025,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 198.12 44.45 0)
+			(at 157.48 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2447,7 +4034,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 198.12 44.45 0)
+			(at 157.48 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2456,7 +4043,7 @@
 			)
 		)
 		(property "MF" "Pololu"
-			(at 198.12 44.45 0)
+			(at 157.48 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2466,7 +4053,7 @@
 			)
 		)
 		(property "DESCRIPTION" "Stepper motor controler; IC: A4988; 1A; Uin mot: 8÷35V"
-			(at 198.12 44.45 0)
+			(at 157.48 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2476,7 +4063,7 @@
 			)
 		)
 		(property "PACKAGE" "None"
-			(at 198.12 44.45 0)
+			(at 157.48 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2486,7 +4073,7 @@
 			)
 		)
 		(property "PRICE" "None"
-			(at 198.12 44.45 0)
+			(at 157.48 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2496,7 +4083,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 198.12 44.45 0)
+			(at 157.48 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2506,7 +4093,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/A4988%20STEPPER%20MOTOR%20DRIVER%20CARRIER/Pololu/view-part/?ref=eda"
-			(at 198.12 44.45 0)
+			(at 157.48 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2516,7 +4103,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 198.12 44.45 0)
+			(at 157.48 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2526,7 +4113,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/A4988%20STEPPER%20MOTOR%20DRIVER%20CARRIER/Pololu/view-part/?ref=snap"
-			(at 198.12 44.45 0)
+			(at 157.48 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2536,7 +4123,7 @@
 			)
 		)
 		(property "MP" "A4988 STEPPER MOTOR DRIVER CARRIER"
-			(at 198.12 44.45 0)
+			(at 157.48 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2546,7 +4133,7 @@
 			)
 		)
 		(property "Availability" "Not in stock"
-			(at 198.12 44.45 0)
+			(at 157.48 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2556,7 +4143,7 @@
 			)
 		)
 		(property "AVAILABILITY" "Unavailable"
-			(at 198.12 44.45 0)
+			(at 157.48 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2566,7 +4153,7 @@
 			)
 		)
 		(property "Description_1" "\n                        \n                            Stepper Motor Driver\n                        \n"
-			(at 198.12 44.45 0)
+			(at 157.48 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2634,17 +4221,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Barrel_Jack")
-		(at 60.96 22.86 0)
+		(at 53.34 22.86 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "11866bfd-7c2b-4925-9bb0-9ce037322ff2")
 		(property "Reference" "J1"
-			(at 67.31 21.5899 0)
+			(at 59.69 21.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2652,8 +4238,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Battery barrel jack"
-			(at 67.31 24.1299 0)
+		(property "Value" "Battery barrel jack  12V"
+			(at 47.752 28.194 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2662,7 +4248,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 23.876 0)
+			(at 52.07 23.876 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2671,7 +4257,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 59.69 23.876 0)
+			(at 52.07 23.876 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2680,7 +4266,7 @@
 			)
 		)
 		(property "Description" "DC Barrel Jack"
-			(at 60.96 22.86 0)
+			(at 53.34 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2705,7 +4291,7 @@
 	)
 	(symbol
 		(lib_id "RPico:Pico")
-		(at 140.97 58.42 0)
+		(at 71.12 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2714,7 +4300,7 @@
 		(fields_autoplaced yes)
 		(uuid "13363b77-22e1-487c-9fc1-b19cb180913a")
 		(property "Reference" "U1"
-			(at 140.97 26.67 0)
+			(at 71.12 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2722,7 +4308,7 @@
 			)
 		)
 		(property "Value" "Pico"
-			(at 140.97 29.21 0)
+			(at 71.12 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2730,7 +4316,7 @@
 			)
 		)
 		(property "Footprint" "RPi_Pico:RPi_Pico_SMD_TH"
-			(at 140.97 58.42 90)
+			(at 71.12 154.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2739,7 +4325,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 58.42 0)
+			(at 71.12 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2748,7 +4334,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 140.97 58.42 0)
+			(at 71.12 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2895,17 +4481,1424 @@
 		)
 	)
 	(symbol
-		(lib_id "Motor:Stepper_Motor_bipolar")
-		(at 257.81 39.37 0)
+		(lib_id "power:+3V3")
+		(at 133.35 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "145d7904-6a7e-487c-962d-3149854108e4")
+		(property "Reference" "#PWR027"
+			(at 133.35 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 133.35 29.464 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 133.35 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "221680a9-b6c1-42f2-8e26-88c624de3c5d")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "184f04f0-583f-4904-97f0-66e3ac8ea0c8")
+		(property "Reference" "#PWR07"
+			(at 31.75 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 31.75 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "13add589-0560-4a5d-89ea-915a4d322d75")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 246.38 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2139bc11-555f-473a-b96c-31966db2098f")
+		(property "Reference" "#PWR016"
+			(at 246.38 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 246.38 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 246.38 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c02bfe68-5c04-4e8d-9d4f-71989c1661ce")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 72.39 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2cab3dbd-b61c-42c2-ba87-e0666d483260")
+		(property "Reference" "#PWR021"
+			(at 72.39 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 72.39 89.916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 72.39 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95cffdca-41ad-4a5c-aa6a-e899a043ad35")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 127 19.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
+		(uuid "342e292c-6fd4-4f36-b4c2-02d22e09ff67")
+		(property "Reference" "J6"
+			(at 125.73 19.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_+12V"
+			(at 125.73 21.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 127 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0880a0b4-c647-49cd-9640-376da2826f13")
+		)
+		(pin "2"
+			(uuid "88e98626-912f-4767-87f4-3d1ecd42c579")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 110.49 161.29 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3a405f6d-5443-475f-b7d7-ada5b18c4c12")
+		(property "Reference" "#PWR013"
+			(at 110.49 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 110.49 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 110.49 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b2479869-4ea0-4767-95e2-707b0c02d233")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 246.38 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b66c232-8e4b-42e5-b61a-d2746c6514bc")
+		(property "Reference" "#PWR017"
+			(at 246.38 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 246.38 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 246.38 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f96f624-c98d-4535-a6f4-8439f9b6d68f")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 110.49 135.89 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "446bc43c-583e-40d9-acb4-1803a7cbd43d")
+		(property "Reference" "#PWR011"
+			(at 110.49 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 110.49 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 110.49 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "904b29e2-d4df-46eb-a073-29c2fd4e9fca")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 110.49 148.59 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4d9e6072-4306-41b4-ace7-748fd7280dbb")
+		(property "Reference" "#PWR012"
+			(at 110.49 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 110.49 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 110.49 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c167f41d-f158-4cb6-aba3-61c6aafc05df")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 175.26 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "596e1dc7-647e-4b90-b238-c8fe37d732bc")
+		(property "Reference" "#PWR04"
+			(at 175.26 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 175.26 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 175.26 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e6fdaa2f-c1e4-4d32-8999-be7f1b72a67e")
+		)
+		(instances
+			(project ""
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "A4988:A4988_STEPPER_MOTOR_DRIVER_CARRIER")
+		(at 228.6 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5da457d2-3bcb-4c6f-b6bd-ad13fb20a620")
+		(property "Reference" "U3"
+			(at 240.284 23.368 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A4988_DRIVER_CARRIER"
+			(at 228.854 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "A4988_STEPPER_MOTOR_DRIVER_CARRIER:MODULE_A4988_STEPPER_MOTOR_DRIVER_CARRIER"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Pololu"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "DESCRIPTION" "Stepper motor controler; IC: A4988; 1A; Uin mot: 8÷35V"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "None"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PRICE" "None"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/A4988%20STEPPER%20MOTOR%20DRIVER%20CARRIER/Pololu/view-part/?ref=eda"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/A4988%20STEPPER%20MOTOR%20DRIVER%20CARRIER/Pololu/view-part/?ref=snap"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "A4988 STEPPER MOTOR DRIVER CARRIER"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "AVAILABILITY" "Unavailable"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "\n                        \n                            Stepper Motor Driver\n                        \n"
+			(at 228.6 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "63ee93e2-5b3e-40b6-93fa-fa62c68c1626")
+		)
+		(pin "2"
+			(uuid "1f6fdf15-9c0b-4277-afd8-772950406433")
+		)
+		(pin "15"
+			(uuid "9f773577-f412-4cf9-887a-012001ea5e97")
+		)
+		(pin "8"
+			(uuid "c27737cc-7dc5-497a-b5e4-9c5d80440757")
+		)
+		(pin "11"
+			(uuid "e2fdbfc8-7d36-4023-9ced-5def4870f910")
+		)
+		(pin "1"
+			(uuid "250ed55b-e82a-41b3-9318-41a239b3dd23")
+		)
+		(pin "12"
+			(uuid "2a9d9a61-09a5-4f96-9e09-f07381969a07")
+		)
+		(pin "6"
+			(uuid "14fc5bee-52fd-4c45-9b54-76ea08f71b7b")
+		)
+		(pin "14"
+			(uuid "8d89f4ba-aec8-47bb-abea-698d5b1d319e")
+		)
+		(pin "16"
+			(uuid "527745e8-a23a-4199-be40-3902b383bdce")
+		)
+		(pin "9"
+			(uuid "4898a9bc-2855-42c9-93c6-641ac8dcfc32")
+		)
+		(pin "13"
+			(uuid "75d9c86b-bf67-45c1-8039-c5ca846f3c8a")
+		)
+		(pin "3"
+			(uuid "77656366-ebf7-4230-86b7-3d97803a79ed")
+		)
+		(pin "5"
+			(uuid "71c808fb-fa80-4178-a2d5-4ee5d863e3d6")
+		)
+		(pin "10"
+			(uuid "f05e4029-1797-48de-944a-592bbf5d872b")
+		)
+		(pin "4"
+			(uuid "4b64fc79-b9c8-4f2b-815e-e5011aab243d")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 71.12 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "61cbf381-1bae-4817-a266-04d3068037f3")
+		(property "Reference" "#PWR06"
+			(at 71.12 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 71.12 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 71.12 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6681979a-8a4c-4a07-bb7a-bbdc16a9a853")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 41.91 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6bcbfede-8333-4af8-abed-9d41ca41996e")
+		(property "Reference" "#PWR020"
+			(at 41.91 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 41.91 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 41.91 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1bb5bb8-8396-48b7-9fa5-6c9967f678d9")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6fa2cf65-e5b5-45b9-baa0-83e755a2fce6")
+		(property "Reference" "#PWR09"
+			(at 31.75 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 31.75 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0e2ca33-6c45-43c0-839d-03f138dd5359")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 133.35 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "73f387c3-6bea-4969-9647-50f80ed267b0")
+		(property "Reference" "#PWR026"
+			(at 133.35 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 133.35 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 133.35 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b1f2595-69a7-4dbe-acd0-bf4044a32ac9")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 133.35 19.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "745272d9-3f4e-43f6-8c62-808858d00c09")
+		(property "Reference" "#PWR028"
+			(at 133.35 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 133.35 15.494 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 133.35 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d8e28320-f359-442a-b6cf-10933b891034")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 72.39 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "753dbfb0-aeb6-4475-96c0-d4a1e09810d0")
+		(property "Reference" "#PWR024"
+			(at 72.39 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 72.39 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 72.39 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07ce1fc3-77a5-4450-a3b4-35e8e7203c21")
+		)
+		(instances
+			(project ""
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 252.73 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7a88bf73-7545-4a4e-b19f-38400ab9b24e")
+		(property "Reference" "#PWR018"
+			(at 252.73 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 252.73 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 252.73 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 252.73 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 252.73 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf8395ae-e4bd-4373-80eb-e7012e701d73")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 175.26 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7bbda47b-c0a4-4d12-bf2d-5b637969f950")
+		(property "Reference" "#PWR05"
+			(at 175.26 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.26 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 175.26 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "233daf05-ecac-474d-8d94-483600efc42b")
+		)
+		(instances
+			(project ""
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Motor:Stepper_Motor_bipolar")
+		(at 200.66 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(uuid "8958bd54-660c-4432-8a0e-930e9affb235")
 		(property "Reference" "M1"
-			(at 262.89 37.249 0)
+			(at 199.39 43.942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2914,7 +5907,7 @@
 			)
 		)
 		(property "Value" "Stepper_Motor_bipolar"
-			(at 262.89 39.789 0)
+			(at 182.372 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2923,7 +5916,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 258.064 39.624 0)
+			(at 200.914 39.624 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2932,7 +5925,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0"
-			(at 258.064 39.624 0)
+			(at 200.914 39.624 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2941,7 +5934,7 @@
 			)
 		)
 		(property "Description" "4-wire bipolar stepper motor"
-			(at 257.81 39.37 0)
+			(at 200.66 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2965,6 +5958,144 @@
 			(project ""
 				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
 					(reference "M1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8eaa1f89-b6a7-4f93-84aa-3fa47a9c1569")
+		(property "Reference" "#PWR010"
+			(at 31.75 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 31.75 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d79af10d-e6ad-4d23-8a6e-c6acf1477b6a")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Buck_converter_modules:LM2596_Module")
+		(at 57.15 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9143c527-bc72-4bda-884c-3460a6369b38")
+		(property "Reference" "U5"
+			(at 57.15 75.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM2596_module"
+			(at 57.658 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3191cc51-e946-4183-bddc-37abfc4793c3")
+		)
+		(pin "2"
+			(uuid "3a8523a6-2b68-4f51-960c-b7337e7fe60f")
+		)
+		(pin "3"
+			(uuid "d5ce8c8b-5128-4366-8c63-8439f8c67d69")
+		)
+		(pin "4"
+			(uuid "c346fec6-f4be-41a2-8361-d6ee9e9a1883")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -3041,16 +6172,18 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Barrel_Jack")
-		(at 25.4 48.26 0)
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 85.09 48.26 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b94a66a9-965d-49a9-a8a1-0a00a5ae6029")
-		(property "Reference" "J2"
-			(at 19.05 46.9899 0)
+		(fields_autoplaced yes)
+		(uuid "96efd0bb-18d3-4a0a-8726-207f2e81ed76")
+		(property "Reference" "J5"
+			(at 86.36 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3058,8 +6191,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Electrical barrel jack"
-			(at 35.56 54.102 0)
+		(property "Value" "Conn_+12V"
+			(at 86.36 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3068,7 +6201,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.67 49.276 0)
+			(at 85.09 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3077,7 +6210,495 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 26.67 49.276 0)
+			(at 85.09 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 85.09 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06f8a29b-cd3a-40e9-a562-011959ec9dab")
+		)
+		(pin "2"
+			(uuid "732a9160-8bb0-43be-bd3b-88f179bd26f7")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 85.09 77.47 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9940b39b-e2fc-43c4-9619-3a5af5bb3f99")
+		(property "Reference" "J4"
+			(at 86.36 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_+3v3"
+			(at 86.36 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 85.09 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c84f302-8a4e-4be7-804c-2ef56ebaa4fe")
+		)
+		(pin "2"
+			(uuid "ab6ac592-77c7-401a-ad23-bc6f3e791954")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 72.39 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "99fc4d9d-6629-4f24-8a4f-7841c6c6abec")
+		(property "Reference" "#PWR022"
+			(at 72.39 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 72.39 72.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 72.39 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c335d80f-6750-4319-b752-f342ac3c7ed1")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 133.35 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a4b3eee-2bf4-41e5-a6d0-9ed82e85d87b")
+		(property "Reference" "#PWR025"
+			(at 133.35 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 133.35 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 133.35 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "688f871c-83cb-4883-bfad-4c66b8e5e4a7")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Motor:Stepper_Motor_bipolar")
+		(at 270.51 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ab61aac0-cde8-4ddb-aff4-abfa1f98d1b6")
+		(property "Reference" "M2"
+			(at 268.986 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Stepper_Motor_bipolar"
+			(at 253.746 28.194 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 270.764 39.624 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0"
+			(at 270.764 39.624 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4-wire bipolar stepper motor"
+			(at 270.51 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5a2eab90-b557-438d-aa90-5e4335b877fa")
+		)
+		(pin "1"
+			(uuid "f3336e66-1d5b-48e5-bb8d-bbbf647b7e89")
+		)
+		(pin "4"
+			(uuid "b425eca3-fc9e-4b8e-8c8d-7d01ee15fccb")
+		)
+		(pin "3"
+			(uuid "c9aaff0f-b0d4-45c9-8916-dcaa4599b87a")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "M2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 127 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b395b982-bdf1-4aca-a01e-1746a9cd7de7")
+		(property "Reference" "J7"
+			(at 125.73 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_+3v3"
+			(at 125.73 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 127 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e5870fe-7cbc-45e9-a635-0fa745528641")
+		)
+		(pin "2"
+			(uuid "ab74b37c-302b-4ec8-987e-d7734cc8c73b")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Buck_converter_modules:LM2596_Module")
+		(at 57.15 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b7693ab0-cb8e-4dc2-9cb0-770e02b1c701")
+		(property "Reference" "U4"
+			(at 57.15 57.404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM2596_module"
+			(at 57.658 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c4e77cb-340a-4e18-8d02-5e387a34a5ef")
+		)
+		(pin "2"
+			(uuid "11da3ea2-7873-4464-8111-529153c3307a")
+		)
+		(pin "3"
+			(uuid "cd0c2118-a601-47b3-be4d-3c05fe4afb07")
+		)
+		(pin "4"
+			(uuid "f341c917-d290-42e2-9560-7c13ec80e741")
+		)
+		(instances
+			(project ""
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Barrel_Jack")
+		(at 26.67 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b94a66a9-965d-49a9-a8a1-0a00a5ae6029")
+		(property "Reference" "J2"
+			(at 20.32 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Electrical barrel jack 12V"
+			(at 37.846 56.642 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 51.816 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 51.816 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3086,7 +6707,7 @@
 			)
 		)
 		(property "Description" "DC Barrel Jack"
-			(at 25.4 48.26 0)
+			(at 26.67 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3104,6 +6725,332 @@
 			(project "Aeris control electrical plans"
 				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 39.37 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c0b390e8-6dd9-4cc5-977e-87bf4a45c2ba")
+		(property "Reference" "#PWR019"
+			(at 39.37 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 39.37 89.916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 39.37 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f3ac7b22-7208-439c-8d07-45aac2e02bd1")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 110.49 173.99 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca216ebe-9cb7-46ba-b706-3e4fc1d58fa3")
+		(property "Reference" "#PWR014"
+			(at 110.49 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 110.49 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 110.49 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "995213be-a2f3-4842-84c8-2b35664ac0fe")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cb76883e-4756-4f0d-ad95-71764872eb88")
+		(property "Reference" "#PWR08"
+			(at 31.75 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 31.75 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "670fdc56-e013-45e0-b64c-06d82bbcd109")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 93.98 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d992b746-4184-46bf-b509-0fe40741a75f")
+		(property "Reference" "#PWR015"
+			(at 93.98 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 93.98 129.794 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 93.98 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 93.98 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "41b0bef4-a6db-41bc-b955-dc0bf4a76cd9")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 72.39 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e19682a1-1e34-40f3-ac6f-306e66ef33d5")
+		(property "Reference" "#PWR023"
+			(at 72.39 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 72.39 73.914 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 72.39 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c8ff1c43-2119-4399-9b4f-9a3967dcd61d")
+		)
+		(instances
+			(project "Aeris control electrical plans"
+				(path "/fa36b2a7-7221-4e16-98a3-044befcdb7dd"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
