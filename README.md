@@ -1,2 +1,2 @@
-# Aeris-Control
-Projet de session S4 
+# AERISCONTROL
+Autonomous sail boat with a multiaxial sail control
