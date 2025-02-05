@@ -40,9 +40,9 @@ class BMI160:
 
     def read_accel_gyro(self):
         # Read accelerometer and gyroscope values
-        data = self.i2c.readfrom_mem(self.address, BMI160_ACC_X_LSB, 12)
+        data = self.i2c.readfrom_mem(self.address, BMI160_ACC_X_LSB, 12) #Read 12 bytes SEQUENTIALLY
         
-        # Convert the raw data to integers
+        # Convert the raw 16 bit data to integers
         accel_x = int.from_bytes(data[0:2], 'little', signed=True)
         accel_y = int.from_bytes(data[2:4], 'little', signed=True)
         accel_z = int.from_bytes(data[4:6], 'little', signed=True)
@@ -54,9 +54,11 @@ class BMI160:
         accel_scale = 2 / 32768  # Assuming +/- 2G range
         gyro_scale = 2000 / 32768  # Assuming 2000 dps range
         
+        #Convert into G value
         accel_x *= accel_scale
         accel_y *= accel_scale
         accel_z *= accel_scale
+        #Convert into dps value
         gyro_x *= gyro_scale
         gyro_y *= gyro_scale
         gyro_z *= gyro_scale

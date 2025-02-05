@@ -51,6 +51,7 @@ class StepperControl:
         jmp(x_dec, "step_loop")  # Continue if x != 0
 
         irq(0)                   # Raise IRQ to notify CPU when x == 0
+        #irq(n) n needs to be equal to the 2^sm_id 
         
     @rp2.asm_pio(set_init=rp2.PIO.OUT_LOW)
     def stepper_control_step_freq_sm1():
@@ -75,7 +76,32 @@ class StepperControl:
         jmp(x_dec, "step_loop")  # Continue if x != 0
 
         irq(1)                   # Raise IRQ to notify CPU when x == 0
-        #irq(n) n needs to be equal to the sm_id 
+        #irq(n) n needs to be equal to the 2^sm_id 
+        
+    @rp2.asm_pio(set_init=rp2.PIO.OUT_LOW)
+    def stepper_control_step_freq_sm4():
+        pull(block)           # Load step count from TX FIFO
+        mov(x, osr)           # x contains the number of steps
+        pull(block)           # Load delay value from TX FIFO
+        
+        label("step_loop")
+        #y contains the 1/2 of the wanted period
+        mov(y, osr)           # Load delay value from OSR into y
+        set(pins, 1)          # Set GPIO high
+        label("high_delay")
+        nop() [31]
+        jmp(y_dec, "high_delay")
+
+        mov(y, osr)           # Load delay value from OSR into y
+        set(pins, 0)          # Set GPIO low
+        label("low_delay")
+        nop() [31]
+        jmp(y_dec, "low_delay")
+        
+        jmp(x_dec, "step_loop")  # Continue if x != 0
+
+        irq(16)                   # Raise IRQ to notify CPU when x == 0
+        #irq(n) n needs to be equal to the 2^sm_id 
 
     def set_step_and_speed(self, step, hz):
         """
@@ -176,15 +202,22 @@ class StepperControl:
         self.sm_id = sm_id
         if sm_id == 0:
             self.sm = rp2.StateMachine(
+            sm_id,
+            self.stepper_control_step_freq_sm0,
+            freq=self.clock_freq,
+            set_base=self.stpPin,
+            )
+        elif sm_id == 1:
+            self.sm = rp2.StateMachine(
                 sm_id,
-                self.stepper_control_step_freq_sm0,
+                self.stepper_control_step_freq_sm1,
                 freq=self.clock_freq,
                 set_base=self.stpPin,
                 )
         else:
-            self.sm = rp2.StateMachine(
+             self.sm = rp2.StateMachine(
                 sm_id,
-                self.stepper_control_step_freq_sm1,
+                self.stepper_control_step_freq_sm4,
                 freq=self.clock_freq,
                 set_base=self.stpPin,
                 )
@@ -202,7 +235,7 @@ class StepperControl:
         
 # Example usage:
 if __name__ == "__main__":
-    motor = StepperControl(sm_id=0, stpPin=14, dirPin=15)
+    motor = StepperControl(sm_id=4, stpPin=14, dirPin=15)
 
     motor.set_step_and_speed(300,300)  # Set initial frequency to 300 Hz
     #motor.wait_for_completion()
