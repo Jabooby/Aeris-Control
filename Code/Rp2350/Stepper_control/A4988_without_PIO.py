@@ -81,16 +81,6 @@ class A4988:
         self._dir.value(0)
         self._step.value(0)
 
-    def step(self, forward=True):
-        """Emit one step pulse, with an optional direction flag."""
-        self._dir.value = forward
-
-        # Create a short pulse on the step pin.  Note that CircuitPython is slow
-        # enough that normal execution delay is sufficient without actually
-        # sleeping.
-        self._step.value = True
-        # time.sleep(1e-6)
-        self._step.value = False
 
     def move_sync(self, steps, speed=1000.0):
         """Move the stepper motor the signed number of steps forward or backward at the
@@ -133,6 +123,6 @@ while True:
     stepper.move_sync(-800, speed)
     time.sleep(1.0)
 
-    speed *= 1.2
-    if speed > 2000:
+    speed *= 1.1
+    if speed > 1000:
         speed = 200
