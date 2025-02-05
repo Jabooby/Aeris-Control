@@ -16,7 +16,7 @@ class StepperControl:
         """
         Poll the IRQ flag to ensure the state machine has completed its current operation.
         """
-        with irq_lock:
+        with irq_lock: #prevents another irq to be activated 
             x = self.sm.irq().flags()
             print("IRQ flag status:", x)
             self.inMovement = False
@@ -30,16 +30,18 @@ class StepperControl:
     @rp2.asm_pio(set_init=rp2.PIO.OUT_LOW)
     def stepper_control_step_freq():
         pull(block)           # Load step count from TX FIFO
-        mov(x, osr)           
+        mov(x, osr)           # x contains the number of steps
         pull(block)           # Load delay value from TX FIFO
+        
         label("step_loop")
+        #y contains the 1/2 of the wanted period
         mov(y, osr)           # Load delay value from OSR into y
         set(pins, 1)          # Set GPIO high
         label("high_delay")
         nop() [31]
         jmp(y_dec, "high_delay")
 
-        mov(y, osr)
+        mov(y, osr)           # Load delay value from OSR into y
         set(pins, 0)          # Set GPIO low
         label("low_delay")
         nop() [31]
@@ -52,26 +54,39 @@ class StepperControl:
     def set_step_and_speed(self, step, hz):
         """
         Set the period dynamically based on the desired frequency.
+        And sends the amount of steps wanted.
         """
         self.set_speed(hz)
         self.set_step(step)
         
     def set_speed(self, hz):
+        """
+        Set the period dynamically based on the desired frequency.
+        """
         self.speed = hz
         
     def set_direction(self, dir):
+        """
+        Set the direction pin according to wanted direction
+        """
         self.dirPin.value(dir)
         
     def set_step(self, step):
+        """
+        Set the direction according to the value step received.
+        Sends the number of steps wanted to the SM with the required speed.
+        Stores all necessary data for logging later.
+        """
         if(step < 0):
-            self.set_direction(BACKWARD)
+            self.set_direction(BACKWARD)#negative value goes backward
         else:
-            self.set_direction(FORWARD)
-        self.sm.put(abs(step))
-        self.desiredStepValue += step
+            self.set_direction(FORWARD) #positive value goas forward
+        self.sm.put(abs(step))          #Send the number of steps to the SM
+        self.desiredStepValue += step   #Store the desired position 
+        #Better way to do this is to do the math whenever the speed is changed and store it
         half_period_cycles = int(self.clock_freq / (50 * self.speed))  # Calculate half-period in clock cycles
-        self.sm.put(half_period_cycles)  # Send the delay value to the PIO state machine
-        self.inMovement = True
+        self.sm.put(half_period_cycles) #Send the delay value to the PIO state machine
+        self.inMovement = True          #SM is occupied and should not be communicated with till it is done. Not yet implemented...
     
     def reset_motor(self):
         """
@@ -121,19 +136,27 @@ class StepperControl:
             "desiredStepValue": self.desiredStepValue,
             "currentStepValue": self.currentStepValue,
             "speed": self.speed,
+            "PIO_id":self.pio_id,
             "state_machine_id": self.sm_id,
             "irq_status": self.sm.irq().flags() if self.sm else None
         }
         
         return state
         
-    def __init__(self, sm_id, stpPin, dirPin, clock_freq=150_000_000):
+    def __init__(self, sm_id, stpPin, dirPin, pioID = rp2.PIO1, clock_freq=150_000_000):
         self.stpPin = Pin(stpPin, Pin.OUT)
         self.dirPin = Pin(dirPin, Pin.OUT)
         self.clock_freq = clock_freq
         
         self.sm_id = sm_id
-        self.sm = rp2.StateMachine(sm_id, self.stepper_control_step_freq, freq=self.clock_freq, set_base=self.stpPin)
+        self.pio_id = pioID
+        self.sm = rp2.StateMachine(
+                sm_id,
+                self.stepper_control_step_freq,
+                freq=self.clock_freq,
+                set_base=self.stpPin,
+                pio=pioID
+                )
         self.start_motor()
         self.sm.irq(handler = self.wait_for_completion)
         
