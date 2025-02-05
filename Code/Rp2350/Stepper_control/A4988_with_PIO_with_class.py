@@ -26,9 +26,10 @@ class StepperControl:
         The print won't work outside the handler and will always show 0
         More info: https://github.com/micropython/micropython/wiki/Hardware-API#irqs 
         """
+     
 
     @rp2.asm_pio(set_init=rp2.PIO.OUT_LOW)
-    def stepper_control_step_freq():
+    def stepper_control_step_freq_sm0():
         pull(block)           # Load step count from TX FIFO
         mov(x, osr)           # x contains the number of steps
         pull(block)           # Load delay value from TX FIFO
@@ -50,6 +51,31 @@ class StepperControl:
         jmp(x_dec, "step_loop")  # Continue if x != 0
 
         irq(0)                   # Raise IRQ to notify CPU when x == 0
+        
+    @rp2.asm_pio(set_init=rp2.PIO.OUT_LOW)
+    def stepper_control_step_freq_sm1():
+        pull(block)           # Load step count from TX FIFO
+        mov(x, osr)           # x contains the number of steps
+        pull(block)           # Load delay value from TX FIFO
+        
+        label("step_loop")
+        #y contains the 1/2 of the wanted period
+        mov(y, osr)           # Load delay value from OSR into y
+        set(pins, 1)          # Set GPIO high
+        label("high_delay")
+        nop() [31]
+        jmp(y_dec, "high_delay")
+
+        mov(y, osr)           # Load delay value from OSR into y
+        set(pins, 0)          # Set GPIO low
+        label("low_delay")
+        nop() [31]
+        jmp(y_dec, "low_delay")
+        
+        jmp(x_dec, "step_loop")  # Continue if x != 0
+
+        irq(1)                   # Raise IRQ to notify CPU when x == 0
+        #irq(n) n needs to be equal to the sm_id 
 
     def set_step_and_speed(self, step, hz):
         """
@@ -136,27 +162,33 @@ class StepperControl:
             "desiredStepValue": self.desiredStepValue,
             "currentStepValue": self.currentStepValue,
             "speed": self.speed,
-            "PIO_id":self.pio_id,
             "state_machine_id": self.sm_id,
             "irq_status": self.sm.irq().flags() if self.sm else None
         }
         
         return state
         
-    def __init__(self, sm_id, stpPin, dirPin, pioID = rp2.PIO1, clock_freq=150_000_000):
+    def __init__(self, sm_id, stpPin, dirPin, clock_freq=150_000_000):
         self.stpPin = Pin(stpPin, Pin.OUT)
         self.dirPin = Pin(dirPin, Pin.OUT)
         self.clock_freq = clock_freq
         
         self.sm_id = sm_id
-        self.pio_id = pioID
-        self.sm = rp2.StateMachine(
+        if sm_id == 0:
+            self.sm = rp2.StateMachine(
                 sm_id,
-                self.stepper_control_step_freq,
+                self.stepper_control_step_freq_sm0,
                 freq=self.clock_freq,
                 set_base=self.stpPin,
-                pio=pioID
                 )
+        else:
+            self.sm = rp2.StateMachine(
+                sm_id,
+                self.stepper_control_step_freq_sm1,
+                freq=self.clock_freq,
+                set_base=self.stpPin,
+                )
+        
         self.start_motor()
         self.sm.irq(handler = self.wait_for_completion)
         
@@ -170,20 +202,21 @@ class StepperControl:
         
 # Example usage:
 if __name__ == "__main__":
-    motor = StepperControl(sm_id= 0, stpPin=14, dirPin=15)
+    motor = StepperControl(sm_id=0, stpPin=14, dirPin=15)
 
     motor.set_step_and_speed(300,300)  # Set initial frequency to 300 Hz
     #motor.wait_for_completion()
     while motor.inMovement:
+        print(motor.state_as_json())
         time.sleep(1)
-    motor.set_step_and_speed(-300,300)  # Set initial frequency to 300 Hz
+    #print(motor.state_as_json())
+    motor.set_speed(400)
+    motor.set_step(-400)
     #motor.wait_for_completion()
     while motor.inMovement:
+        print(motor.state_as_json())
         time.sleep(1)        
     print("First step sequence complete!")
-    
-    print(motor.state_as_json())
-    #time.sleep(5)
     
     
     motor.set_step_and_speed(900,900)  # Set frequency to 900 Hz
