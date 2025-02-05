@@ -193,6 +193,10 @@ class StepperControl:
         }
         
         return state
+    
+    def go_to_position(self, position):
+        stepsNeeded = position - self.currentStepValue
+        self.set_step(stepsNeeded)
         
     def __init__(self, sm_id, stpPin, dirPin, clock_freq=150_000_000):
         self.stpPin = Pin(stpPin, Pin.OUT)
@@ -243,13 +247,14 @@ if __name__ == "__main__":
         print(motor.state_as_json())
         time.sleep(1)
     #print(motor.state_as_json())
-    motor.set_speed(400)
-    motor.set_step(-400)
+    motor.set_speed(800)
+    motor.go_to_position(-400)
     #motor.wait_for_completion()
     while motor.inMovement:
         print(motor.state_as_json())
         time.sleep(1)        
     print("First step sequence complete!")
+    print(motor.state_as_json())
     
     
     motor.set_step_and_speed(900,900)  # Set frequency to 900 Hz
