@@ -1,7 +1,7 @@
 import rp2
 import time
 from machine import Pin
-import json
+import ujson
 from _thread import allocate_lock
 
 irq_lock = allocate_lock()
