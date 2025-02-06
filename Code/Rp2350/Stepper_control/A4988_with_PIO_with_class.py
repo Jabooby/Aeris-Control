@@ -6,7 +6,6 @@ from _thread import allocate_lock
 
 irq_lock = allocate_lock()
 
-
 FORWARD = 1
 BACKWARD = 0
 
@@ -239,7 +238,7 @@ class StepperControl:
         
 # Example usage:
 if __name__ == "__main__":
-    motor = StepperControl(sm_id=4, stpPin=14, dirPin=15)
+    motor = StepperControl(sm_id=0, stpPin=14, dirPin=15)
 
     motor.set_step_and_speed(300,300)  # Set initial frequency to 300 Hz
     #motor.wait_for_completion()
