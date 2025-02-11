@@ -3,7 +3,7 @@ from machine import UART, Pin
 import uasyncio as asyncio
 
 class UARTJsonHandler:
-    def __init__(self, uart_id=0, baudrate=9600, tx_pin=Pin(0), rx_pin=Pin(1)):
+    def __init__(self, uart_id=0, baudrate=115600, tx_pin=Pin(0), rx_pin=Pin(1)):
         """
         Initialize UART communication for JSON handling.
         :param uart_id: UART bus ID (0 or 1 for RP2040)
