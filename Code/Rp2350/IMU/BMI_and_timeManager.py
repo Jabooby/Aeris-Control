@@ -27,23 +27,38 @@ class IMUSensor:
     def __init__(self, i2c, weight_of_sensors=0.98):
         self.bmi = bmi160.BMI160(i2c)
         self.weight_of_sensors = weight_of_sensors
+        self.PI = 3.14159265359
         self.roll = 0.0
         self.pitch = 0.0
         self.yaw = 0.0
-        self.PI = 3.14159265359
+        self.accx = 0.0
+        self.accy = 0.0
+        self.accz = 0.0
+        self.speedx = 0.0
+        self.speedy = 0.0
+        self.speedz = 0.0
+        self.distancex = 0.0
+        self.distancey = 0.0
+        self.distancez = 0.0
     
     def rad_to_deg(self, val_rad):
         return val_rad * (180 / self.PI)
 
     def get_acc_angle(self):
-        accx, accy, accz = self.bmi.acceleration
-        roll = math.atan2(accy, accz)
-        pitch = math.atan2(-accx, math.sqrt(accy**2 + accz**2))
+        self.accx, self.accy, self.accz = self.bmi.acceleration
+        roll = math.atan2(self.accy, self.accz)
+        pitch = math.atan2(-self.accx, math.sqrt(self.accy**2 + self.accz**2))
         return self.rad_to_deg(roll), self.rad_to_deg(pitch)
 
     def get_gyro_angle(self, time_delta):
         gyrox, gyroy, gyroz = self.bmi.gyro
         return gyrox * time_delta, gyroy * time_delta, gyroz * time_delta
+    
+    def get_speed(self, time_delta):
+        return self.speedx, self.speedy, self.speedz
+
+    def get_distance(self, time_delta):
+        return self.distancex, self.distancey, self.distancez
 
     def angle_filter(self, acc_roll, acc_pitch, gy_roll, gy_pitch, gy_yaw):
         f_roll = self.weight_of_sensors * gy_roll + (1 - self.weight_of_sensors) * acc_roll
@@ -56,9 +71,18 @@ class IMUSensor:
         gy_roll, gy_pitch, gy_yaw = self.get_gyro_angle(time_delta)
         f_roll, f_pitch, f_yaw = self.angle_filter(acc_roll, acc_pitch, gy_roll, gy_pitch, gy_yaw)
 
+        # Update angles
         self.roll += f_roll
         self.pitch += f_pitch
         self.yaw += f_yaw
+
+        # Update values by integration
+        self.speedx += self.accx*time_delta
+        self.speedy += self.accy*time_delta
+        self.speedz += self.accz*time_delta
+        self.distancex += self.speedx*time_delta
+        self.distancey += self.speedy*time_delta
+        self.distancez += self.speedz*time_delta
 
 # Create IMU Sensor object
 imu_0 = IMUSensor(i2c_0)
