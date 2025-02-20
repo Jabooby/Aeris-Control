@@ -1,4 +1,5 @@
 import time
+import json
 from machine import Pin, I2C
 from micropython_bmi160 import bmi160
 import math as m
@@ -93,6 +94,18 @@ class IMUSensor:
         self.distancey += self.speedy * time_delta + 0.5 * self.accy * time_delta**2
         self.distancez += self.speedz * time_delta + 0.5 * self.accz * time_delta**2
 
+
+def update_json_file(roll, pitch, yaw, filename="imu_data.json"):
+    data = {
+        "roll": roll,
+        "pitch": pitch,
+        "yaw": yaw
+    }
+
+
+    with open(filename, "w") as f:
+        json.dump(data, f)
+        
 # Create IMU Sensor object
 imu_0 = IMUSensor(i2c_0)
 time_manager = TimeManager()
@@ -106,6 +119,7 @@ while True:
 
     imu_0.update(time_manager.get_time_delta())
     roll, pitch, yaw = imu_0.roll, imu_0.pitch, imu_0.yaw
+    update_json_file(roll, pitch, yaw)
     time.sleep(0.5)
     
     print(f"roll: {roll:.2f}°, pitch: {pitch:.2f}°, yaw: {yaw:.2f}°")
