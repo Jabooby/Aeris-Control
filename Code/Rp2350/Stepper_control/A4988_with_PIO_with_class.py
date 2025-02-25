@@ -107,8 +107,9 @@ class StepperControl:
         Set the period dynamically based on the desired frequency.
         And sends the amount of steps wanted.
         """
-        self.set_speed(hz)
-        self.set_step(step)
+        if(self.inMovement == false):
+            self.set_speed(hz)
+            self.set_step(step)
         
     def set_speed(self, hz):
         """
@@ -194,8 +195,9 @@ class StepperControl:
         return state
     
     def go_to_position(self, position):
-        stepsNeeded = position - self.currentStepValue
-        self.set_step(stepsNeeded)
+        if(self.inMovement == false):
+            stepsNeeded = position - self.currentStepValue
+            self.set_step(stepsNeeded)
         
     def __init__(self, sm_id, stpPin, dirPin, clock_freq=150_000_000):
         self.stpPin = Pin(stpPin, Pin.OUT)
