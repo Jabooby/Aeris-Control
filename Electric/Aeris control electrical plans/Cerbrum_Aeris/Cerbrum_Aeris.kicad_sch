@@ -1,0 +1,398 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "04529f1b-0008-4e47-aa6b-118856ec7930")
+	(paper "A4")
+	(lib_symbols)
+	(no_connect
+		(at 86.36 57.15)
+		(uuid "f0027d77-9f9f-4dad-a935-a48d01ca406a")
+	)
+	(bus
+		(pts
+			(xy 86.36 127) (xy 96.52 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30c58ac0-b9fa-48a7-8144-e74e28fa7a25")
+	)
+	(bus
+		(pts
+			(xy 88.9 120.65) (xy 88.9 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33b691a6-4675-4752-9551-d7951f446f51")
+	)
+	(bus
+		(pts
+			(xy 96.52 127) (xy 96.52 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6368920d-43bf-4370-b216-718f189a26c1")
+	)
+	(bus
+		(pts
+			(xy 106.68 36.83) (xy 106.68 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79e39313-b665-4567-85c4-c2a19fad69e0")
+	)
+	(bus
+		(pts
+			(xy 96.52 46.99) (xy 86.36 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8933f519-b207-4510-ae33-3e079de86b9c")
+	)
+	(bus
+		(pts
+			(xy 106.68 29.21) (xy 86.36 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b2ebdbb-f04d-4c31-a2df-7696b7befe0d")
+	)
+	(bus
+		(pts
+			(xy 86.36 120.65) (xy 88.9 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a98737e4-577f-47fd-a4f1-f450b08e66e6")
+	)
+	(bus
+		(pts
+			(xy 134.62 36.83) (xy 106.68 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8d4a44c-d6c0-45f6-8c16-7fbb404a74b7")
+	)
+	(bus
+		(pts
+			(xy 88.9 52.07) (xy 86.36 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f986bf82-5b4c-4bba-a938-afe59cbde9f0")
+	)
+	(sheet
+		(at 13.97 64.77)
+		(size 72.39 44.45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2fb1611b-ab8d-48aa-a2ad-56e9e73e21d2")
+		(property "Sheetname" "Power"
+			(at 13.97 64.0584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 13.97 109.8046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 134.62 15.24)
+		(size 72.39 44.45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5a0f0455-b6cc-4aae-a344-4152e5ecd280")
+		(property "Sheetname" "Sensors"
+			(at 134.62 14.5284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Sensors.kicad_sch"
+			(at 134.62 60.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO[4..5]" input
+			(at 134.62 36.83 180)
+			(uuid "40244585-bf5c-483f-877f-05f7add4ec4c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 13.97 15.24)
+		(size 72.39 44.45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8f570ebf-fd91-423f-9c3f-df6392a84418")
+		(property "Sheetname" "MCU"
+			(at 13.97 14.5284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 13.97 60.2746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO[0..2]" input
+			(at 86.36 39.37 0)
+			(uuid "8f831f31-a238-452b-b353-657fe98543ba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPIO[3..5]" input
+			(at 86.36 29.21 0)
+			(uuid "03c332e8-3dcd-484f-8924-74f35df8c750")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPIO[6..14]" input
+			(at 86.36 46.99 0)
+			(uuid "54874859-c3fe-4ac6-9e5d-874cedf1cbe8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPIO[15..23]" input
+			(at 86.36 52.07 0)
+			(uuid "9c5d69f3-4a68-4be8-b0bc-049929c436d7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPIO[24..47]" input
+			(at 86.36 57.15 0)
+			(uuid "e9fbab01-0d98-4994-9533-e5758a483a8d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 13.97 114.3)
+		(size 72.39 44.45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ea57873c-c587-45ad-b214-4c2f93292745")
+		(property "Sheetname" "Steppers"
+			(at 13.97 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Steppers.kicad_sch"
+			(at 13.97 159.3346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GPIO[6..14]" input
+			(at 86.36 127 0)
+			(uuid "646adca6-5031-4028-a3b1-00c77ea2c6d1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPIO[15..23]" input
+			(at 86.36 120.65 0)
+			(uuid "33e724f1-af23-4a01-8985-e3d6a620d655")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 134.62 64.77)
+		(size 72.39 44.45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fbd7be89-bcac-4b20-b0e4-a9c8786dcd7c")
+		(property "Sheetname" "RPi connection"
+			(at 134.62 64.0584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "RPi_connection.kicad_sch"
+			(at 134.62 109.8046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
