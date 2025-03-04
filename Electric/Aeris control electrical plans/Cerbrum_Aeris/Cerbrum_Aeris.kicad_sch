@@ -5,6 +5,78 @@
 	(uuid "04529f1b-0008-4e47-aa6b-118856ec7930")
 	(paper "A4")
 	(lib_symbols)
+	(text "Unused"
+		(exclude_from_sim no)
+		(at 68.834 57.404 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "0e376657-0517-461b-9b55-c3bff7e62b49")
+	)
+	(text "I2C_1"
+		(exclude_from_sim no)
+		(at 71.374 32.004 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "2e99cb33-8fc2-4551-aef4-0691c1f6f4dc")
+	)
+	(text "M_Conn_RIGHT"
+		(exclude_from_sim no)
+		(at 65.532 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "47ea7d91-da64-45ea-9cba-bef9af6499cf")
+	)
+	(text "I2C_0"
+		(exclude_from_sim no)
+		(at 71.882 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "4e41fda7-2f01-4853-9a45-e9304a3f073c")
+	)
+	(text "UART"
+		(exclude_from_sim no)
+		(at 72.644 39.116 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "abc58971-c86d-4aef-9d7b-dfc73ae424a4")
+	)
+	(text "M_Conn_LEFT"
+		(exclude_from_sim no)
+		(at 67.056 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "dbb1183d-0b4f-4ed9-aa69-40187f3fa50b")
+	)
 	(no_connect
 		(at 86.36 57.15)
 		(uuid "f0027d77-9f9f-4dad-a935-a48d01ca406a")
@@ -51,6 +123,16 @@
 	)
 	(bus
 		(pts
+			(xy 101.6 87.63) (xy 134.62 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88db84b4-48c0-4b7b-b898-02d6408d56c2")
+	)
+	(bus
+		(pts
 			(xy 96.52 46.99) (xy 86.36 46.99)
 		)
 		(stroke
@@ -61,6 +143,16 @@
 	)
 	(bus
 		(pts
+			(xy 104.14 31.75) (xy 104.14 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91b89ed1-6209-4228-95fe-6ce9fdb7b043")
+	)
+	(bus
+		(pts
 			(xy 106.68 29.21) (xy 86.36 29.21)
 		)
 		(stroke
@@ -68,6 +160,16 @@
 			(type default)
 		)
 		(uuid "9b2ebdbb-f04d-4c31-a2df-7696b7befe0d")
+	)
+	(bus
+		(pts
+			(xy 101.6 39.37) (xy 101.6 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7a75139-8b42-4d26-9411-650186403aed")
 	)
 	(bus
 		(pts
@@ -88,6 +190,36 @@
 			(type default)
 		)
 		(uuid "b8d4a44c-d6c0-45f6-8c16-7fbb404a74b7")
+	)
+	(bus
+		(pts
+			(xy 86.36 39.37) (xy 101.6 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc13c43d-9062-430e-94e3-11ee83e6bff4")
+	)
+	(bus
+		(pts
+			(xy 86.36 31.75) (xy 104.14 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e38a053a-a5df-4e4e-bcaf-3d7eebfc2f04")
+	)
+	(bus
+		(pts
+			(xy 104.14 39.37) (xy 134.62 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7d03561-206f-4bc0-b493-8688e0863ebd")
 	)
 	(bus
 		(pts
@@ -185,6 +317,16 @@
 				(justify left)
 			)
 		)
+		(pin "GPIO[2..3]" input
+			(at 134.62 39.37 180)
+			(uuid "a6625959-05c0-4b8c-bec0-c2d3403a9a56")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "Cerbrum_Aeris"
 				(path "/04529f1b-0008-4e47-aa6b-118856ec7930"
@@ -227,17 +369,7 @@
 				(justify left top)
 			)
 		)
-		(pin "GPIO[0..2]" input
-			(at 86.36 39.37 0)
-			(uuid "8f831f31-a238-452b-b353-657fe98543ba")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "GPIO[3..5]" input
+		(pin "GPIO[4..5]" input
 			(at 86.36 29.21 0)
 			(uuid "03c332e8-3dcd-484f-8924-74f35df8c750")
 			(effects
@@ -270,6 +402,26 @@
 		(pin "GPIO[24..47]" input
 			(at 86.36 57.15 0)
 			(uuid "e9fbab01-0d98-4994-9533-e5758a483a8d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPIO[0..1]" input
+			(at 86.36 39.37 0)
+			(uuid "c9959db3-4988-4e8e-a378-833cc7926962")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GPIO[2..3]" input
+			(at 86.36 31.75 0)
+			(uuid "41e13bd2-2f99-4086-8367-5f50ddd89f6f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -379,6 +531,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "GPIO[0..1]" input
+			(at 134.62 87.63 180)
+			(uuid "32841379-679c-45a7-bf0f-19fe9e2cfe06")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

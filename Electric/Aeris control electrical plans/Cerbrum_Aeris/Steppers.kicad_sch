@@ -5,6 +5,214 @@
 	(uuid "f40aa0e5-2a64-4464-92b9-1d432de58b82")
 	(paper "B")
 	(lib_symbols
+		(symbol "Aeris_custom:SJ_Stepper_1-5mm"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -0.254 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SJ_Stepper_1-5mm_0_1"
+				(rectangle
+					(start -2.54 5.08)
+					(end 2.54 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SJ_Stepper_1-5mm_1_1"
+				(pin input line
+					(at -5.08 3.81 0)
+					(length 2.54)
+					(name "a"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 1.27 0)
+					(length 2.54)
+					(name "b"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -1.27 0)
+					(length 2.54)
+					(name "c"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -3.81 0)
+					(length 2.54)
+					(name "d"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 3.81 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 1.27 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 -1.27 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 -3.81 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x08_Socket"
 			(pin_names
 				(offset 1.016)
@@ -1388,16 +1596,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 29.21) (xy 180.34 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "002d3103-cb89-4429-b9b9-428c6c99ba78")
-	)
-	(wire
-		(pts
 			(xy 115.57 36.83) (xy 119.38 36.83)
 		)
 		(stroke
@@ -1408,7 +1606,17 @@
 	)
 	(wire
 		(pts
-			(xy 318.77 66.04) (xy 347.98 66.04)
+			(xy 368.3 97.79) (xy 379.73 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00b6eee5-e165-4737-aa57-c73f77f00340")
+	)
+	(wire
+		(pts
+			(xy 318.77 66.04) (xy 353.06 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1428,13 +1636,13 @@
 	)
 	(wire
 		(pts
-			(xy 353.06 39.37) (xy 353.06 36.83)
+			(xy 363.22 105.41) (xy 370.84 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "034464d1-3d35-4fd5-9798-cbcec8bf726d")
+		(uuid "0429632c-84d5-478e-8172-2fb7d2a11d5a")
 	)
 	(wire
 		(pts
@@ -1448,13 +1656,13 @@
 	)
 	(wire
 		(pts
-			(xy 353.06 36.83) (xy 355.6 36.83)
+			(xy 203.2 39.37) (xy 203.2 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "09954a2b-626c-44df-af96-a04c2e1b9554")
+		(uuid "07f3ad88-6bd9-422f-8aa2-235ffe0bdc4b")
 	)
 	(wire
 		(pts
@@ -1478,13 +1686,23 @@
 	)
 	(wire
 		(pts
-			(xy 350.52 63.5) (xy 350.52 68.58)
+			(xy 370.84 71.12) (xy 370.84 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1022f1dd-6ca4-4b8c-92f7-1a7848b99445")
+		(uuid "0e746c74-d287-4fcb-b0c3-630e8347aceb")
+	)
+	(wire
+		(pts
+			(xy 200.66 68.58) (xy 200.66 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f5d7b5c-7bf4-4afb-a731-707a356c867a")
 	)
 	(wire
 		(pts
@@ -1518,6 +1736,26 @@
 	)
 	(wire
 		(pts
+			(xy 370.84 105.41) (xy 370.84 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "149aafd7-ea88-498e-b5fc-e7d2f25778dd")
+	)
+	(wire
+		(pts
+			(xy 200.66 36.83) (xy 200.66 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15a245cf-2d8a-4702-afda-542297fc85e2")
+	)
+	(wire
+		(pts
 			(xy 267.97 29.21) (xy 287.02 29.21)
 		)
 		(stroke
@@ -1538,13 +1776,13 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 31.75) (xy 182.88 31.75)
+			(xy 195.58 34.29) (xy 195.58 29.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "19a38017-4b5d-4a20-98f1-f4d90c9b0710")
+		(uuid "18e98712-8410-4aa2-9ece-e4156b954394")
 	)
 	(wire
 		(pts
@@ -1555,6 +1793,16 @@
 			(type default)
 		)
 		(uuid "1aa34290-5cf9-4e81-a68c-f1de14fe4c4b")
+	)
+	(wire
+		(pts
+			(xy 195.58 95.25) (xy 217.17 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cd54301-2223-4514-a939-859f94f0afdd")
 	)
 	(wire
 		(pts
@@ -1588,7 +1836,7 @@
 	)
 	(wire
 		(pts
-			(xy 318.77 41.91) (xy 355.6 41.91)
+			(xy 318.77 41.91) (xy 353.06 41.91)
 		)
 		(stroke
 			(width 0)
@@ -1658,6 +1906,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 31.75) (xy 212.09 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22275d3b-501e-4924-83c5-97654238e6fb")
+	)
+	(wire
+		(pts
 			(xy 318.77 113.03) (xy 344.17 113.03)
 		)
 		(stroke
@@ -1665,6 +1923,16 @@
 			(type default)
 		)
 		(uuid "2251d862-4bb6-4a57-8e93-45dd24450c4d")
+	)
+	(wire
+		(pts
+			(xy 195.58 29.21) (xy 217.17 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2437d6d7-1f15-4167-91a6-63c1833114b6")
 	)
 	(wire
 		(pts
@@ -1688,6 +1956,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 63.5) (xy 212.09 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28ea559f-5659-45a4-b469-21fc63e1194e")
+	)
+	(wire
+		(pts
 			(xy 233.68 97.79) (xy 267.97 97.79)
 		)
 		(stroke
@@ -1698,6 +1976,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 97.79) (xy 212.09 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a832959-6097-4b1c-b27b-ef805fedbc76")
+	)
+	(wire
+		(pts
 			(xy 283.21 68.58) (xy 287.02 68.58)
 		)
 		(stroke
@@ -1705,16 +1993,6 @@
 			(type default)
 		)
 		(uuid "2ccd2d93-cc25-479e-a363-4e08f24cc906")
-	)
-	(wire
-		(pts
-			(xy 353.06 71.12) (xy 353.06 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2cdb8d79-d272-49bc-8989-179798e4d689")
 	)
 	(wire
 		(pts
@@ -1735,36 +2013,6 @@
 			(type default)
 		)
 		(uuid "301d1e1c-a552-413c-969e-588d086ddf58")
-	)
-	(wire
-		(pts
-			(xy 347.98 60.96) (xy 347.98 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3104a8c1-0cc7-407f-baf9-2366801da75e")
-	)
-	(wire
-		(pts
-			(xy 185.42 36.83) (xy 187.96 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "33194038-ef4f-4fa9-a707-5fc9fa9f45d8")
-	)
-	(wire
-		(pts
-			(xy 180.34 95.25) (xy 180.34 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3388f8e0-fa05-4cf5-9eec-e8f3d7254c07")
 	)
 	(wire
 		(pts
@@ -1816,6 +2064,26 @@
 		)
 		(uuid "39283c57-3ac8-45c9-a9b2-e331d34310d8")
 	)
+	(wire
+		(pts
+			(xy 203.2 102.87) (xy 207.01 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39d159c1-caa0-47b5-9e3a-86a20b3b8f49")
+	)
+	(wire
+		(pts
+			(xy 363.22 39.37) (xy 370.84 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e25f868-e6d8-4afe-9386-ff7c1e3f3b43")
+	)
 	(bus
 		(pts
 			(xy 55.88 71.12) (xy 55.88 100.33)
@@ -1848,13 +2116,13 @@
 	)
 	(wire
 		(pts
-			(xy 365.76 95.25) (xy 347.98 95.25)
+			(xy 195.58 107.95) (xy 207.01 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "40a7767e-e064-4d9b-892f-2be6e290bf97")
+		(uuid "41862d4a-5028-4ced-ac4c-60ed622284c4")
 	)
 	(wire
 		(pts
@@ -1865,16 +2133,6 @@
 			(type default)
 		)
 		(uuid "41a8a36e-e027-4914-b1a2-806e3ec5a7cf")
-	)
-	(wire
-		(pts
-			(xy 350.52 97.79) (xy 350.52 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41baad71-5817-48d2-850c-b064b3f846c5")
 	)
 	(wire
 		(pts
@@ -1898,6 +2156,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 63.5) (xy 217.17 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43621934-91a0-4903-9e1c-94ecc6c4e89c")
+	)
+	(wire
+		(pts
 			(xy 283.21 63.5) (xy 287.02 63.5)
 		)
 		(stroke
@@ -1905,6 +2173,16 @@
 			(type default)
 		)
 		(uuid "4435f1e6-6588-4fb6-b11f-3d5e68505b70")
+	)
+	(wire
+		(pts
+			(xy 195.58 41.91) (xy 207.01 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4489fbb9-87e1-413f-8c7a-8d9fbe084530")
 	)
 	(wire
 		(pts
@@ -1965,16 +2243,6 @@
 			(type default)
 		)
 		(uuid "476ceed5-9edc-4d49-a4dc-d1c3a65362e9")
-	)
-	(wire
-		(pts
-			(xy 347.98 29.21) (xy 347.98 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "478b7cda-b375-4bd3-bc5d-a54271edcb09")
 	)
 	(wire
 		(pts
@@ -2048,7 +2316,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 34.29) (xy 180.34 34.29)
+			(xy 151.13 34.29) (xy 185.42 34.29)
 		)
 		(stroke
 			(width 0)
@@ -2078,13 +2346,13 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 29.21) (xy 180.34 34.29)
+			(xy 363.22 95.25) (xy 384.81 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4e4f5777-a83a-4b58-98e3-988d019d5f44")
+		(uuid "4ea1e411-41f4-4b5e-93c0-b5d0302ba3ae")
 	)
 	(wire
 		(pts
@@ -2108,6 +2376,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 100.33) (xy 195.58 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56c5f47a-611c-4523-984f-0b40b98f403e")
+	)
+	(wire
+		(pts
 			(xy 264.16 46.99) (xy 264.16 36.83)
 		)
 		(stroke
@@ -2128,13 +2406,13 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 97.79) (xy 182.88 97.79)
+			(xy 195.58 102.87) (xy 200.66 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5db2744b-f171-44e7-86ae-b4d9494098e3")
+		(uuid "5acc688d-1f30-4881-80f7-0c9dde36166f")
 	)
 	(wire
 		(pts
@@ -2158,7 +2436,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 36.83) (xy 182.88 36.83)
+			(xy 151.13 36.83) (xy 185.42 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2175,16 +2453,6 @@
 			(type default)
 		)
 		(uuid "61ee9e02-7920-447a-8afd-55bc8a725bd4")
-	)
-	(wire
-		(pts
-			(xy 353.06 105.41) (xy 353.06 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6246ec18-656c-452c-83a2-d9fe815f01cd")
 	)
 	(wire
 		(pts
@@ -2208,13 +2476,13 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 102.87) (xy 187.96 102.87)
+			(xy 195.58 60.96) (xy 217.17 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "67d547de-3d4f-442a-83ac-5dc8898325b5")
+		(uuid "6685b868-fc0c-44f4-8bd8-9dc037158b90")
 	)
 	(wire
 		(pts
@@ -2238,33 +2506,23 @@
 	)
 	(wire
 		(pts
-			(xy 365.76 97.79) (xy 365.76 95.25)
+			(xy 384.81 31.75) (xy 384.81 29.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6bc2e38b-226a-4d88-99f5-ea34ea0bbd1c")
+		(uuid "69fa46fb-300a-4b97-8e95-6640a1bfac91")
 	)
 	(wire
 		(pts
-			(xy 185.42 71.12) (xy 185.42 68.58)
+			(xy 368.3 68.58) (xy 368.3 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6c9cad44-6461-4806-bb54-c79b9f960fc4")
-	)
-	(wire
-		(pts
-			(xy 182.88 63.5) (xy 182.88 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d011d59-3c48-446d-ba65-f7ddb153e950")
+		(uuid "6c0e1f3a-a95f-41ff-aa2e-ea88127211c6")
 	)
 	(wire
 		(pts
@@ -2275,16 +2533,6 @@
 			(type default)
 		)
 		(uuid "6d4e0bea-0b9e-4158-ace0-e9ad120030bb")
-	)
-	(wire
-		(pts
-			(xy 198.12 97.79) (xy 198.12 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d6ed6d5-33f5-4cf3-a468-9193ed72d6e2")
 	)
 	(bus
 		(pts
@@ -2308,23 +2556,33 @@
 	)
 	(wire
 		(pts
-			(xy 318.77 73.66) (xy 355.6 73.66)
+			(xy 363.22 36.83) (xy 368.3 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70a1ff76-c093-491d-b77e-b86bb046b2fa")
+	)
+	(wire
+		(pts
+			(xy 217.17 97.79) (xy 217.17 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7240459f-3216-4655-8c60-f203154dd73b")
+	)
+	(wire
+		(pts
+			(xy 318.77 73.66) (xy 353.06 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "73c1db70-7afd-4bef-9908-959f849c0919")
-	)
-	(wire
-		(pts
-			(xy 193.04 63.5) (xy 182.88 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73e25506-6541-45c8-9225-0237575df4aa")
 	)
 	(wire
 		(pts
@@ -2348,7 +2606,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 100.33) (xy 180.34 100.33)
+			(xy 151.13 100.33) (xy 185.42 100.33)
 		)
 		(stroke
 			(width 0)
@@ -2358,7 +2616,17 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 41.91) (xy 187.96 41.91)
+			(xy 363.22 107.95) (xy 374.65 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77467659-47fb-4312-848b-491fb41fd530")
+	)
+	(wire
+		(pts
+			(xy 151.13 41.91) (xy 185.42 41.91)
 		)
 		(stroke
 			(width 0)
@@ -2386,16 +2654,6 @@
 		)
 		(uuid "78f9ee4d-498b-4fd5-a744-1376fd4f1f35")
 	)
-	(wire
-		(pts
-			(xy 360.68 31.75) (xy 350.52 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7928afdc-d944-44b7-bb3b-11173246528b")
-	)
 	(bus
 		(pts
 			(xy 55.88 39.37) (xy 55.88 66.04)
@@ -2408,43 +2666,13 @@
 	)
 	(wire
 		(pts
-			(xy 318.77 107.95) (xy 355.6 107.95)
+			(xy 318.77 107.95) (xy 353.06 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7b41ef6d-dafe-4b8e-b277-b5f330ddbf8c")
-	)
-	(wire
-		(pts
-			(xy 185.42 68.58) (xy 187.96 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d3dee67-a33c-4549-89b7-696d060d3ac1")
-	)
-	(wire
-		(pts
-			(xy 198.12 60.96) (xy 180.34 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e504521-a031-48c0-ba26-a636ae777acd")
-	)
-	(wire
-		(pts
-			(xy 360.68 63.5) (xy 350.52 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f3856a7-4fd4-406d-a032-ce49c6fbc001")
 	)
 	(wire
 		(pts
@@ -2488,17 +2716,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 39.37) (xy 185.42 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81f1988a-33e4-4e26-b1f8-2a8804e9829a")
-	)
-	(wire
-		(pts
-			(xy 318.77 68.58) (xy 350.52 68.58)
+			(xy 318.77 68.58) (xy 353.06 68.58)
 		)
 		(stroke
 			(width 0)
@@ -2508,13 +2726,23 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 107.95) (xy 187.96 107.95)
+			(xy 151.13 107.95) (xy 185.42 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "831df2ee-d8f4-4c60-ab86-108f584d4aa8")
+	)
+	(wire
+		(pts
+			(xy 195.58 105.41) (xy 203.2 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "835e6f1b-8320-499e-aeb9-6a217d939e24")
 	)
 	(wire
 		(pts
@@ -2548,13 +2776,33 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 95.25) (xy 180.34 95.25)
+			(xy 195.58 71.12) (xy 203.2 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "86c1fbbd-07d6-4802-8429-35a6fc0cb6d4")
+		(uuid "84c248cc-bb65-44e4-8899-a9032ed8ebac")
+	)
+	(wire
+		(pts
+			(xy 368.3 63.5) (xy 379.73 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85209258-d16e-4319-bd5a-c9b6bcb9364e")
+	)
+	(wire
+		(pts
+			(xy 203.2 68.58) (xy 207.01 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8598965a-ae2f-4f38-a376-5f967797ef58")
 	)
 	(wire
 		(pts
@@ -2578,17 +2826,7 @@
 	)
 	(wire
 		(pts
-			(xy 365.76 63.5) (xy 365.76 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88bd6384-8c54-4711-8582-0e41903366d2")
-	)
-	(wire
-		(pts
-			(xy 151.13 73.66) (xy 187.96 73.66)
+			(xy 151.13 73.66) (xy 185.42 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2598,13 +2836,33 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 68.58) (xy 182.88 68.58)
+			(xy 384.81 97.79) (xy 384.81 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a7b4ea8-5f38-4df3-93b6-4dd5106354d0")
+	)
+	(wire
+		(pts
+			(xy 151.13 68.58) (xy 185.42 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8abeac5b-095c-4ea9-828b-33180fc4df08")
+	)
+	(wire
+		(pts
+			(xy 363.22 68.58) (xy 368.3 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b5f48e7-f73e-4fde-b1c3-4df9fb519dae")
 	)
 	(wire
 		(pts
@@ -2618,13 +2876,13 @@
 	)
 	(wire
 		(pts
-			(xy 347.98 95.25) (xy 347.98 100.33)
+			(xy 363.22 60.96) (xy 384.81 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8cb6f3b4-a42c-4f70-96c3-872cb5e62806")
+		(uuid "8d891c8e-b28b-4879-8d8f-29d53664157e")
 	)
 	(wire
 		(pts
@@ -2648,6 +2906,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 36.83) (xy 200.66 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91625a96-9814-425e-87b3-372f177e22af")
+	)
+	(wire
+		(pts
 			(xy 283.21 36.83) (xy 287.02 36.83)
 		)
 		(stroke
@@ -2658,7 +2926,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 66.04) (xy 180.34 66.04)
+			(xy 151.13 66.04) (xy 185.42 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2668,23 +2936,13 @@
 	)
 	(wire
 		(pts
-			(xy 318.77 34.29) (xy 347.98 34.29)
+			(xy 318.77 34.29) (xy 353.06 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "93fba714-1bb5-4000-be19-664540a1a150")
-	)
-	(wire
-		(pts
-			(xy 365.76 31.75) (xy 365.76 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94dc0435-2b2a-4b55-b3e1-acfb6d8854b6")
 	)
 	(wire
 		(pts
@@ -2728,6 +2986,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 102.87) (xy 200.66 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97b386fa-c6ea-48ab-9b0d-33898edcaa1e")
+	)
+	(wire
+		(pts
 			(xy 318.77 63.5) (xy 341.63 63.5)
 		)
 		(stroke
@@ -2748,16 +3016,6 @@
 	)
 	(wire
 		(pts
-			(xy 365.76 29.21) (xy 347.98 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ba90156-92b2-430c-8ccc-390611d7d36a")
-	)
-	(wire
-		(pts
 			(xy 100.33 41.91) (xy 119.38 41.91)
 		)
 		(stroke
@@ -2768,13 +3026,33 @@
 	)
 	(wire
 		(pts
-			(xy 353.06 102.87) (xy 355.6 102.87)
+			(xy 363.22 41.91) (xy 374.65 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a0af11b7-e180-48d2-887e-5d1850e086ad")
+		(uuid "a00e9780-8813-4f6d-a61f-8d51146b2d89")
+	)
+	(wire
+		(pts
+			(xy 368.3 36.83) (xy 368.3 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0951571-858e-42fd-b17b-ff3c26f74ef6")
+	)
+	(wire
+		(pts
+			(xy 363.22 100.33) (xy 363.22 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0ad8112-b4f0-4cb6-a86d-d865c3f84319")
 	)
 	(wire
 		(pts
@@ -2818,16 +3096,6 @@
 	)
 	(wire
 		(pts
-			(xy 353.06 68.58) (xy 355.6 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7af241c-0c16-49ef-9452-9d4dbf99dc2e")
-	)
-	(wire
-		(pts
 			(xy 151.13 71.12) (xy 185.42 71.12)
 		)
 		(stroke
@@ -2835,16 +3103,6 @@
 			(type default)
 		)
 		(uuid "a9e1e670-2cf0-4c54-bd15-57f1cbf45216")
-	)
-	(wire
-		(pts
-			(xy 350.52 31.75) (xy 350.52 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "abec21d9-09c5-4dfc-87c5-934c2c89e12a")
 	)
 	(wire
 		(pts
@@ -2898,6 +3156,16 @@
 	)
 	(wire
 		(pts
+			(xy 363.22 71.12) (xy 370.84 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b10c78d4-6ac9-414c-92af-e0ef99b87628")
+	)
+	(wire
+		(pts
 			(xy 233.68 31.75) (xy 267.97 31.75)
 		)
 		(stroke
@@ -2928,16 +3196,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 63.5) (xy 198.12 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b41d0fdb-3d00-46a9-8695-3937be22f0d1")
-	)
-	(wire
-		(pts
 			(xy 318.77 95.25) (xy 339.09 95.25)
 		)
 		(stroke
@@ -2958,6 +3216,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 73.66) (xy 207.01 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b71086cf-ddb4-450b-b9ec-5df45a214112")
+	)
+	(wire
+		(pts
 			(xy 96.52 113.03) (xy 119.38 113.03)
 		)
 		(stroke
@@ -2965,6 +3233,26 @@
 			(type default)
 		)
 		(uuid "b8e1e7ab-4c1e-4472-b702-1638c00abf6f")
+	)
+	(wire
+		(pts
+			(xy 368.3 102.87) (xy 368.3 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9808647-519f-49cc-962b-2e2369e55310")
+	)
+	(wire
+		(pts
+			(xy 363.22 73.66) (xy 374.65 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba80123d-a018-4bb7-9e47-502f7c7a1a78")
 	)
 	(wire
 		(pts
@@ -2998,7 +3286,7 @@
 	)
 	(wire
 		(pts
-			(xy 318.77 36.83) (xy 350.52 36.83)
+			(xy 318.77 36.83) (xy 353.06 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3028,7 +3316,17 @@
 	)
 	(wire
 		(pts
-			(xy 318.77 102.87) (xy 350.52 102.87)
+			(xy 203.2 36.83) (xy 207.01 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c170acd3-9200-47e7-bbf8-ea87c8be6791")
+	)
+	(wire
+		(pts
+			(xy 318.77 102.87) (xy 353.06 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3128,13 +3426,13 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 97.79) (xy 182.88 102.87)
+			(xy 370.84 102.87) (xy 374.65 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "caca786e-31a3-41c7-8b3d-cd195c8d8293")
+		(uuid "cb35dcbc-0425-48de-8c77-ef6b818b931f")
 	)
 	(wire
 		(pts
@@ -3168,23 +3466,23 @@
 	)
 	(wire
 		(pts
-			(xy 365.76 60.96) (xy 347.98 60.96)
+			(xy 368.3 31.75) (xy 379.73 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d06a3384-c1ef-44ed-b053-e583f6ed608a")
+		(uuid "d4fbf352-ee91-4802-9c24-2cba2f11fa02")
 	)
 	(wire
 		(pts
-			(xy 360.68 97.79) (xy 350.52 97.79)
+			(xy 363.22 66.04) (xy 363.22 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d1d2bf52-0496-4d14-b2dd-19d72ee20fc6")
+		(uuid "d59baa86-ba76-4e8b-9c51-034cfb763034")
 	)
 	(wire
 		(pts
@@ -3198,6 +3496,16 @@
 	)
 	(wire
 		(pts
+			(xy 370.84 68.58) (xy 374.65 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8902367-9455-44b8-b3d0-13d2b27d5456")
+	)
+	(wire
+		(pts
 			(xy 99.06 110.49) (xy 99.06 100.33)
 		)
 		(stroke
@@ -3205,6 +3513,36 @@
 			(type default)
 		)
 		(uuid "d91dadd7-9dba-4350-842f-34f42f229882")
+	)
+	(wire
+		(pts
+			(xy 370.84 36.83) (xy 374.65 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9c1147f-da77-4b44-a2c2-1eeea9a216b1")
+	)
+	(wire
+		(pts
+			(xy 363.22 102.87) (xy 368.3 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc2598ee-720c-4711-b8e2-d8a7721ba018")
+	)
+	(wire
+		(pts
+			(xy 195.58 39.37) (xy 203.2 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc7dd101-4ceb-476f-bb15-d87455efae3a")
 	)
 	(wire
 		(pts
@@ -3228,6 +3566,16 @@
 	)
 	(wire
 		(pts
+			(xy 363.22 34.29) (xy 363.22 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e09b16d6-e799-430d-8fe8-cbe4f8257152")
+	)
+	(wire
+		(pts
 			(xy 100.33 39.37) (xy 119.38 39.37)
 		)
 		(stroke
@@ -3238,13 +3586,23 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 31.75) (xy 198.12 29.21)
+			(xy 217.17 31.75) (xy 217.17 29.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e16956dd-2d32-4147-9a0c-b209301f983d")
+	)
+	(wire
+		(pts
+			(xy 203.2 105.41) (xy 203.2 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2a1ba45-6b1e-4432-a973-ae0ab20db347")
 	)
 	(wire
 		(pts
@@ -3298,7 +3656,17 @@
 	)
 	(wire
 		(pts
-			(xy 318.77 100.33) (xy 347.98 100.33)
+			(xy 195.58 66.04) (xy 195.58 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6894bea-7978-47bf-bc63-2a1052864dbc")
+	)
+	(wire
+		(pts
+			(xy 318.77 100.33) (xy 353.06 100.33)
 		)
 		(stroke
 			(width 0)
@@ -3348,13 +3716,23 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 102.87) (xy 182.88 102.87)
+			(xy 151.13 102.87) (xy 185.42 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ecb1a7c6-b2ff-4d5f-a970-e1deca0706e4")
+	)
+	(wire
+		(pts
+			(xy 363.22 29.21) (xy 384.81 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecdd519f-59d2-4f54-a293-6eaf89b7b340")
 	)
 	(wire
 		(pts
@@ -3378,13 +3756,23 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 105.41) (xy 185.42 102.87)
+			(xy 384.81 63.5) (xy 384.81 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "efb5c504-d451-4fc4-91da-55a0ba263dd0")
+		(uuid "f1cef0fe-6017-4906-a3ed-93b0e4864b0e")
+	)
+	(wire
+		(pts
+			(xy 203.2 71.12) (xy 203.2 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f367ad43-1ac3-410e-963c-ffff35775067")
 	)
 	(wire
 		(pts
@@ -3398,6 +3786,16 @@
 	)
 	(wire
 		(pts
+			(xy 370.84 39.37) (xy 370.84 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4bfceac-2a58-4f62-a2b5-65efa92db601")
+	)
+	(wire
+		(pts
 			(xy 283.21 97.79) (xy 287.02 97.79)
 		)
 		(stroke
@@ -3408,6 +3806,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 68.58) (xy 200.66 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f71d4ac4-eacf-40b7-ba4d-f96c5eab0ba1")
+	)
+	(wire
+		(pts
 			(xy 233.68 34.29) (xy 266.7 34.29)
 		)
 		(stroke
@@ -3415,16 +3823,6 @@
 			(type default)
 		)
 		(uuid "f8631c95-2570-47fa-9da8-1e90b6d6c57a")
-	)
-	(wire
-		(pts
-			(xy 182.88 31.75) (xy 182.88 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f869b6af-1f5f-4148-928b-97cc11f47244")
 	)
 	(wire
 		(pts
@@ -3445,16 +3843,6 @@
 			(type default)
 		)
 		(uuid "fbc34e21-0be5-4bbd-82ae-75e70bbf5384")
-	)
-	(wire
-		(pts
-			(xy 180.34 60.96) (xy 180.34 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fea15e46-7a6d-4a0d-9961-0ae3b5321b47")
 	)
 	(wire
 		(pts
@@ -4824,6 +5212,92 @@
 		)
 	)
 	(symbol
+		(lib_id "Aeris_custom:SJ_Stepper_1-5mm")
+		(at 190.5 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1547ff1d-e57f-4216-84ff-43c5c2bd25b8")
+		(property "Reference" "J17"
+			(at 190.5 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 190.5 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom_Aeris:SJ_Stepper_1-5mm"
+			(at 190.5 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "d50053f9-77b5-4e4d-beaa-9bca5db6a63f")
+		)
+		(pin "1"
+			(uuid "4f9b4de7-40de-4a1d-a882-f46931f647ef")
+		)
+		(pin "2"
+			(uuid "2569033b-de56-403a-8525-7d616de96faf")
+		)
+		(pin "5"
+			(uuid "d0154768-dd90-4cb2-b72a-863d70b6e40e")
+		)
+		(pin "8"
+			(uuid "a3348ca7-46be-47ef-8ac9-8cb4a1ec3867")
+		)
+		(pin "7"
+			(uuid "3464b3a9-e8e5-4a2c-b71a-0528772250ce")
+		)
+		(pin "3"
+			(uuid "1bc0b3dd-dacf-4192-bbd0-a922212d6799")
+		)
+		(pin "6"
+			(uuid "afe345a3-deb1-4a74-aa83-b84a050eb30a")
+		)
+		(instances
+			(project ""
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
+					(reference "J17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 344.17 60.96 0)
 		(unit 1)
@@ -4954,81 +5428,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Motor:Stepper_Motor_bipolar")
-		(at 363.22 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "23babd80-52ab-41f1-a052-94c9f6f46567")
-		(property "Reference" "M5"
-			(at 361.95 75.692 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Stepper_Motor_bipolar"
-			(at 344.932 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
-			(at 363.474 71.374 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0"
-			(at 363.474 71.374 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "4-wire bipolar stepper motor"
-			(at 363.22 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "162e512d-47d1-4cbb-8271-ddee632f0817")
-		)
-		(pin "1"
-			(uuid "c9d40a42-9f97-4a18-a9c9-1c7177d57be2")
-		)
-		(pin "4"
-			(uuid "df0c7351-6f80-46c1-beb9-822700a27252")
-		)
-		(pin "3"
-			(uuid "03b38ad7-a223-4aff-b296-622abbf3ad24")
-		)
-		(instances
-			(project "Cerbrum_Aeris"
-				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
-					(reference "M5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 344.17 46.99 0)
 		(unit 1)
@@ -5153,6 +5552,81 @@
 			(project "Cerbrum_Aeris"
 				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
 					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Motor:Stepper_Motor_bipolar")
+		(at 214.63 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2a41df9c-6a25-48a1-9af7-ec10433cc348")
+		(property "Reference" "M3"
+			(at 213.36 109.982 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Stepper_Motor_bipolar"
+			(at 196.342 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 214.884 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0"
+			(at 214.884 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4-wire bipolar stepper motor"
+			(at 214.63 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "791c5682-5591-404e-a4e6-2a26ab13a6f4")
+		)
+		(pin "1"
+			(uuid "7b7d4641-f0c0-4737-9ddf-361db0dd97b9")
+		)
+		(pin "4"
+			(uuid "2cba57e7-5663-42b2-abd0-8e2eb0a05f06")
+		)
+		(pin "3"
+			(uuid "478eabe5-74a6-4b94-baae-8bf91b690498")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
+					(reference "M3")
 					(unit 1)
 				)
 			)
@@ -5617,15 +6091,15 @@
 	)
 	(symbol
 		(lib_id "Motor:Stepper_Motor_bipolar")
-		(at 363.22 105.41 0)
+		(at 382.27 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "56a58e24-6f6e-4470-aa84-5a139b55fad3")
-		(property "Reference" "M6"
-			(at 361.95 109.982 0)
+		(uuid "5aa4d01a-a789-417f-ad20-5c5ff1c118a2")
+		(property "Reference" "M4"
+			(at 381 43.942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5634,7 +6108,7 @@
 			)
 		)
 		(property "Value" "Stepper_Motor_bipolar"
-			(at 344.932 93.98 0)
+			(at 363.982 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5643,7 +6117,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
-			(at 363.474 105.664 0)
+			(at 382.524 39.624 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5652,7 +6126,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0"
-			(at 363.474 105.664 0)
+			(at 382.524 39.624 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5661,7 +6135,7 @@
 			)
 		)
 		(property "Description" "4-wire bipolar stepper motor"
-			(at 363.22 105.41 0)
+			(at 382.27 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5670,21 +6144,21 @@
 			)
 		)
 		(pin "2"
-			(uuid "8499a420-2f2a-4b01-b096-2b011ad3b81b")
+			(uuid "559c44c2-2d9d-43d3-a658-e196d5e61083")
 		)
 		(pin "1"
-			(uuid "ef63389d-400d-4c85-b872-0a8c1a1473ba")
+			(uuid "765da0d7-37be-4ef5-927d-17262350281f")
 		)
 		(pin "4"
-			(uuid "a0305ad7-7602-445e-873f-acf64d5f0d39")
+			(uuid "9fde71b0-cb40-48e6-9200-53ccd8bd82bb")
 		)
 		(pin "3"
-			(uuid "43c88f7d-a3a0-442b-9002-6eec4ec75a87")
+			(uuid "0526edbd-1b60-4543-8988-fffcfcfc8e30")
 		)
 		(instances
 			(project "Cerbrum_Aeris"
 				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
-					(reference "M6")
+					(reference "M4")
 					(unit 1)
 				)
 			)
@@ -5756,156 +6230,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Motor:Stepper_Motor_bipolar")
-		(at 363.22 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5e0be5cc-24c3-4828-9eba-07063f38feb0")
-		(property "Reference" "M4"
-			(at 361.95 43.942 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Stepper_Motor_bipolar"
-			(at 344.932 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
-			(at 363.474 39.624 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0"
-			(at 363.474 39.624 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "4-wire bipolar stepper motor"
-			(at 363.22 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4988b22c-1e65-4cdd-a4b8-1f2d8025244e")
-		)
-		(pin "1"
-			(uuid "7a2ab3af-fbc7-4a52-92ce-27635bf7ff5c")
-		)
-		(pin "4"
-			(uuid "522bdf7f-3904-4673-9965-60615a72510e")
-		)
-		(pin "3"
-			(uuid "164cb03a-a61e-4545-899a-2f58df7f5b59")
-		)
-		(instances
-			(project "Cerbrum_Aeris"
-				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
-					(reference "M4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Motor:Stepper_Motor_bipolar")
-		(at 195.58 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6c4a3366-23ac-48d6-88d5-9e02f7f37982")
-		(property "Reference" "M3"
-			(at 194.31 109.982 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Stepper_Motor_bipolar"
-			(at 177.292 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
-			(at 195.834 105.664 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0"
-			(at 195.834 105.664 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "4-wire bipolar stepper motor"
-			(at 195.58 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1e6dbacc-efb0-42a2-b547-0c295eafa0ff")
-		)
-		(pin "1"
-			(uuid "1e1e5d53-aeb3-4b3e-ba49-9f054e7d5459")
-		)
-		(pin "4"
-			(uuid "261a539a-7e21-4284-9cd9-fde9ab3d5763")
-		)
-		(pin "3"
-			(uuid "7e764bbd-e65f-4933-8722-3eab3de466ba")
-		)
-		(instances
-			(project "Cerbrum_Aeris"
-				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
-					(reference "M3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 176.53 29.21 0)
 		(unit 1)
@@ -5965,6 +6289,167 @@
 			(project ""
 				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Motor:Stepper_Motor_bipolar")
+		(at 214.63 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "73af8085-48a3-4579-a7a9-9940c42d0061")
+		(property "Reference" "M2"
+			(at 213.36 75.692 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Stepper_Motor_bipolar"
+			(at 196.342 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 214.884 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0"
+			(at 214.884 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4-wire bipolar stepper motor"
+			(at 214.63 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ee08b982-3e3d-4204-bd3e-51a52f2e7f4b")
+		)
+		(pin "1"
+			(uuid "8a0e7254-faa7-4a41-b7ce-71264633941a")
+		)
+		(pin "4"
+			(uuid "b35cd12f-d907-4cbf-a603-0d4d6e64743d")
+		)
+		(pin "3"
+			(uuid "be3d3e38-73f5-4d2b-87a4-cdeba30905ab")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
+					(reference "M2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Aeris_custom:SJ_Stepper_1-5mm")
+		(at 190.5 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7744076d-f6e9-4060-ba98-7cfcffdc5fd0")
+		(property "Reference" "J18"
+			(at 190.5 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 190.5 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom_Aeris:SJ_Stepper_1-5mm"
+			(at 190.5 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "b7f1089a-8566-448d-8e01-d3c4b06af1e5")
+		)
+		(pin "1"
+			(uuid "88782759-4f40-40be-8bee-86240ee03314")
+		)
+		(pin "2"
+			(uuid "c7f7adff-91a5-4b8f-9159-cd05ca13eced")
+		)
+		(pin "5"
+			(uuid "ef85b77e-23cb-4585-a291-e76b0d1bce0b")
+		)
+		(pin "8"
+			(uuid "a8a78a6f-74fd-4d7e-97e5-b29ef8e98568")
+		)
+		(pin "7"
+			(uuid "357c2ccc-f3ec-4748-9024-1b0658cb8ff5")
+		)
+		(pin "3"
+			(uuid "fcdf0c52-aeaa-4da3-9d8a-1960357d0419")
+		)
+		(pin "6"
+			(uuid "f3f17b3e-d868-49ee-bd9e-74a07703e42a")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
+					(reference "J18")
 					(unit 1)
 				)
 			)
@@ -6037,7 +6522,7 @@
 	)
 	(symbol
 		(lib_id "Motor:Stepper_Motor_bipolar")
-		(at 195.58 39.37 0)
+		(at 214.63 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6045,7 +6530,7 @@
 		(dnp no)
 		(uuid "8958bd54-660c-4432-8a0e-930e9affb235")
 		(property "Reference" "M1"
-			(at 194.31 43.942 0)
+			(at 213.36 43.942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6054,7 +6539,7 @@
 			)
 		)
 		(property "Value" "Stepper_Motor_bipolar"
-			(at 177.292 27.94 0)
+			(at 196.342 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6063,7 +6548,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
-			(at 195.834 39.624 0)
+			(at 214.884 39.624 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6072,7 +6557,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0"
-			(at 195.834 39.624 0)
+			(at 214.884 39.624 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6081,7 +6566,7 @@
 			)
 		)
 		(property "Description" "4-wire bipolar stepper motor"
-			(at 195.58 39.37 0)
+			(at 214.63 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6235,6 +6720,92 @@
 			(project "Cerbrum_Aeris"
 				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Aeris_custom:SJ_Stepper_1-5mm")
+		(at 358.14 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97116cf1-1b94-4082-8557-737a5b8bed05")
+		(property "Reference" "J25"
+			(at 358.14 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 358.14 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom_Aeris:SJ_Stepper_1-5mm"
+			(at 358.14 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 358.14 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 358.14 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "cdc69fac-5501-47b7-b2a8-896692b1a145")
+		)
+		(pin "1"
+			(uuid "adbfa83f-0a49-45e8-b0fd-f2e024fb6948")
+		)
+		(pin "2"
+			(uuid "0ee7adc6-0690-497f-a288-6ad5353fe418")
+		)
+		(pin "5"
+			(uuid "b14fde05-fc18-4057-90fd-536e9a052903")
+		)
+		(pin "8"
+			(uuid "832f5fbd-c818-4b52-9b85-98bcf7343ddf")
+		)
+		(pin "7"
+			(uuid "d56d253c-a511-4f2d-beea-a1e2a459f4a5")
+		)
+		(pin "3"
+			(uuid "69a94f6d-6e1a-483d-9c90-ec0c95f53a00")
+		)
+		(pin "6"
+			(uuid "8a95298d-ff6a-470b-8cef-534ccd0802d8")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
+					(reference "J25")
 					(unit 1)
 				)
 			)
@@ -6570,43 +7141,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Motor:Stepper_Motor_bipolar")
-		(at 195.58 71.12 0)
+		(lib_id "Aeris_custom:SJ_Stepper_1-5mm")
+		(at 190.5 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a6cbcfb0-cad2-415c-bb33-184ba261449c")
-		(property "Reference" "M2"
-			(at 194.31 75.692 0)
+		(fields_autoplaced yes)
+		(uuid "bdb36258-e14a-4497-bc4f-5312e3f7ea2d")
+		(property "Reference" "J20"
+			(at 190.5 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "Stepper_Motor_bipolar"
-			(at 177.292 59.69 0)
+		(property "Value" "~"
+			(at 190.5 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
-			(at 195.834 71.374 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0"
-			(at 195.834 71.374 0)
+		(property "Footprint" "Custom_Aeris:SJ_Stepper_1-5mm"
+			(at 190.5 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6614,8 +7175,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "4-wire bipolar stepper motor"
-			(at 195.58 71.12 0)
+		(property "Datasheet" ""
+			(at 190.5 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6623,22 +7184,43 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "6d7ccf10-f0ef-4962-953c-622b2d718b22")
-		)
-		(pin "1"
-			(uuid "6186a166-86d1-4c58-a48e-6b3cf8358219")
+		(property "Description" ""
+			(at 190.5 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "4"
-			(uuid "cca5324f-5a16-44da-869d-c6df522a6cef")
+			(uuid "b1ced4b2-6ff8-419e-b79f-3f8e79219b08")
+		)
+		(pin "1"
+			(uuid "095d4f8e-89df-4606-bfd8-e2e94719f36a")
+		)
+		(pin "2"
+			(uuid "79a4ebd2-3c9b-4b64-ace5-63484b4ada90")
+		)
+		(pin "5"
+			(uuid "0dddc324-a58f-414b-b111-91fa79115e52")
+		)
+		(pin "8"
+			(uuid "e49c513c-96db-4394-92ef-b1718513dac7")
+		)
+		(pin "7"
+			(uuid "ca7c48f0-b252-4bf7-8fa4-ff4da40a587a")
 		)
 		(pin "3"
-			(uuid "8a453e59-4ea2-451f-88f9-6e4e59c7094d")
+			(uuid "2e008395-8878-4d02-89ef-911ac61bce15")
+		)
+		(pin "6"
+			(uuid "05bf6214-65c0-4c54-a8c7-462a34225604")
 		)
 		(instances
 			(project "Cerbrum_Aeris"
 				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
-					(reference "M2")
+					(reference "J20")
 					(unit 1)
 				)
 			)
@@ -6857,6 +7439,92 @@
 			(project "Cerbrum_Aeris"
 				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
 					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Aeris_custom:SJ_Stepper_1-5mm")
+		(at 358.14 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d20b2b5b-5408-4122-a4fd-690f0cacd678")
+		(property "Reference" "J22"
+			(at 358.14 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 358.14 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom_Aeris:SJ_Stepper_1-5mm"
+			(at 358.14 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 358.14 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 358.14 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "80bfb8f0-6baf-434a-aadd-124f0a51da1f")
+		)
+		(pin "1"
+			(uuid "249a74df-3b96-43a8-b85d-908a8f9186a8")
+		)
+		(pin "2"
+			(uuid "d716bd1b-8bd9-4b2d-9667-a2ccfa10f3b1")
+		)
+		(pin "5"
+			(uuid "93545442-ad1d-4b56-b7d7-31154b898bba")
+		)
+		(pin "8"
+			(uuid "859b9299-7512-4ef2-81ff-373f63b3933f")
+		)
+		(pin "7"
+			(uuid "3376a87e-3840-4515-9121-53d618bde260")
+		)
+		(pin "3"
+			(uuid "248cfba3-df89-489b-ad30-a98049f68de5")
+		)
+		(pin "6"
+			(uuid "28dfd079-61f0-4393-9abc-2060d9483f07")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
+					(reference "J22")
 					(unit 1)
 				)
 			)
@@ -7298,6 +7966,81 @@
 		)
 	)
 	(symbol
+		(lib_id "Motor:Stepper_Motor_bipolar")
+		(at 382.27 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e78ab011-e735-4f9e-be09-5bcb8b4e3bf4")
+		(property "Reference" "M6"
+			(at 381 109.982 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Stepper_Motor_bipolar"
+			(at 363.982 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 382.524 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0"
+			(at 382.524 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4-wire bipolar stepper motor"
+			(at 382.27 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "64126b0c-99fe-47e3-83a9-f9f567605b46")
+		)
+		(pin "1"
+			(uuid "e3e482d7-cae2-476f-b2e9-a1180b392a5f")
+		)
+		(pin "4"
+			(uuid "6f6cde0c-d56e-44f8-887a-258122b04f66")
+		)
+		(pin "3"
+			(uuid "99c4c212-f145-43e4-a13f-e2c8b09486bb")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
+					(reference "M6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 339.09 60.96 0)
 		(unit 1)
@@ -7357,6 +8100,81 @@
 			(project "Cerbrum_Aeris"
 				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
 					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Motor:Stepper_Motor_bipolar")
+		(at 382.27 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ef0d3127-e7c9-4ecd-815e-bc7b5b6f4d1b")
+		(property "Reference" "M5"
+			(at 381 75.692 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Stepper_Motor_bipolar"
+			(at 363.982 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 382.524 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0"
+			(at 382.524 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4-wire bipolar stepper motor"
+			(at 382.27 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a4b67596-2c69-465f-bbdc-708507710637")
+		)
+		(pin "1"
+			(uuid "26c12ce1-de6f-4cd5-b56e-28e594b377f6")
+		)
+		(pin "4"
+			(uuid "3739e993-f4d4-4b5e-9d95-78cecac146fd")
+		)
+		(pin "3"
+			(uuid "31b24e00-3c3c-4af0-bfbc-80ff20f65034")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
+					(reference "M5")
 					(unit 1)
 				)
 			)
@@ -7509,6 +8327,92 @@
 			(project "Cerbrum_Aeris"
 				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
 					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Aeris_custom:SJ_Stepper_1-5mm")
+		(at 358.14 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f785dcd9-626a-4bed-9a12-609b316f6597")
+		(property "Reference" "J26"
+			(at 358.14 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 358.14 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom_Aeris:SJ_Stepper_1-5mm"
+			(at 358.14 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 358.14 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 358.14 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "babe41f5-8f0e-487f-9f9a-5562481c4296")
+		)
+		(pin "1"
+			(uuid "eb61892a-f33e-4dd5-92f4-b1251ee6e4e2")
+		)
+		(pin "2"
+			(uuid "f57b3d0b-2ac6-4fe8-808a-150536f25ef0")
+		)
+		(pin "5"
+			(uuid "fde8c6d0-9dbe-448c-92d4-8445929b2af8")
+		)
+		(pin "8"
+			(uuid "bdfe241b-267c-4be3-a59b-03684bade637")
+		)
+		(pin "7"
+			(uuid "af44a46a-a998-4ff4-a41f-708135a9bc85")
+		)
+		(pin "3"
+			(uuid "fe886f89-b781-4b62-9cff-d0730c9ae8f2")
+		)
+		(pin "6"
+			(uuid "1f60299d-b235-4a96-892c-d76fdd37ce2b")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/ea57873c-c587-45ad-b214-4c2f93292745"
+					(reference "J26")
 					(unit 1)
 				)
 			)

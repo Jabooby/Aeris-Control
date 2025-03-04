@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "rp2350b-qfn80")(type "KiCad")(uri "D:/Uni/H25/Projet/GitHub/Aeris-Control/Electric/Aeris control electrical plans/symbols/RP2350_KiCad-main/rp2350b-qfn80.kicad_sym")(options "")(descr ""))
   (lib (name "TPS565242")(type "KiCad")(uri "D:/Uni/H25/Projet/GitHub/Aeris-Control/Electric/Aeris control electrical plans/symbols/TPS565242.kicad_sym")(options "")(descr ""))
+  (lib (name "Aeris_custom")(type "KiCad")(uri "D:/Uni/H25/Projet/GitHub/Aeris-Control/Electric/Aeris control electrical plans/symbols/Aeris_custom.kicad_sym")(options "")(descr ""))
 )

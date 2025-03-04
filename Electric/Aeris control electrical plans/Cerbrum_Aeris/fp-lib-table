@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Custom_Aeris")(type "KiCad")(uri "D:/Uni/H25/Projet/GitHub/Aeris-Control/Electric/Aeris control electrical plans/symbols/Custom_Aeris.pretty")(options "")(descr ""))
+)

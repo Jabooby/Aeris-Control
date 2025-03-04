@@ -5,6 +5,214 @@
 	(uuid "f40aa0e5-2a64-4464-92b9-1d432de58b82")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Aeris_custom:SJ_Stepper_1-5mm"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -0.254 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SJ_Stepper_1-5mm_0_1"
+				(rectangle
+					(start -2.54 5.08)
+					(end 2.54 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SJ_Stepper_1-5mm_1_1"
+				(pin input line
+					(at -5.08 3.81 0)
+					(length 2.54)
+					(name "a"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 1.27 0)
+					(length 2.54)
+					(name "b"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -1.27 0)
+					(length 2.54)
+					(name "c"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -3.81 0)
+					(length 2.54)
+					(name "d"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 3.81 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 1.27 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 -1.27 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 -3.81 180)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x04_Socket"
 			(pin_names
 				(offset 1.016)
@@ -655,34 +863,82 @@
 		)
 	)
 	(junction
-		(at 130.81 53.34)
+		(at 130.81 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "25ecdd17-00cc-4efe-a6f1-d0d9bee1baaa")
-	)
-	(junction
-		(at 67.31 22.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6b243e37-6eea-46aa-92d4-bf7efc941e2a")
-	)
-	(junction
-		(at 130.81 24.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8ebd3790-a357-4fc8-99ea-46635bb00795")
-	)
-	(junction
-		(at 130.81 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e34d13b8-693b-43e1-992f-953bb25d6dc5")
+		(uuid "08e2a7c7-a826-4c1f-a216-4f127ca7576b")
 	)
 	(junction
 		(at 130.81 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f91a9a26-3b2c-4bd4-9dc2-39bb8b5dcd91")
+		(uuid "547b4595-ca59-4aaa-a074-f47a1ea402b9")
+	)
+	(junction
+		(at 76.2 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60f774e2-3339-4464-b72c-98d3bb145455")
+	)
+	(junction
+		(at 76.2 22.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6b243e37-6eea-46aa-92d4-bf7efc941e2a")
+	)
+	(junction
+		(at 200.66 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84d405b7-47c0-4558-982a-319af091d6ce")
+	)
+	(junction
+		(at 130.81 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "902a9dbd-7236-4af7-884b-e624676a8a5b")
+	)
+	(junction
+		(at 130.81 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99e542a5-e777-415e-8be2-f2df6928a0c9")
+	)
+	(junction
+		(at 200.66 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a854786f-e498-4c21-bd3f-3caf9f21ae06")
+	)
+	(junction
+		(at 200.66 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4b83fe0-c302-4205-b0ee-1820d412aaa3")
+	)
+	(junction
+		(at 200.66 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f08d8265-155e-4c82-8a04-68c8e1ac71a5")
+	)
+	(bus_entry
+		(at 46.99 92.71)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f315c0b-8258-4847-9c8a-bb62f4a460eb")
+	)
+	(bus_entry
+		(at 46.99 90.17)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28eabde0-9383-441d-9318-1199461fd7da")
 	)
 	(bus_entry
 		(at 46.99 29.21)
@@ -704,13 +960,23 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 22.86) (xy 71.12 22.86)
+			(xy 76.2 22.86) (xy 80.01 22.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "01ebddb6-7c26-443a-b3d7-345a62c92e76")
+	)
+	(wire
+		(pts
+			(xy 194.31 90.17) (xy 207.01 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "024e8405-79d5-42a6-9650-0c3a060d7f2a")
 	)
 	(wire
 		(pts
@@ -724,7 +990,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 22.86) (xy 71.12 24.13)
+			(xy 80.01 22.86) (xy 80.01 24.13)
 		)
 		(stroke
 			(width 0)
@@ -734,7 +1000,57 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 24.13) (xy 63.5 22.86)
+			(xy 200.66 24.13) (xy 207.01 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15667a0a-c9e2-481b-893d-a9f7ca062fdc")
+	)
+	(wire
+		(pts
+			(xy 200.66 95.25) (xy 207.01 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15906d91-d36f-4bac-8896-9a46b6cf3c52")
+	)
+	(wire
+		(pts
+			(xy 194.31 95.25) (xy 200.66 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bc72117-f6da-4cba-889f-3cf9743546fc")
+	)
+	(wire
+		(pts
+			(xy 80.01 83.82) (xy 80.01 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28ed1a4c-1a49-44b2-bbf3-04d8f61c2a1b")
+	)
+	(wire
+		(pts
+			(xy 171.45 50.8) (xy 173.99 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ac87668-c900-4e58-a289-e1954d112ddd")
+	)
+	(wire
+		(pts
+			(xy 72.39 24.13) (xy 72.39 22.86)
 		)
 		(stroke
 			(width 0)
@@ -744,33 +1060,43 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 53.34) (xy 130.81 53.34)
+			(xy 72.39 83.82) (xy 76.2 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4bb2c517-bdff-4ea8-8b35-4ff12175e86d")
+		(uuid "3f7d3593-3894-404c-90f9-37dd350a9150")
 	)
 	(wire
 		(pts
-			(xy 124.46 58.42) (xy 137.16 58.42)
+			(xy 158.75 124.46) (xy 161.29 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54905832-9e92-415a-a22c-86557b89f04e")
+		(uuid "4c223fe5-523b-4a56-b187-3700747c90a2")
 	)
 	(wire
 		(pts
-			(xy 130.81 24.13) (xy 137.16 24.13)
+			(xy 194.31 92.71) (xy 207.01 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5d620d81-0aca-4119-80f0-69e3267017d5")
+		(uuid "50955242-4764-4784-8f09-83275a8a3bf5")
+	)
+	(wire
+		(pts
+			(xy 158.75 50.8) (xy 161.29 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "567f3b47-c85f-4644-8cfc-c8feb78e0e5e")
 	)
 	(wire
 		(pts
@@ -784,7 +1110,47 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 34.29) (xy 71.12 34.29)
+			(xy 130.81 31.75) (xy 137.16 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63c13d2c-ae73-45ce-ac59-2177f50a85bf")
+	)
+	(wire
+		(pts
+			(xy 194.31 31.75) (xy 200.66 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a9bb258-3963-4841-9376-8951d4ac3ea2")
+	)
+	(wire
+		(pts
+			(xy 124.46 90.17) (xy 137.16 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f8b167b-cd14-4592-84f6-54e825c90f46")
+	)
+	(wire
+		(pts
+			(xy 76.2 83.82) (xy 80.01 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71305e8f-5aed-479c-a5f0-1cba67c1a6a5")
+	)
+	(wire
+		(pts
+			(xy 49.53 34.29) (xy 80.01 34.29)
 		)
 		(stroke
 			(width 0)
@@ -794,33 +1160,103 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 60.96) (xy 130.81 60.96)
+			(xy 80.01 95.25) (xy 80.01 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a73242b0-cf8c-4cef-8178-378fc31ba192")
+		(uuid "7fc9dce7-571c-4044-97b6-c71ce7e68ad2")
 	)
 	(wire
 		(pts
-			(xy 124.46 55.88) (xy 137.16 55.88)
+			(xy 194.31 24.13) (xy 200.66 24.13)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aa52cbad-e743-4748-a2fd-743047bfdd6a")
+		(uuid "8a113fd6-d7e9-4292-a965-294c6623a7b0")
 	)
 	(wire
 		(pts
-			(xy 49.53 31.75) (xy 63.5 31.75)
+			(xy 200.66 87.63) (xy 207.01 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a328cb6-87c6-4770-82b0-44e20ae98adf")
+	)
+	(wire
+		(pts
+			(xy 130.81 95.25) (xy 137.16 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9823ce18-3410-49d9-a4ad-3d5940e0681a")
+	)
+	(wire
+		(pts
+			(xy 171.45 43.18) (xy 173.99 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1386547-1ef9-4eeb-8df9-fbd83de57326")
+	)
+	(wire
+		(pts
+			(xy 194.31 87.63) (xy 200.66 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a33e554d-2170-41dc-9986-05dd2660cff1")
+	)
+	(wire
+		(pts
+			(xy 130.81 87.63) (xy 137.16 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a852d972-0dbf-4c97-a15f-a4fda36b47bf")
+	)
+	(wire
+		(pts
+			(xy 49.53 92.71) (xy 72.39 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa558b08-de02-441c-b56c-1177fb870c87")
+	)
+	(wire
+		(pts
+			(xy 49.53 31.75) (xy 72.39 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "aef22ee7-f1e7-4ecd-babf-c4e521aef941")
+	)
+	(wire
+		(pts
+			(xy 158.75 43.18) (xy 161.29 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8fcdc25-b160-4ab4-9621-46b68575cee9")
 	)
 	(bus
 		(pts
@@ -844,7 +1280,47 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 22.86) (xy 67.31 22.86)
+			(xy 124.46 95.25) (xy 130.81 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdd39077-eaf1-424f-bdf7-a54b2450210a")
+	)
+	(wire
+		(pts
+			(xy 124.46 92.71) (xy 137.16 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfdc1457-a938-4696-b8c7-1bb4a76db125")
+	)
+	(wire
+		(pts
+			(xy 194.31 29.21) (xy 207.01 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c41ae5ad-7001-4d65-922a-289bb74bc311")
+	)
+	(wire
+		(pts
+			(xy 171.45 124.46) (xy 173.99 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c836163e-955c-497a-b568-b40533f9e029")
+	)
+	(wire
+		(pts
+			(xy 72.39 22.86) (xy 76.2 22.86)
 		)
 		(stroke
 			(width 0)
@@ -854,37 +1330,57 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 116.84) (xy 161.29 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da74fbf4-b0e3-4600-a8c0-a39a1a66eb87")
+	)
+	(wire
+		(pts
+			(xy 171.45 116.84) (xy 173.99 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfb452e0-a942-4633-8ea0-1cd8490a36d9")
+	)
+	(bus
+		(pts
+			(xy 46.99 90.17) (xy 46.99 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5f84b45-b5bb-4784-8b94-b3dd95c53c24")
+	)
+	(wire
+		(pts
+			(xy 124.46 87.63) (xy 130.81 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebe80153-b6d1-4b43-822d-2d0ff84362bf")
+	)
+	(wire
+		(pts
+			(xy 200.66 31.75) (xy 207.01 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed8aeb77-dadc-43c2-b7b8-da0d5a44b5e7")
+	)
+	(wire
+		(pts
 			(xy 124.46 31.75) (xy 130.81 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d72c076a-ff69-49da-945b-a79b702d870c")
-	)
-	(wire
-		(pts
-			(xy 130.81 60.96) (xy 137.16 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e88a77a0-98e5-4cb9-a72e-2bd713e23805")
-	)
-	(wire
-		(pts
-			(xy 130.81 53.34) (xy 137.16 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2bc199b-6fc4-45bc-b747-13baec08cad4")
-	)
-	(wire
-		(pts
-			(xy 130.81 31.75) (xy 137.16 31.75)
 		)
 		(stroke
 			(width 0)
@@ -894,13 +1390,63 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 34.29) (xy 71.12 31.75)
+			(xy 130.81 24.13) (xy 137.16 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f407b44e-df22-4404-a684-26a069f31fff")
+	)
+	(wire
+		(pts
+			(xy 49.53 95.25) (xy 80.01 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f40b92d3-a996-4dc0-ad9c-bcbdb2b157db")
+	)
+	(wire
+		(pts
+			(xy 80.01 34.29) (xy 80.01 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f4e68c43-1514-4de4-893a-51359a248d3a")
+	)
+	(wire
+		(pts
+			(xy 72.39 85.09) (xy 72.39 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f809e2d5-a230-48ec-9d9c-2ee47f8884b7")
+	)
+	(wire
+		(pts
+			(xy 194.31 26.67) (xy 207.01 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffc7bc78-f835-43ce-b6fa-354780b759b3")
+	)
+	(label "SDA_1"
+		(at 198.12 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "06bd21b2-c715-4ead-98b1-113aa1692a9b")
 	)
 	(label "GPIO4"
 		(at 49.53 31.75 0)
@@ -913,6 +1459,36 @@
 		(uuid "0f6cb02a-b485-4d70-9d4b-1935f63e1814")
 	)
 	(label "SCL_0"
+		(at 198.12 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b31cbe5-f874-4ff0-80f2-4a4de560ac91")
+	)
+	(label "SCL_1"
+		(at 128.27 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "29d59977-4023-4679-8c42-f4adf5da56df")
+	)
+	(label "SDA_1_PICO"
+		(at 161.29 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2d3bfbce-1edb-43e5-aaae-421bc910e054")
+	)
+	(label "SCL_0_PICO"
 		(at 55.88 34.29 0)
 		(effects
 			(font
@@ -921,6 +1497,16 @@
 			(justify left bottom)
 		)
 		(uuid "45f6a9d1-0e1e-4d2b-abcb-2ba5d3b64cb1")
+	)
+	(label "SDA_1"
+		(at 128.27 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "464d5aa1-5042-40df-82d3-bf0dc1458165")
 	)
 	(label "SCL_0"
 		(at 128.27 29.21 0)
@@ -932,7 +1518,107 @@
 		)
 		(uuid "46587398-6eac-4df6-8bff-f3c7c604fbca")
 	)
+	(label "SCL_0_PICO"
+		(at 161.29 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "51e35267-dfd2-488a-ab59-e38aae853d83")
+	)
+	(label "SCL_0"
+		(at 171.45 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "57ca68a9-9a13-4a96-928f-e2bc3b46b9e2")
+	)
+	(label "GPIO3"
+		(at 49.53 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5b18edde-5eb0-4018-9633-85725b85f946")
+	)
+	(label "SCL_1_PICO"
+		(at 161.29 121.92 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5c5b76c2-06ef-4f6c-b41d-7140749eb1bb")
+	)
 	(label "SDA_0"
+		(at 198.12 26.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5c634fc3-7462-43d2-944a-d307a1e32165")
+	)
+	(label "SDA_0"
+		(at 171.45 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5ec88504-c3d4-4aad-9419-672af80aab11")
+	)
+	(label "SCL_1"
+		(at 171.45 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6c1ca984-3f75-43a4-bf7e-2960e13e3b24")
+	)
+	(label "SCL_1_PICO"
+		(at 57.15 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "73f80a67-716d-4758-8def-b8fd7f1f9299")
+	)
+	(label "SCL_1"
+		(at 198.12 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "78fb256a-d50d-4dd0-a4a3-455fc0dcda42")
+	)
+	(label "SDA_0_PICO"
+		(at 161.29 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "92320db1-8508-4778-9616-d9057889a5ea")
+	)
+	(label "SDA_0_PICO"
 		(at 55.88 31.75 0)
 		(effects
 			(font
@@ -942,15 +1628,35 @@
 		)
 		(uuid "92ac5111-8d3d-43a9-b7e9-3f39b17a3ce7")
 	)
-	(label "SCL_0"
-		(at 128.27 58.42 0)
+	(label "SDA_1_PICO"
+		(at 57.15 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "ae313939-f23b-48ab-997c-9bc677a59e66")
+		(uuid "a373c340-ed6a-4669-b711-839e50163a5a")
+	)
+	(label "SDA_1"
+		(at 171.45 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa00ed49-fb75-4c3f-8a7a-ab1442ccb5e9")
+	)
+	(label "GPIO2"
+		(at 49.53 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c948199f-f2c4-46cf-aa22-94eba5e18e30")
 	)
 	(label "SDA_0"
 		(at 128.27 26.67 0)
@@ -961,16 +1667,6 @@
 			(justify left bottom)
 		)
 		(uuid "cefbf129-4454-4c12-9e08-b630e33921ab")
-	)
-	(label "SDA_0"
-		(at 128.27 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d69b6783-d528-42d0-a74f-c162be5634df")
 	)
 	(label "GPIO5"
 		(at 49.53 34.29 0)
@@ -993,18 +1689,29 @@
 		)
 		(uuid "2bd1aac4-c776-4d90-a5b2-db2df76dbaac")
 	)
+	(hierarchical_label "GPIO[2..3]"
+		(shape input)
+		(at 46.99 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "67d8facc-1ccd-41d4-986f-4389fd59befe")
+	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Socket")
-		(at 119.38 55.88 0)
-		(mirror y)
+		(at 142.24 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "11df42e3-b1ca-49fc-a07d-57bd3afc1c4e")
-		(property "Reference" "J17"
-			(at 118.11 55.8799 0)
+		(fields_autoplaced yes)
+		(uuid "01b9dd82-f248-459b-9b51-99695093e28e")
+		(property "Reference" "J24"
+			(at 143.51 90.1699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1013,7 +1720,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04_Socket"
-			(at 118.11 58.4199 0)
+			(at 143.51 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1021,8 +1728,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 119.38 55.88 0)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 142.24 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1031,7 +1738,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 119.38 55.88 0)
+			(at 142.24 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1040,7 +1747,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 119.38 55.88 0)
+			(at 142.24 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1049,38 +1756,39 @@
 			)
 		)
 		(pin "4"
-			(uuid "9c670266-3ca8-435c-8f2f-4a86272beae5")
+			(uuid "fe595a39-a54d-4bf6-9c70-dc66363c1150")
 		)
 		(pin "1"
-			(uuid "eb4f879e-cfd2-40b4-8721-1dbd12337471")
+			(uuid "f640bef0-8bb4-4a7d-ad5c-ef45c3dced4c")
 		)
 		(pin "3"
-			(uuid "59fce0d5-e436-43dc-993e-9794883d9d60")
+			(uuid "e5b0e90c-82a6-446a-86d8-e07a8325dce2")
 		)
 		(pin "2"
-			(uuid "74084f70-e036-445b-9c3a-b6f84447b5ff")
+			(uuid "17090b42-ffd5-46fc-88d5-c45c6dfb5cfa")
 		)
 		(instances
 			(project "Cerbrum_Aeris"
 				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
-					(reference "J17")
+					(reference "J24")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 130.81 53.34 0)
+		(lib_id "power:GND")
+		(at 200.66 95.25 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "158ca2c6-e3bd-494d-a562-f91db7305994")
-		(property "Reference" "#PWR058"
-			(at 130.81 57.15 0)
+		(uuid "0464356a-8122-40be-a315-0a77523e8250")
+		(property "Reference" "#PWR087"
+			(at 200.66 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1088,8 +1796,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 130.81 48.26 0)
+		(property "Value" "GND_I2C"
+			(at 200.66 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1097,7 +1805,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 53.34 0)
+			(at 200.66 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1106,7 +1814,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 53.34 0)
+			(at 200.66 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1114,8 +1822,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 130.81 53.34 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 200.66 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1124,12 +1832,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f8c44dd2-f673-42e0-bb6e-f6a0c0259415")
+			(uuid "f105fe17-68ca-4073-b4bb-da51721514ea")
 		)
 		(instances
 			(project "Cerbrum_Aeris"
 				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
-					(reference "#PWR058")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -1137,7 +1845,274 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 67.31 22.86 0)
+		(at 173.99 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "04adc945-c6a6-41eb-976d-a93238750d0b")
+		(property "Reference" "#PWR069"
+			(at 173.99 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3_I2C"
+			(at 173.99 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 173.99 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b3630e8-f8af-4a7f-9fc7-b7075b711dc7")
+		)
+		(instances
+			(project ""
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 158.75 50.8 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07bc5825-f67d-44f1-a06e-f97a2e62462d")
+		(property "Reference" "#PWR065"
+			(at 158.75 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 158.75 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 158.75 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ba32b3b-b8c5-4bc4-9986-ae15fdffaaab")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 130.81 31.75 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a5e8275-0486-4eda-9cef-16b49f3c8e15")
+		(property "Reference" "#PWR083"
+			(at 130.81 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND_I2C"
+			(at 130.81 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 130.81 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "31028b0a-1a2b-4fb9-b9ba-e8357186bd41")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "#PWR083")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 158.75 124.46 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e8f7449-53b8-4123-98d0-aa5651d0a649")
+		(property "Reference" "#PWR074"
+			(at 158.75 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 158.75 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 158.75 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9130f134-db37-4677-99f6-30ec1310f84a")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "#PWR074")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 76.2 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1146,7 +2121,7 @@
 		(fields_autoplaced yes)
 		(uuid "3d4495b6-96db-4188-926b-17017a0d70ee")
 		(property "Reference" "#PWR059"
-			(at 67.31 26.67 0)
+			(at 76.2 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1155,7 +2130,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 67.31 17.78 0)
+			(at 76.2 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1163,7 +2138,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 22.86 0)
+			(at 76.2 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1172,7 +2147,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 22.86 0)
+			(at 76.2 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1181,7 +2156,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 67.31 22.86 0)
+			(at 76.2 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1196,6 +2171,158 @@
 			(project ""
 				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
 					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Aeris_custom:SJ_Stepper_1-5mm")
+		(at 166.37 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41114a7b-0cae-434b-9c35-eb29806ed238")
+		(property "Reference" "J28"
+			(at 166.37 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 166.37 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom_Aeris:SJ_Stepper_1-5mm"
+			(at 166.37 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 166.37 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "60a7c2a9-e39f-48ca-896c-67188aa5825d")
+		)
+		(pin "2"
+			(uuid "d71a4c95-e724-431d-bffa-a912478f5db4")
+		)
+		(pin "8"
+			(uuid "b01e447f-80f6-4704-b31a-915cdc0fa3d9")
+		)
+		(pin "7"
+			(uuid "8ea705ce-34fd-4878-8f17-b643b86341a3")
+		)
+		(pin "6"
+			(uuid "50cb8f61-0a88-4088-8bc1-9f11030fad6c")
+		)
+		(pin "4"
+			(uuid "732900ad-4208-444a-a878-a117f6d21b5b")
+		)
+		(pin "5"
+			(uuid "f4bcff8b-ae62-4a39-8125-86db9c62b417")
+		)
+		(pin "1"
+			(uuid "68f1c46a-20e1-4d8c-833c-5f392338825c")
+		)
+		(instances
+			(project ""
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "J28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 130.81 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "45cd9788-1612-4854-9809-b8cb68b2c5e0")
+		(property "Reference" "#PWR071"
+			(at 130.81 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3_I2C"
+			(at 130.81 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 130.81 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eedd0b22-d567-41bc-a51a-c4e22219fa34")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -1229,7 +2356,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
 			(at 119.38 26.67 0)
 			(effects
 				(font
@@ -1278,150 +2405,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Socket")
-		(at 142.24 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4c95aa45-d908-4d65-a360-8d38219ddfea")
-		(property "Reference" "J18"
-			(at 143.51 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x04_Socket"
-			(at 143.51 58.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 142.24 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "3fa037b8-d3ff-48b9-b126-d0cd41c93fb7")
-		)
-		(pin "1"
-			(uuid "50d5ba8e-5609-4c2f-9455-b5aca79fc3be")
-		)
-		(pin "3"
-			(uuid "446b7169-5453-4559-b5dd-21136f0dee16")
-		)
-		(pin "2"
-			(uuid "91dc63e4-5bb6-4cd7-943d-44644a8a0188")
-		)
-		(instances
-			(project "Cerbrum_Aeris"
-				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
-					(reference "J18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 130.81 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4df4be0d-3b98-48bf-bae2-b56ed4910ea2")
-		(property "Reference" "#PWR061"
-			(at 130.81 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 130.81 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0f68ca55-4bf5-4191-bca4-dd4e07446ef3")
-		)
-		(instances
-			(project "Cerbrum_Aeris"
-				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
-					(reference "#PWR061")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
-		(at 71.12 27.94 0)
+		(at 80.01 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1429,7 +2414,7 @@
 		(dnp no)
 		(uuid "51105d35-0d88-448f-80e2-6dc7134505fa")
 		(property "Reference" "R19"
-			(at 73.152 26.67 0)
+			(at 82.042 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1438,7 +2423,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 73.152 29.21 0)
+			(at 82.042 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1446,8 +2431,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 72.136 28.194 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 81.026 28.194 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1456,7 +2441,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 71.12 27.94 0)
+			(at 80.01 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1465,7 +2450,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 71.12 27.94 0)
+			(at 80.01 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1489,17 +2474,18 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 130.81 31.75 0)
+		(lib_id "power:+3V3")
+		(at 158.75 116.84 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "baf45087-cbd8-4d42-ad6b-048f6543145a")
-		(property "Reference" "#PWR060"
-			(at 130.81 38.1 0)
+		(uuid "52bf0bf4-9738-4b2a-b0a9-8f398f9c91ad")
+		(property "Reference" "#PWR073"
+			(at 158.75 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1507,8 +2493,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 130.81 36.83 0)
+		(property "Value" "+3V3"
+			(at 158.75 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1516,7 +2502,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 31.75 0)
+			(at 158.75 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1525,7 +2511,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 31.75 0)
+			(at 158.75 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1533,8 +2519,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 31.75 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 158.75 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1543,12 +2529,1072 @@
 			)
 		)
 		(pin "1"
-			(uuid "95737040-f239-493e-ae52-cd7acb0cd083")
+			(uuid "92c4140b-2121-4444-8d76-41a75e838c20")
 		)
 		(instances
-			(project ""
+			(project "Cerbrum_Aeris"
 				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
-					(reference "#PWR060")
+					(reference "#PWR073")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 119.38 90.17 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5f6ef2c5-e63c-4e64-9e6b-d7c58691ef82")
+		(property "Reference" "J23"
+			(at 118.11 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x04_Socket"
+			(at 118.11 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 119.38 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 119.38 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "7cb539eb-c45e-4d16-a950-992ccc060e65")
+		)
+		(pin "1"
+			(uuid "620ef7f6-4614-46c9-9f81-d6024e9ad06b")
+		)
+		(pin "3"
+			(uuid "505e9d9e-e49a-4f46-9278-911eefec65f7")
+		)
+		(pin "2"
+			(uuid "ba00096b-eae5-4cc2-835a-556fd79b41df")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "J23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 76.2 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66f8d42d-4ba1-4f04-a840-09bac0ec84b0")
+		(property "Reference" "#PWR066"
+			(at 76.2 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 76.2 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 76.2 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f7c42373-c16d-4233-9030-1cdf78120cd1")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 158.75 43.18 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81838f54-c5ac-40e8-b55e-1543f11bc1b2")
+		(property "Reference" "#PWR064"
+			(at 158.75 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 158.75 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 158.75 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15832c5d-31ef-4f46-bc7c-67f9637d7e2d")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 200.66 31.75 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "855ce0d2-76b3-41e1-8cb1-ef701fea12b3")
+		(property "Reference" "#PWR085"
+			(at 200.66 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND_I2C"
+			(at 200.66 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 200.66 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f40c72d4-df6d-4337-99ee-6b25ef8f8106")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "#PWR085")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 189.23 90.17 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8d307bc0-1d48-40b7-a2e9-627b44a35457")
+		(property "Reference" "J27"
+			(at 187.96 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x04_Socket"
+			(at 187.96 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 189.23 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 189.23 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "265e6060-f52b-4201-81d5-84eac5d379cf")
+		)
+		(pin "1"
+			(uuid "e286f991-8cc8-4c55-a19e-fcac8ac97706")
+		)
+		(pin "3"
+			(uuid "a6b8b111-c878-481d-a7d8-522169ee1d11")
+		)
+		(pin "2"
+			(uuid "e689d691-7ad3-4320-b752-07c891d90b3f")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "J27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 72.39 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8f7c7d1c-0bbe-4277-9de7-0497d4c4d0a6")
+		(property "Reference" "R20"
+			(at 73.152 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 73.152 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 73.406 89.154 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 72.39 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ccc7ff48-0628-4b05-b402-9d1137ab5b0d")
+		)
+		(pin "1"
+			(uuid "2e4acfa3-5780-4b0d-9f35-98bc92f98681")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 200.66 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "971da74e-fc35-4936-a18d-ed743456c37a")
+		(property "Reference" "#PWR086"
+			(at 200.66 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3_I2C"
+			(at 200.66 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 200.66 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "de876516-ccae-4c84-b4f3-9addd5cc2b1d")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "#PWR086")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 173.99 50.8 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9fcb7092-2c5b-4107-b4f9-4420862dc50e")
+		(property "Reference" "#PWR070"
+			(at 173.99 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND_I2C"
+			(at 173.99 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 173.99 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3755e660-a43f-46e7-971e-1815efa7dbd7")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 212.09 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9012af4-bf74-472d-892a-4c5aa631620a")
+		(property "Reference" "J21"
+			(at 213.36 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x04_Socket"
+			(at 213.36 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 212.09 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 212.09 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "c0bb9f4c-a404-4c54-a5cd-e35b5b6b3cb2")
+		)
+		(pin "1"
+			(uuid "34133751-944b-4911-bb16-3047435b40b2")
+		)
+		(pin "3"
+			(uuid "4968384f-23f8-48fe-8203-3339deec6077")
+		)
+		(pin "2"
+			(uuid "d8214c1b-dfce-4c75-b1c4-22be8390021e")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "J21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 130.81 95.25 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0cb9b27-f699-4798-bb57-d02044532cae")
+		(property "Reference" "#PWR072"
+			(at 130.81 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND_I2C"
+			(at 130.81 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 130.81 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c9518c4-7957-44ea-8829-283ff8336209")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "#PWR072")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 173.99 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4e8f9b5-6e4a-4649-9515-984d7a0f5917")
+		(property "Reference" "#PWR080"
+			(at 173.99 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3_I2C"
+			(at 173.99 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 173.99 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28286eeb-5577-4c50-88b6-50de7324496e")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 80.01 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b5a73eda-9327-43ec-8104-ffbb973d3d68")
+		(property "Reference" "R21"
+			(at 82.042 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 82.042 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 81.026 89.154 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 80.01 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "70753634-7fff-4ff2-8bc6-125c3b49b1db")
+		)
+		(pin "1"
+			(uuid "1250dddd-bf6a-4f97-ba3e-c92eea03b641")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 130.81 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bf14e3c5-178b-4ec9-9f0c-24469ffa4a8e")
+		(property "Reference" "#PWR082"
+			(at 130.81 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3_I2C"
+			(at 130.81 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 130.81 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a6ad3db-e69f-4d0c-b043-a91ad9ce62f6")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "#PWR082")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Aeris_custom:SJ_Stepper_1-5mm")
+		(at 166.37 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2790d0e-663d-470a-ac50-05615fb5fd45")
+		(property "Reference" "J30"
+			(at 166.37 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 166.37 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom_Aeris:SJ_Stepper_1-5mm"
+			(at 166.37 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 166.37 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "494bc297-98c8-4c26-9fb8-b269570be79a")
+		)
+		(pin "2"
+			(uuid "f3f6a200-de13-42dd-b7a8-eafdc6e136e9")
+		)
+		(pin "8"
+			(uuid "cd2137cc-7dd7-4225-8a0b-74b65fa00b11")
+		)
+		(pin "7"
+			(uuid "15908440-bf22-4900-8b2e-775c1b1dae0f")
+		)
+		(pin "6"
+			(uuid "18974775-1163-4638-8697-404fe45cb46b")
+		)
+		(pin "4"
+			(uuid "2409fa86-1fa9-4c6b-a9d9-5a2f2f4ffa5c")
+		)
+		(pin "5"
+			(uuid "6069e3ab-33fa-4770-9399-c846eaa203d3")
+		)
+		(pin "1"
+			(uuid "1e0118d7-2675-4ddb-add1-d558de8ac78f")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "J30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 212.09 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5781513-a8cc-4e1f-aa42-322b0196b1df")
+		(property "Reference" "J29"
+			(at 213.36 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x04_Socket"
+			(at 213.36 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 212.09 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 212.09 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 212.09 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "2abb7340-5764-45bd-89db-f626465095c2")
+		)
+		(pin "1"
+			(uuid "4ce126db-d2c9-474c-9eb4-464b1b20a39d")
+		)
+		(pin "3"
+			(uuid "d619ffce-ce66-4e32-bde5-0ee597d5d4f8")
+		)
+		(pin "2"
+			(uuid "e0b7fc25-d100-4b87-bfed-614695c92904")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "J29")
 					(unit 1)
 				)
 			)
@@ -1582,7 +3628,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
 			(at 142.24 26.67 0)
 			(effects
 				(font
@@ -1631,74 +3677,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 130.81 24.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e8116fba-69e1-43a9-97e3-c923d3ba4b21")
-		(property "Reference" "#PWR057"
-			(at 130.81 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 130.81 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 130.81 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ba4d203f-2e94-4c26-8c6d-3883520be16e")
-		)
-		(instances
-			(project ""
-				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
-					(reference "#PWR057")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
-		(at 63.5 27.94 0)
+		(at 72.39 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1706,7 +3686,7 @@
 		(dnp no)
 		(uuid "e88ea47b-0f68-4b25-ada6-7305f5477fa3")
 		(property "Reference" "R18"
-			(at 64.262 26.67 0)
+			(at 73.152 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1715,7 +3695,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 64.262 29.21 0)
+			(at 73.152 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1723,8 +3703,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 64.516 28.194 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 73.406 28.194 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1733,7 +3713,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 63.5 27.94 0)
+			(at 72.39 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1742,7 +3722,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 63.5 27.94 0)
+			(at 72.39 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1760,6 +3740,215 @@
 			(project ""
 				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
 					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 173.99 124.46 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8c05db3-020b-4723-9136-f187c9bf3e2c")
+		(property "Reference" "#PWR081"
+			(at 173.99 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND_I2C"
+			(at 173.99 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 173.99 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e2bff62-c560-471e-9a26-a5d18fe1274d")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 189.23 26.67 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "efaed72d-2f70-43bc-be07-c069c5954b0c")
+		(property "Reference" "J19"
+			(at 187.96 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x04_Socket"
+			(at 187.96 29.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 189.23 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 189.23 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "b6be81eb-310d-4b2f-b49f-1f6c71b5371d")
+		)
+		(pin "1"
+			(uuid "4a157a4c-c354-490e-b59e-e7e5ba6a18d0")
+		)
+		(pin "3"
+			(uuid "58dc4fa8-dd31-4efb-b8d7-510e263c430d")
+		)
+		(pin "2"
+			(uuid "c5c4dd23-875f-412b-8865-bcabb86ea32b")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "J19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 200.66 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fda67747-2c6f-49f3-bba3-5d7ed11409d0")
+		(property "Reference" "#PWR084"
+			(at 200.66 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3_I2C"
+			(at 200.66 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 200.66 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "71209477-9c62-4388-9fcd-260fcbc9d735")
+		)
+		(instances
+			(project "Cerbrum_Aeris"
+				(path "/04529f1b-0008-4e47-aa6b-118856ec7930/5a0f0455-b6cc-4aae-a344-4152e5ecd280"
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)

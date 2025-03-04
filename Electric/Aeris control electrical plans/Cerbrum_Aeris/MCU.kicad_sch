@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "76d1dc9c-3869-4900-81f7-689cfde532f9")
+	(uuid "4ee67261-8432-464d-96d6-b64029fbc30d")
 	(paper "B")
 	(lib_symbols
 		(symbol "Connector:USB_C_Receptacle_USB2.0"
@@ -4663,6 +4663,18 @@
 		)
 		(uuid "219dee79-640c-4b6f-9997-fa0c53d6c1de")
 	)
+	(text "M_Conn_LEFT"
+		(exclude_from_sim no)
+		(at 338.836 74.168 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "2ea25eeb-df10-4450-8452-e3cb30dfe608")
+	)
 	(text "24"
 		(exclude_from_sim no)
 		(at 151.13 31.75 0)
@@ -4716,6 +4728,42 @@
 			)
 		)
 		(uuid "479ae528-a0aa-4f25-972b-3b08ad3ab69b")
+	)
+	(text "Unused"
+		(exclude_from_sim no)
+		(at 337.312 127.254 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "486b305d-bc6d-47f4-8b5c-98e14c101303")
+	)
+	(text "I2C_0"
+		(exclude_from_sim no)
+		(at 334.518 55.118 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "4896fae2-293b-4719-ab12-e34e0b7df263")
+	)
+	(text "M_Conn_RIGHT"
+		(exclude_from_sim no)
+		(at 340.868 97.282 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "4baaff22-f177-418b-9bdd-b80ea1d5dc77")
 	)
 	(text "12MHz"
 		(exclude_from_sim no)
@@ -4834,6 +4882,30 @@
 			(justify left bottom)
 		)
 		(uuid "a84cd6ba-4c7d-4037-b2c1-e01ea24b6c6e")
+	)
+	(text "I2C_1"
+		(exclude_from_sim no)
+		(at 334.518 60.198 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "b8dbf719-bd6e-4d42-9572-6bb851bba075")
+	)
+	(text "UART"
+		(exclude_from_sim no)
+		(at 334.264 50.038 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "c3eb63a3-be7e-4930-a708-22be461f74fa")
 	)
 	(text "ADC"
 		(exclude_from_sim no)
@@ -5392,6 +5464,15 @@
 		(uuid "78bca200-6cf8-4b17-9346-c34a5d5047b6")
 	)
 	(bus_entry
+		(at 317.5 53.34)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a2d8966-f373-461f-9657-d6462d60b005")
+	)
+	(bus_entry
 		(at 317.5 45.72)
 		(size 2.54 2.54)
 		(stroke
@@ -5507,15 +5588,6 @@
 			(type default)
 		)
 		(uuid "d7fef521-a933-4886-b437-b9786ce08a8b")
-	)
-	(bus_entry
-		(at 317.5 53.34)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da386554-d424-4de9-a1ed-4a9c115a5428")
 	)
 	(bus_entry
 		(at 317.5 101.6)
@@ -6316,6 +6388,16 @@
 			(type solid)
 		)
 		(uuid "4310455a-6ea1-4a77-b962-6d599ff14c86")
+	)
+	(bus
+		(pts
+			(xy 320.04 53.34) (xy 320.04 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4333aaf6-32a9-4649-b7c2-c2105007bd1f")
 	)
 	(wire
 		(pts
@@ -7657,16 +7739,6 @@
 		)
 		(uuid "c9d70fb6-1ac3-4168-8330-4ee5a9c30b56")
 	)
-	(bus
-		(pts
-			(xy 320.04 50.8) (xy 320.04 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc225aab-2724-4ea1-9824-5130a22f0137")
-	)
 	(wire
 		(pts
 			(xy 59.69 31.75) (xy 62.23 31.75)
@@ -7686,16 +7758,6 @@
 			(type default)
 		)
 		(uuid "cd67ab2f-6c6b-4129-8e49-bf2716bd8a8c")
-	)
-	(bus
-		(pts
-			(xy 320.04 55.88) (xy 320.04 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf57a7dc-bc2d-4ca2-826f-e99ccac8f0bd")
 	)
 	(wire
 		(pts
@@ -8969,9 +9031,9 @@
 		)
 		(uuid "25a52700-cdad-46ca-99a2-f4a940746fd4")
 	)
-	(hierarchical_label "GPIO[3..5]"
+	(hierarchical_label "GPIO[4..5]"
 		(shape input)
-		(at 320.04 58.1393 0)
+		(at 320.04 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8979,6 +9041,17 @@
 			(justify left)
 		)
 		(uuid "7862f859-3d23-48d0-9bde-105e214c9a9f")
+	)
+	(hierarchical_label "GPIO[2..3]"
+		(shape input)
+		(at 320.04 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "790abad7-9727-4ba6-b35a-78d724807b13")
 	)
 	(hierarchical_label "GPIO[15..23]"
 		(shape input)
@@ -8991,9 +9064,9 @@
 		)
 		(uuid "a876b093-8920-4789-970d-56f30f8a0aa0")
 	)
-	(hierarchical_label "GPIO[0..2]"
+	(hierarchical_label "GPIO[0..1]"
 		(shape input)
-		(at 320.04 50.8 0)
+		(at 320.04 49.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11170,7 +11243,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 217.17 30.48 0)
 			(effects
 				(font
