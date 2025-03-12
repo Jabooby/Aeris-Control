@@ -52,7 +52,24 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|217587500|112062500|960ef957-8044-4f3f-a25e-8ac8cd892510|027f5597-6822-4773-9578-ab2e2bae9fe8",
+          ""
+        ],
+        [
+          "clearance|217912500|110637500|878f273f-3e64-412a-962e-99c1abaac382|db504c63-709d-444e-9b0a-794dc795a101",
+          ""
+        ],
+        [
+          "clearance|218087500|112062500|027f5597-6822-4773-9578-ab2e2bae9fe8|83a8de32-1535-4f97-b3c9-b40b538a3e81",
+          ""
+        ],
+        [
+          "clearance|218412500|110637500|5feccf05-2175-4020-b63c-4dce59a62bac|878f273f-3e64-412a-962e-99c1abaac382",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -60,20 +77,20 @@
         "annular_width": "error",
         "clearance": "error",
         "connection_width": "warning",
-        "copper_edge_clearance": "error",
+        "copper_edge_clearance": "ignore",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
         "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
-        "drill_out_of_range": "error",
+        "drill_out_of_range": "ignore",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
-        "hole_clearance": "error",
+        "hole_clearance": "ignore",
         "hole_to_hole": "warning",
         "holes_co_located": "warning",
         "invalid_outline": "error",
@@ -99,7 +116,7 @@
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
-        "starved_thermal": "error",
+        "starved_thermal": "ignore",
         "text_height": "warning",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
@@ -429,7 +446,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -471,6 +488,15 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 24,
+        "line_style": 0,
+        "name": "Power_5V&12V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(255, 0, 0)",
+        "wire_width": 8
       }
     ],
     "meta": {
@@ -478,7 +504,24 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Power_5V&12V",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "Power_5V&12V",
+        "pattern": "+12V"
+      },
+      {
+        "netclass": "Power_5V&12V",
+        "pattern": "+12V_BAT"
+      },
+      {
+        "netclass": "Power_5V&12V",
+        "pattern": "+5V_ALIM"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -486,7 +529,7 @@
       "idf": "",
       "netlist": "",
       "plot": "",
-      "pos_files": "",
+      "pos_files": "./",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
@@ -558,14 +601,38 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Digikey",
+          "name": "Digikey",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
-      "sort_field": "Référence"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {

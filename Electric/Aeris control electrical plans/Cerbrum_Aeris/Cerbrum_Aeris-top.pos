@@ -1,0 +1,42 @@
+### Footprint positions - created on 2025-03-09T21:33:55-0400 ###
+### Printed by KiCad version 9.0.0
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val                 Package                                            PosX       PosY       Rot  Side
+BOOT      SW_BOOTSEL          SW_SPST_B3U-1000P                              190.5000  -122.0000   90.0000  top
+C20       10µF               C_0805_2012Metric_Pad1.18x1.45mm_HandSolder    214.5000   -94.6000  -90.0000  top
+C21       0.1µF              C_0603_1608Metric_Pad1.08x0.95mm_HandSolder    212.5000   -94.8000   90.0000  top
+C24       33pF                C_0603_1608Metric_Pad1.08x0.95mm_HandSolder    214.7000  -109.3000    0.0000  top
+C25       22µF               C_0805_2012Metric_Pad1.18x1.45mm_HandSolder    214.5000   -98.4000  -90.0000  top
+C26       0.1µF              C_0603_1608Metric_Pad1.08x0.95mm_HandSolder    212.5000   -98.2000  -90.0000  top
+D1        Green_power         D_0805_2012Metric                              207.0000   -91.6000   90.0000  top
+J2        Conn_01x08_Stepper  PinSocket_1x08_P2.54mm_Vertical_SMD_Pin1Left   149.0000   -79.2500  180.0000  top
+J3        Conn_01x08_Stepper  PinSocket_1x08_P2.54mm_Vertical_SMD_Pin1Left   169.5000   -79.2500  180.0000  top
+J4        Conn_01x08_Stepper  PinSocket_1x08_P2.54mm_Vertical_SMD_Pin1Left   190.0000   -79.2500  180.0000  top
+J5        Conn_09x16_Stepper  PinSocket_1x08_P2.54mm_Vertical_SMD_Pin1Left   161.7000   -79.2500  180.0000  top
+J6        Conn_09x16_Stepper  PinSocket_1x08_P2.54mm_Vertical_SMD_Pin1Left   182.2000   -79.2500  180.0000  top
+J7        Conn_09x16_Stepper  PinSocket_1x08_P2.54mm_Vertical_SMD_Pin1Left   202.7000   -79.2500  180.0000  top
+J8        Conn_01x08_Stepper  PinSocket_1x08_P2.54mm_Vertical_SMD_Pin1Left   149.0000  -106.2500  180.0000  top
+J9        Conn_01x08_Stepper  PinSocket_1x08_P2.54mm_Vertical_SMD_Pin1Left   169.5000  -106.2500  180.0000  top
+J10       Conn_01x08_Stepper  PinSocket_1x08_P2.54mm_Vertical_SMD_Pin1Left   190.0000  -106.2500  180.0000  top
+J11       Conn_09x16_Stepper  PinSocket_1x08_P2.54mm_Vertical_SMD_Pin1Left   161.7000  -106.2500  180.0000  top
+J12       Conn_09x16_Stepper  PinSocket_1x08_P2.54mm_Vertical_SMD_Pin1Left   182.2000  -106.2500  180.0000  top
+J13       Conn_09x16_Stepper  PinSocket_1x08_P2.54mm_Vertical_SMD_Pin1Left   202.7000  -106.2500  180.0000  top
+J17       ~                   SJ_Stepper_1-5mm                               153.2500   -67.7500   90.0000  top
+J18       ~                   SJ_Stepper_1-5mm                               173.7500   -67.7500   90.0000  top
+J20       ~                   SJ_Stepper_1-5mm                               194.2500   -67.7500   90.0000  top
+J22       ~                   SJ_Stepper_1-5mm                               157.7500  -125.2500  -90.0000  top
+J25       ~                   SJ_Stepper_1-5mm                               178.2500  -125.2500  -90.0000  top
+J26       ~                   SJ_Stepper_1-5mm                               198.7500  -125.2500  -90.0000  top
+J28       ~                   SJ_Stepper_1-5mm                               143.2500   -81.7500  180.0000  top
+J30       ~                   SJ_Stepper_1-5mm                               143.2500  -116.0000  180.0000  top
+J31       ~                   SJ_Stepper_1-5mm                               208.7500   -94.2500    0.0000  top
+R1        5.1k                R_0603_1608Metric_Pad0.98x0.95mm_HandSolder    168.9000  -121.4000    0.0000  top
+R2        5.1k                R_0603_1608Metric_Pad0.98x0.95mm_HandSolder    163.1000  -121.4000  180.0000  top
+R9        100k                R_0603_1608Metric_Pad0.98x0.95mm_HandSolder    224.0000  -106.9000  -90.0000  top
+R10       17.4k               R_0603_1608Metric_Pad0.98x0.95mm_HandSolder    221.5000  -107.8000  180.0000  top
+R12       220k                R_0603_1608Metric_Pad0.98x0.95mm_HandSolder    214.7000  -107.8000    0.0000  top
+R13       30k                 R_0603_1608Metric_Pad0.98x0.95mm_HandSolder    218.1000  -107.8000    0.0000  top
+RESET     SW_RESET            SW_SPST_B3U-1000P                              182.2000  -122.0000   90.0000  top
+U6        ~                   SOT-563                                        218.0000  -111.6000   90.0000  top
+## End
