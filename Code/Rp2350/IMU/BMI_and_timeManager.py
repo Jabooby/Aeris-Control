@@ -43,14 +43,58 @@ class IMUSensor:
         self.accx, self.accy, self.accz = 0.0, 0.0, 0.0
         self.speedx, self.speedy, self.speedz = 0.0, 0.0, 0.0
         self.distancex, self.distancey, self.distancez = 0.0, 0.0, 0.0
+        self.setup_accx_offset, self.setup_accy_offset, self.setup_accz_offset = 0.0, 0.0, 0.0
+        self.temp_accx, self.temp_accy, self.temp_accz = 0.0, 0.0, 0.0
+        
+    def auto_calibrate(self):
+        """Perform auto-calibration to remove noise or error."""  
+        num_samples = 300
+        ax_offset = 0
+        ay_offset = 0
+        az_offset = 0
+     
+        for _ in range(num_samples):
+            ax_raw, ay_raw, az_raw = self.bmi.acceleration
+            ax_offset += ax_raw
+            ay_offset += ay_raw
+            az_offset += az_raw
+            time.sleep(0.01)  # Small delay between readings
+     
+        # Calculate average offsets
+        self.setup_accx_offset //= num_samples
+        self.setup_accy_offset //= num_samples
+        self.setup_accz_offset //= num_samples
+     
+        # Assuming the sensor is stable, Z-axis should measure 1g (gravity)
+        self.setup_accz_offset -= self.gravity
+   
+        return
     
     def rad_to_deg(self, val_rad):
         return val_rad * (180 / self.PI)
 
-    def get_acc_angle(self):
-        self.accx, self.accy, self.accz = self.bmi.acceleration
-        self.accz -= self.gravity  # Remove gravity effect
+    def set_get_acceleration(self):
+        acc_raw_x, acc_raw_y, acc_raw_z = self.bmi.acceleration 
+        self.accx = acc_raw_x - self.setup_accx_offset - self.gravity
+        self.accy = acc_raw_y - self.setup_accy_offset
+        self.accz = acc_raw_z - self.setup_accz_offset - self.gravity
+        ancient_accx, ancient_accy, ancient_accz = self.accx, self.accy, self.accz
         
+        # If the before and after acceleration delta is too small we set it to 0, we only set temp to ancient_acc because we need to compare with true acceleration
+        if (abs(self.temp_accx - self.accx) < 0.2):
+            self.accx = 0.0
+            
+        if (abs(self.temp_accy - self.accy) < 0.2):
+            self.accy = 0.0
+            
+        if (abs(self.temp_accz - self.accz) < 0.2):
+            self.accz = 0.0
+            
+        self.temp_accx, self.temp_accy, self.temp_accz = ancient_accx, ancient_accy, ancient_accz
+        
+        return self.accx, self.accy, self.accz
+        
+    def get_acc_angle(self):
         if abs(self.accz) < self.epsilon:  # Prevent division by zero
             accz = self.epsilon
         if m.sqrt(self.accy**2 + self.accz**2) < self.epsilon:
@@ -80,19 +124,24 @@ class IMUSensor:
         return f_roll, f_pitch, f_yaw
 
     def update(self, time_delta):
+        accx, accy, accz = self.set_get_acceleration()
         acc_roll, acc_pitch = self.get_acc_angle()
         gy_roll, gy_pitch, gy_yaw = self.get_gyro_angle(time_delta)
         # Update angles
         self.roll, self.pitch, self.yaw = self.angle_filter(acc_roll, acc_pitch, gy_roll, gy_pitch, gy_yaw)
-
+        print(f"accx: {accx:.2f}, accy: {accy:.2f}, accz: {accz:.2f}")
+        # Reset velocity periodically (e.g., every 10 seconds)
+        if time.ticks_ms() % 10000 < 100:  # Every 10 seconds
+            self.speedx = self.speedy = self.speedz = 0.0
+        
         # Update values by integration
-        self.speedx += self.accx * time_delta
-        self.speedy += self.accy * time_delta
-        self.speedz += self.accz * time_delta
-        print(self.accx)
+        self.speedx += accx * time_delta
+        self.speedy += accy * time_delta
+        self.speedz += accz * time_delta
         self.distancex += self.speedx * time_delta + 0.5 * self.accx * time_delta**2
         self.distancey += self.speedy * time_delta + 0.5 * self.accy * time_delta**2
         self.distancez += self.speedz * time_delta + 0.5 * self.accz * time_delta**2
+        #print(f"accx: {self.distancex:.2f}, accy: {self.distancey:.2f}, accz: {self.distancez:.2f}")
 
 
 def update_json_file(roll, pitch, yaw, filename="imu_data.json"):
@@ -106,22 +155,23 @@ def update_json_file(roll, pitch, yaw, filename="imu_data.json"):
     with open(filename, "w") as f:
         json.dump(data, f)
         
-# Create IMU Sensor object
+# Create IMU Sensor object + Calibration
 imu_0 = IMUSensor(i2c_0)
+imu_0.auto_calibrate()
 time_manager = TimeManager()
 
 # Initialize time tracking variable
 sum_time_delta = 0.0
 
-# Read and update sensor data in a loop
 while True:
     time_manager.update()
-
     imu_0.update(time_manager.get_time_delta())
+    accx, accy, accz = imu_0.accx, imu_0.accy, imu_0.accz
     roll, pitch, yaw = imu_0.roll, imu_0.pitch, imu_0.yaw
     update_json_file(roll, pitch, yaw)
     time.sleep(0.5)
     
-    print(f"roll: {roll:.2f}°, pitch: {pitch:.2f}°, yaw: {yaw:.2f}°")
-    #print(f"distancex: {imu_0.distancex:.2f}°, distancey: {imu_0.distancey:.2f}°, distancez: {imu_0.distancez:.2f}°")
+  
+
+
 
