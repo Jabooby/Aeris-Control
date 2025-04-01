@@ -4,8 +4,6 @@ from machine import Pin
 import ujson
 from _thread import allocate_lock
 
-irq_lock = allocate_lock()
-
 FORWARD = 1
 BACKWARD = 0
 
@@ -13,11 +11,10 @@ class StepperControl:
     
     def wait_for_completion(self, sm_irq_state):
         """
-        Poll the IRQ flag to ensure the state machine has completed its current operation.
+        IRQ handler for PIO state machine completion.
         """
-        with irq_lock: #prevents another irq to be activated 
-            x = self.sm.irq().flags()
-            print("IRQ flag status:", x)
+        with self.irq_lock:  # Prevent race conditions
+            self.irq_flag = True  # Set a flag to indicate completion
             self.inMovement = False
             self.currentStepValue = self.desiredStepValue
         """
@@ -99,7 +96,7 @@ class StepperControl:
         
         jmp(x_dec, "step_loop")  # Continue if x != 0
 
-        irq(16)                   # Raise IRQ to notify CPU when x == 0
+        irq(2)                   # Raise IRQ to notify CPU when x == 0
         #irq(n) n needs to be equal to the 2^sm_id 
 
     def set_step_and_speed(self, step, hz):
@@ -107,7 +104,7 @@ class StepperControl:
         Set the period dynamically based on the desired frequency.
         And sends the amount of steps wanted.
         """
-        if(self.inMovement == false):
+        if(self.inMovement == False):
             self.set_speed(hz)
             self.set_step(step)
         
@@ -142,24 +139,24 @@ class StepperControl:
     
     def reset_motor(self):
         """
-        Reset the motor by reactivating the state machine and clearing any previous settings.
+        Reset the motorZ by reactivating the state machine and clearing any previous settings.
         """
         self.stop_motor()
         time.sleep(0.1)  # Short delay to ensure state machine stops
         self.sm.active(1)  # Reactivate the state machine
         self.desiredStepValue = 0
         self.currentStepValue = 0
-        print("Motor reset.")
+        print("motorZ reset.")
 
     def stop_motor(self):
         """
-        Stop the motor. More specifically, stops the state machine.
+        Stop the motorZ. More specifically, stops the state machine.
         """
         self.sm.active(0)  # Stop the state machine
         
     def start_motor(self):
         """
-        Start the motor. More specifically, starts the state machine.
+        Start the motorZ. More specifically, starts the state machine.
         """
         self.sm.active(1)  # Stop the state machine
         
@@ -195,7 +192,7 @@ class StepperControl:
         return state
     
     def go_to_position(self, position):
-        if(self.inMovement == false):
+        if(self.inMovement == False):
             stepsNeeded = position - self.currentStepValue
             self.set_step(stepsNeeded)
         
@@ -203,6 +200,8 @@ class StepperControl:
         self.stpPin = Pin(stpPin, Pin.OUT)
         self.dirPin = Pin(dirPin, Pin.OUT)
         self.clock_freq = clock_freq
+        
+
         
         self.sm_id = sm_id
         if sm_id == 0:
@@ -226,6 +225,10 @@ class StepperControl:
                 freq=self.clock_freq,
                 set_base=self.stpPin,
                 )
+             
+        self.sm.irq(handler=self.wait_for_completion)
+        self.irq_flag = False  # Initialize flag
+        self.irq_lock = allocate_lock()
         
         self.start_motor()
         self.sm.irq(handler = self.wait_for_completion)
@@ -240,30 +243,42 @@ class StepperControl:
         
 # Example usage:
 if __name__ == "__main__":
-    motor = StepperControl(sm_id=0, stpPin=14, dirPin=15)
+    motorZ = StepperControl(sm_id=0, stpPin=14, dirPin=15)
+    motorL = StepperControl(sm_id=1, stpPin=16, dirPin=17)
 
-    motor.set_step_and_speed(300,300)  # Set initial frequency to 300 Hz
-    #motor.wait_for_completion()
-    while motor.inMovement:
-        print(motor.state_as_json())
-        time.sleep(1)
-    #print(motor.state_as_json())
-    motor.set_speed(800)
-    motor.go_to_position(-400)
-    #motor.wait_for_completion()
-    while motor.inMovement:
-        print(motor.state_as_json())
-        time.sleep(1)        
+    motorZ.set_step_and_speed(1200,300)  # Set initial frequency to 300 Hz
+    motorL.set_step_and_speed(300,310)  # Set initial frequency to 300 Hz
+    #motorZ.wait_for_completion()
+    while not motorZ.irq_flag or not motorL.irq_flag:
+        time.sleep(0.1)  # Small delay to prevent CPU overload
+
+    motorZ.irq_flag = False  # Reset flag
+    motorL.irq_flag = False  # Reset flag
+    print("Step sequence complete!")
+
+
+    #print(motorZ.state_as_json())
     print("First step sequence complete!")
-    print(motor.state_as_json())
+    print(motorZ.state_as_json())
+    print(motorL.state_as_json())
     
-    
-    motor.set_step_and_speed(900,900)  # Set frequency to 900 Hz
-    #motor.wait_for_completion()
-    while motor.inMovement:
-        time.sleep(1)
-    print("Second step sequence complete!")
+    motorZ.set_step_and_speed(-1200,300)  # Set frequency to 900 Hz
+    motorL.set_step_and_speed(-600,310)  # Set initial frequency to 300 Hz
+    #motorZ.wait_for_completion()
+    while not motorZ.irq_flag or not motorL.irq_flag:
+        time.sleep(0.1)  # Small delay to prevent CPU overload
 
-    # Reset the motor
-    motor.reset_motor()
+    motorZ.irq_flag = False  # Reset flag
+    motorL.irq_flag = False  # Reset flag
+    print("Step sequence complete!")
+
+
+    print("Second step sequence complete!")
+    print(motorZ.state_as_json())
+    print(motorL.state_as_json())
+
+    # Reset the motorZ
+    motorZ.reset_motor()
+    motorL.reset_motor()
+
 

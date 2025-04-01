@@ -4663,6 +4663,28 @@
 		)
 		(uuid "219dee79-640c-4b6f-9997-fa0c53d6c1de")
 	)
+	(text "100k pas nécessaire"
+		(exclude_from_sim no)
+		(at 353.568 32.258 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 5 0 1)
+			)
+		)
+		(uuid "21f9a93b-6a62-4033-ae96-559bc0174fd1")
+	)
+	(text "Maybe descendre à 1kOhm?"
+		(exclude_from_sim no)
+		(at 195.072 60.198 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 5 0 1)
+			)
+		)
+		(uuid "240b7994-1b25-40be-953f-42d3a46fd394")
+	)
 	(text "M_Conn_LEFT"
 		(exclude_from_sim no)
 		(at 338.836 74.168 0)
@@ -4674,6 +4696,17 @@
 			)
 		)
 		(uuid "2ea25eeb-df10-4450-8452-e3cb30dfe608")
+	)
+	(text "^--Aucune différence"
+		(exclude_from_sim no)
+		(at 147.32 90.424 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+		)
+		(uuid "2ea360fd-1483-4af4-961f-045431adfdad")
 	)
 	(text "24"
 		(exclude_from_sim no)
@@ -4786,6 +4819,20 @@
 		)
 		(uuid "4fab3ed4-5be1-448f-b36f-dcfdc5008417")
 	)
+	(text "X"
+		(exclude_from_sim no)
+		(at 357.378 32.258 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+				(italic yes)
+				(color 0 255 11 1)
+			)
+		)
+		(uuid "5638bf12-b4b9-493d-a640-3c21eb6b68bb")
+	)
 	(text "41"
 		(exclude_from_sim no)
 		(at 151.13 35.56 0)
@@ -4796,6 +4843,19 @@
 			(justify left)
 		)
 		(uuid "5a2fe0f0-9b9f-41b9-b08b-a56b85e5ad8f")
+	)
+	(text "je vais changer la clock par celle recommandé par RPi..."
+		(exclude_from_sim no)
+		(at 195.072 84.074 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "62e1935c-d9d0-4df7-9477-27226a56e7f7")
 	)
 	(text "ADC"
 		(exclude_from_sim no)
@@ -4818,6 +4878,20 @@
 		)
 		(uuid "69264880-f60c-45c8-92d5-e887009666a0")
 	)
+	(text "X"
+		(exclude_from_sim no)
+		(at 214.63 77.47 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+				(italic yes)
+				(color 0 255 11 1)
+			)
+		)
+		(uuid "6c79ba6c-5c48-4c9c-b617-b8f744388270")
+	)
 	(text "51"
 		(exclude_from_sim no)
 		(at 151.13 77.47 0)
@@ -4839,6 +4913,20 @@
 			(justify left)
 		)
 		(uuid "70861bbb-2feb-42d8-b5d0-8b973eaa52ee")
+	)
+	(text "X"
+		(exclude_from_sim no)
+		(at 195.326 60.96 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+				(italic yes)
+				(color 0 255 11 1)
+			)
+		)
+		(uuid "8dc5057a-7102-48e6-bb70-778b76a8dec0")
 	)
 	(text "32"
 		(exclude_from_sim no)
@@ -4872,6 +4960,17 @@
 		)
 		(uuid "a5ca0a1b-8e4c-4d62-8048-dc641b65030e")
 	)
+	(text "D+ et D- sont inversé\n"
+		(exclude_from_sim no)
+		(at 304.292 30.226 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 5 0 1)
+			)
+		)
+		(uuid "a671090d-aae5-4cd4-b88f-bac4473758b5")
+	)
 	(text "ADC"
 		(exclude_from_sim no)
 		(at 302.26 159.766 0)
@@ -4882,6 +4981,31 @@
 			(justify left bottom)
 		)
 		(uuid "a84cd6ba-4c7d-4037-b2c1-e01ea24b6c6e")
+	)
+	(text "X"
+		(exclude_from_sim no)
+		(at 303.784 29.972 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+				(italic yes)
+				(color 0 255 11 1)
+			)
+		)
+		(uuid "ae5b7cf7-8d31-4428-941b-f20494d11118")
+	)
+	(text "Pull-up de 100k est pas nécessaire\nmaybe 1k en série"
+		(exclude_from_sim no)
+		(at 199.644 102.616 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 5 0 1)
+			)
+		)
+		(uuid "b8baa415-19db-4e7d-8024-7347102502cd")
 	)
 	(text "I2C_1"
 		(exclude_from_sim no)
@@ -4939,6 +5063,42 @@
 			(justify left bottom)
 		)
 		(uuid "f3eaa2c5-24df-4a86-b357-2298cc8d4c46")
+	)
+	(text "maybe 1k en série \navec xout"
+		(exclude_from_sim no)
+		(at 215.392 76.708 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 5 0 1)
+			)
+		)
+		(uuid "f4e968ef-5a67-45b7-aa32-851c4a7192a4")
+	)
+	(text "Pas 10µF\nSupposé être 4µ7F\n"
+		(exclude_from_sim no)
+		(at 142.494 86.614 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 5 0 1)
+			)
+		)
+		(uuid "f8eef65e-d763-4511-9037-7cfa79b3ec78")
+	)
+	(text "X"
+		(exclude_from_sim no)
+		(at 195.834 101.346 0)
+		(effects
+			(font
+				(size 3 3)
+				(thickness 0.6)
+				(bold yes)
+				(italic yes)
+				(color 0 255 11 1)
+			)
+		)
+		(uuid "fe060e60-969a-4423-adc6-2a122ddbfdfa")
 	)
 	(text "50"
 		(exclude_from_sim no)
