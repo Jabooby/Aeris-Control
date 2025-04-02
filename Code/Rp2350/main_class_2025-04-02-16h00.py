@@ -48,16 +48,23 @@ class MotorController:
         # IMU Sensor
         self.imu_0 = IMUSensor(i2c_0)
         self.imu_0.auto_calibrate()
+        
+        # Array creation optimization
+        self.left_side_inv  = np.linalg.inv(np.array([[H_CRWNST * COS_M, H_CRWNST * COS_M], 
+                              [H_CRWNST * SIN_M, -H_CRWNST * SIN_M]]))
 
         # Time Management
         self.time_manager = TimeManager()
         time.sleep(0.5)  # Allow time for calibration
 
     async def read_UART_JSON(self):
-        """ Continuously read JSON data from UART. """
         while True:
-            self.JSONData = await self.uart.read_json()
-            await asyncio.sleep(0.0001)  # Avoid blocking
+            try:
+                self.JSONData = await self.uart.read_json()
+            except Exception as e:
+                print(f"UART read error: {e}")
+            await asyncio.sleep(0)
+
 
     def currentPosition(self, roll, pitch, yaw):
         """ Compute the current mast position based on IMU data. """
@@ -99,12 +106,7 @@ class MotorController:
         deltaX = newX - currentX
         deltaY = newY - currentY
 
-
-        left_side = np.array([[H_CRWNST * COS_M, H_CRWNST * COS_M], 
-                              [H_CRWNST * SIN_M, -H_CRWNST * SIN_M]])
-
-        right_side = np.array([deltaX, deltaY])
-        MN = np.dot(np.linalg.inv(left_side), right_side)
+        MN = np.dot(self.left_side_inv, np.array([deltaX, deltaY]))
 
         # Ensure MN is a 1D array
         MN = MN.flatten()  # Converts any shape into a 1D array
@@ -156,7 +158,7 @@ class MotorController:
             print("Motor Z wanted position:", stepZ)
 
             while self.motorZ.inMovement:
-                await asyncio.sleep(0.0001)
+                await asyncio.sleep(0)
 
     async def main(self):
         """ Run both tasks simultaneously. """
