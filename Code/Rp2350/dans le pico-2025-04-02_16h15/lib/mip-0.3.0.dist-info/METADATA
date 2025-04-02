@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: mip
+Version: 0.3.0
+Summary: On-device package installer for network-capable boards
+Author: 
+License: MIT
