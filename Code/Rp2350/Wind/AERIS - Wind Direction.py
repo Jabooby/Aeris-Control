@@ -11,7 +11,7 @@ class WindVane :
         
     def get_wind_direction(self) :
         return ((self.zero_angle + self.sensor.get_angle()) % 360)
-        #In Degrees - Always positive
+        #In Degrees : 0 to 360
     
     def set_0(self) :
         self.zero_angle = self.sensor.get_angle()
