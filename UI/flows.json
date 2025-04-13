@@ -1,0 +1,2269 @@
+[
+    {
+        "id": "ca301c770cdb2d99",
+        "type": "tab",
+        "label": "General",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9c4f43180d29f569",
+        "type": "tab",
+        "label": "Sensors",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0b366bacf2700117",
+        "type": "tab",
+        "label": "Control",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7db82bfc79c354bc",
+        "type": "tab",
+        "label": "Mast",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4f21002651558eb2",
+        "type": "mqtt-broker",
+        "name": "AERISPI",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "5",
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9fe26f346815d85c",
+        "type": "ui_tab",
+        "name": "Sensors",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1fb147222b2580de",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097724",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097724",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097724",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0ebe3a",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097724",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "2ff83ebeb8075421",
+        "type": "serial-port",
+        "name": "PicoData",
+        "serialport": "/dev/ttyUSB0",
+        "serialbaud": "115200",
+        "databits": 8,
+        "parity": "none",
+        "stopbits": 1,
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "\\n",
+        "responsetimeout": "1000"
+    },
+    {
+        "id": "78d4fa66cb6ea95f",
+        "type": "serial-port",
+        "name": "",
+        "serialport": "/dev/ttyUSB0",
+        "serialbaud": "57600",
+        "databits": 8,
+        "parity": "none",
+        "stopbits": 1,
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": 10000
+    },
+    {
+        "id": "0997a5135d4237ab",
+        "type": "ui_tab",
+        "name": "Control",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3e82113f4af1de71",
+        "type": "ui_group",
+        "name": "Control Tab",
+        "tab": "0997a5135d4237ab",
+        "order": 1,
+        "disp": true,
+        "width": 17,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bfd989f97f91fb52",
+        "type": "ui_group",
+        "name": "Remote",
+        "tab": "9fe26f346815d85c",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b9a9cd753c2ba8bb",
+        "type": "ui_group",
+        "name": "Gyroscope",
+        "tab": "9fe26f346815d85c",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9a92dee351e6ce7b",
+        "type": "ui_group",
+        "name": "Accelerometer",
+        "tab": "9fe26f346815d85c",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "055e70191cf7617b",
+        "type": "ui_group",
+        "name": "Math Motor",
+        "tab": "9fe26f346815d85c",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0d367c7aeb83faf7",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3fcc358b4510325f",
+        "type": "ui_group",
+        "name": "Home Tab",
+        "tab": "0d367c7aeb83faf7",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "250d2c58027d6018",
+        "type": "ui_spacer",
+        "z": "0b366bacf2700117",
+        "name": "spacer",
+        "group": "3e82113f4af1de71",
+        "order": 9,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "c547902421100b98",
+        "type": "ui_spacer",
+        "z": "0b366bacf2700117",
+        "name": "spacer",
+        "group": "3e82113f4af1de71",
+        "order": 10,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "afb2df488b7a39ad",
+        "type": "ui_tab",
+        "name": "IMU data",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3bedf741dd91b4c6",
+        "type": "ui_group",
+        "name": "Mast",
+        "tab": "afb2df488b7a39ad",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7534d24eb23f23fa",
+        "type": "ui_group",
+        "name": "Boat",
+        "tab": "afb2df488b7a39ad",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9788cdc72e452e99",
+        "type": "exec",
+        "z": "ca301c770cdb2d99",
+        "command": "python3 Desktop/S4/Aeris-Control/Code/RaspberryPi4/ControllerWithJSON.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Controller Code",
+        "x": 380,
+        "y": 120,
+        "wires": [
+            [
+                "dbbc34abd0220454"
+            ],
+            [
+                "619767c912d952e1"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "36a70930d0cd6955",
+        "type": "inject",
+        "z": "ca301c770cdb2d99",
+        "name": "START controller code",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "9788cdc72e452e99"
+            ]
+        ]
+    },
+    {
+        "id": "619767c912d952e1",
+        "type": "debug",
+        "z": "ca301c770cdb2d99",
+        "name": "debug Controller Code",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "dbbc34abd0220454",
+        "type": "debug",
+        "z": "ca301c770cdb2d99",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "09daa6a76ef3e052",
+        "type": "inject",
+        "z": "ca301c770cdb2d99",
+        "name": "Shutdown",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 220,
+        "wires": [
+            [
+                "27c17ecbf7af825a"
+            ]
+        ]
+    },
+    {
+        "id": "27c17ecbf7af825a",
+        "type": "exec",
+        "z": "ca301c770cdb2d99",
+        "command": "sudo shutdown now",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Shutdown",
+        "x": 360,
+        "y": 220,
+        "wires": [
+            [],
+            [
+                "34e2be51a5b16b51"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "34e2be51a5b16b51",
+        "type": "debug",
+        "z": "ca301c770cdb2d99",
+        "name": "debug shutdown",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "94c491c495662b6e",
+        "type": "ui_button",
+        "z": "ca301c770cdb2d99",
+        "name": "",
+        "group": "3fcc358b4510325f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Shutdown PI",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 210,
+        "y": 360,
+        "wires": [
+            [
+                "27c17ecbf7af825a"
+            ]
+        ]
+    },
+    {
+        "id": "569ff9915235b647",
+        "type": "ui_button",
+        "z": "ca301c770cdb2d99",
+        "name": "",
+        "group": "3fcc358b4510325f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Start Controller Code",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 40,
+        "wires": [
+            [
+                "9788cdc72e452e99"
+            ]
+        ]
+    },
+    {
+        "id": "2e121bd406a27670",
+        "type": "mqtt in",
+        "z": "9c4f43180d29f569",
+        "name": "ControllerData from PI4",
+        "topic": "sensor/data",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4f21002651558eb2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 60,
+        "wires": [
+            [
+                "7a543adb691d85c3"
+            ]
+        ]
+    },
+    {
+        "id": "7a543adb691d85c3",
+        "type": "json",
+        "z": "9c4f43180d29f569",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 310,
+        "y": 60,
+        "wires": [
+            [
+                "d46f082b90a1993e",
+                "f4aecbe60fb01610",
+                "3ba38ed51fb576d0",
+                "47e2820e8a1585e4",
+                "ef7dd5188588719e"
+            ]
+        ]
+    },
+    {
+        "id": "d46f082b90a1993e",
+        "type": "debug",
+        "z": "9c4f43180d29f569",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "f4aecbe60fb01610",
+        "type": "function",
+        "z": "9c4f43180d29f569",
+        "name": "ZRight",
+        "func": "msg.payload = JSON.parse(msg.payload).ZRight;\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 140,
+        "wires": [
+            [
+                "63eec57b2b45b95d"
+            ]
+        ]
+    },
+    {
+        "id": "3ba38ed51fb576d0",
+        "type": "function",
+        "z": "9c4f43180d29f569",
+        "name": "ZLeft",
+        "func": "msg.payload = JSON.parse(msg.payload).ZLeft;\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 220,
+        "wires": [
+            [
+                "63eec57b2b45b95d"
+            ]
+        ]
+    },
+    {
+        "id": "ef7dd5188588719e",
+        "type": "function",
+        "z": "9c4f43180d29f569",
+        "name": "axeY",
+        "func": "msg.payload = JSON.parse(msg.payload).axeY;\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 380,
+        "wires": [
+            [
+                "57913324ea3abf74"
+            ]
+        ]
+    },
+    {
+        "id": "47e2820e8a1585e4",
+        "type": "function",
+        "z": "9c4f43180d29f569",
+        "name": "axeX",
+        "func": "msg.topic = \"axeX\";\nmsg.payload = JSON.parse(msg.payload).axeX;\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 300,
+        "wires": [
+            [
+                "225eb27e02f1d14d"
+            ]
+        ]
+    },
+    {
+        "id": "225eb27e02f1d14d",
+        "type": "ui_gauge",
+        "z": "9c4f43180d29f569",
+        "name": "axeX",
+        "group": "bfd989f97f91fb52",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "axeX",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-1",
+        "max": "1",
+        "colors": [
+            "#ff0000",
+            "#000fe6",
+            "#18f514"
+        ],
+        "seg1": "-0.5",
+        "seg2": "0.5",
+        "diff": true,
+        "className": "",
+        "x": 650,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "57913324ea3abf74",
+        "type": "ui_gauge",
+        "z": "9c4f43180d29f569",
+        "name": "axeY",
+        "group": "bfd989f97f91fb52",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "axeY",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-1",
+        "max": "1",
+        "colors": [
+            "#ff0000",
+            "#000fe6",
+            "#18f514"
+        ],
+        "seg1": "-0.5",
+        "seg2": "0.5",
+        "diff": true,
+        "className": "",
+        "x": 650,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "b511327e90e9e0e6",
+        "type": "ui_text",
+        "z": "9c4f43180d29f569",
+        "group": "bfd989f97f91fb52",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Z",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 750,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "63eec57b2b45b95d",
+        "type": "function",
+        "z": "9c4f43180d29f569",
+        "name": "function 1",
+        "func": "if (msg.payload.ZRight == 1){\n    msg.payload = \"Turning Right\"\n}\nelse if (msg.payload.ZLeft == 1){\n    msg.payload = \"Turning Left\"\n}\nelse{\n    msg.payload = \"Not Turning\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 180,
+        "wires": [
+            [
+                "b511327e90e9e0e6"
+            ]
+        ]
+    },
+    {
+        "id": "f820378735c4f756",
+        "type": "serial in",
+        "z": "9c4f43180d29f569",
+        "name": "from Pico",
+        "serial": "2ff83ebeb8075421",
+        "x": 100,
+        "y": 440,
+        "wires": [
+            [
+                "cbbadb817ca1c7c2",
+                "d9fb7ca1836f4894"
+            ]
+        ]
+    },
+    {
+        "id": "cbbadb817ca1c7c2",
+        "type": "debug",
+        "z": "9c4f43180d29f569",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 280,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "9b284b22d22e5a73",
+        "type": "function",
+        "z": "9c4f43180d29f569",
+        "name": "isoler Yaw",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet yawValue = data.Mast.Yaw;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = yawValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 600,
+        "wires": [
+            [
+                "e141350ae271ee42"
+            ]
+        ]
+    },
+    {
+        "id": "f4fd7cb73b07c8f3",
+        "type": "function",
+        "z": "9c4f43180d29f569",
+        "name": "isoler Pitch",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet pitchValue = data.Mast.Pitch;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = pitchValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 640,
+        "wires": [
+            [
+                "a2148d76a3e00505"
+            ]
+        ]
+    },
+    {
+        "id": "f0f3cddb1fddd418",
+        "type": "function",
+        "z": "9c4f43180d29f569",
+        "name": "Isoler Roll",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet rollValue = data.Mast.Roll;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = rollValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 680,
+        "wires": [
+            [
+                "8b0abfd255875a9c"
+            ]
+        ]
+    },
+    {
+        "id": "7d2f5d6b05f9cd27",
+        "type": "function",
+        "z": "9c4f43180d29f569",
+        "name": "Isoler AccX",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet accxValue = data.Mast.accx;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = accxValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 720,
+        "wires": [
+            [
+                "647ec74ce65bd404"
+            ]
+        ]
+    },
+    {
+        "id": "0f2a4922e3be4989",
+        "type": "function",
+        "z": "9c4f43180d29f569",
+        "name": "Isoler AccY",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet accyValue = data.Mast.accy;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = accyValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 760,
+        "wires": [
+            [
+                "9d4e7be700af8cf2"
+            ]
+        ]
+    },
+    {
+        "id": "e0e752e70c064efe",
+        "type": "function",
+        "z": "9c4f43180d29f569",
+        "name": "Isoler AccZ",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet acczValue = data.Mast.accz;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = acczValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 800,
+        "wires": [
+            [
+                "46ced8f5592a0d1a"
+            ]
+        ]
+    },
+    {
+        "id": "e141350ae271ee42",
+        "type": "ui_gauge",
+        "z": "9c4f43180d29f569",
+        "name": "",
+        "group": "b9a9cd753c2ba8bb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Yaw",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 630,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "a2148d76a3e00505",
+        "type": "ui_gauge",
+        "z": "9c4f43180d29f569",
+        "name": "",
+        "group": "b9a9cd753c2ba8bb",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Pitch",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 630,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "8b0abfd255875a9c",
+        "type": "ui_gauge",
+        "z": "9c4f43180d29f569",
+        "name": "",
+        "group": "b9a9cd753c2ba8bb",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Roll",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 630,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "647ec74ce65bd404",
+        "type": "ui_gauge",
+        "z": "9c4f43180d29f569",
+        "name": "",
+        "group": "9a92dee351e6ce7b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "AccX",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 630,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "9d4e7be700af8cf2",
+        "type": "ui_gauge",
+        "z": "9c4f43180d29f569",
+        "name": "",
+        "group": "9a92dee351e6ce7b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "AccY",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 630,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "46ced8f5592a0d1a",
+        "type": "ui_gauge",
+        "z": "9c4f43180d29f569",
+        "name": "",
+        "group": "9a92dee351e6ce7b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "AccZ",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 630,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "70c344b6ab4c55a5",
+        "type": "function",
+        "z": "9c4f43180d29f569",
+        "name": "isoler vitesse moteur droite",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet motLValue = data.MotorMath.motL;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = motLValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 840,
+        "wires": [
+            [
+                "8e53648f61300619"
+            ]
+        ]
+    },
+    {
+        "id": "88e2951c201566b4",
+        "type": "function",
+        "z": "9c4f43180d29f569",
+        "name": "isoler vitesse moteur gauche",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet motRValue = data.MotorMath.motR;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = motRValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 880,
+        "wires": [
+            [
+                "c35be3411ff605fc"
+            ]
+        ]
+    },
+    {
+        "id": "8e53648f61300619",
+        "type": "ui_gauge",
+        "z": "9c4f43180d29f569",
+        "name": "",
+        "group": "055e70191cf7617b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "MotorR",
+        "label": "ratio de vitesse",
+        "format": "{{value}}",
+        "min": "-1",
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 640,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "c35be3411ff605fc",
+        "type": "ui_gauge",
+        "z": "9c4f43180d29f569",
+        "name": "",
+        "group": "055e70191cf7617b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "MotorL",
+        "label": "ratio de vitesse",
+        "format": "{{value}}",
+        "min": "-1",
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 640,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "d9fb7ca1836f4894",
+        "type": "function",
+        "z": "9c4f43180d29f569",
+        "name": "UART_to_JSON",
+        "func": "// Node-RED Function Node\n// Purpose: Parse JSON from UART serial input and store it in global context\n// Assumes msg.payload contains a valid JSON string from the microcontroller\n\ntry {\n    // Parse the JSON string from UART\n    let systemState = JSON.parse(msg.payload);\n\n    // Optional: Basic validation of expected keys (adjust to your structure)\n    if (systemState.RightMotor && systemState.LeftMotor && systemState.Boat) {\n        // Save parsed JSON to global context for use anywhere in the flow\n        global.set(\"SystemState\", systemState);\n\n        // Also send the structured object to the next node (e.g., for debug or UI)\n        msg.payload = systemState;\n        return msg;\n    } else {\n        // Log warning and stop the flow if JSON structure is invalid\n        node.warn(\"JSON received from UART is missing required keys.\");\n        return null;\n    }\n} catch (err) {\n    // Handle malformed JSON (common in UART stream glitches)\n    node.error(\"Failed to parse UART JSON: \" + err.message);\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f62edbd4cd63c1f8",
+        "type": "inject",
+        "z": "9c4f43180d29f569",
+        "name": "Inject per second",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "SystemState",
+        "payloadType": "global",
+        "x": 150,
+        "y": 600,
+        "wires": [
+            [
+                "9b284b22d22e5a73",
+                "f4fd7cb73b07c8f3",
+                "f0f3cddb1fddd418",
+                "7d2f5d6b05f9cd27",
+                "0f2a4922e3be4989",
+                "e0e752e70c064efe",
+                "70c344b6ab4c55a5",
+                "88e2951c201566b4",
+                "795cef806db17932"
+            ]
+        ]
+    },
+    {
+        "id": "795cef806db17932",
+        "type": "function",
+        "z": "9c4f43180d29f569",
+        "name": "isoler wind direction",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet WindVane = data.WindVane;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = WindVane;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 920,
+        "wires": [
+            [
+                "a16694d3c50dba09"
+            ]
+        ]
+    },
+    {
+        "id": "a16694d3c50dba09",
+        "type": "ui_gauge",
+        "z": "9c4f43180d29f569",
+        "name": "",
+        "group": "055e70191cf7617b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Wind angle",
+        "label": "ratio de vitesse",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "360",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "2bd7cb2f5c552410",
+        "type": "ui_joystick",
+        "z": "0b366bacf2700117",
+        "name": "XYRotate",
+        "group": "3e82113f4af1de71",
+        "order": 5,
+        "width": 7,
+        "height": 7,
+        "trigger": "all",
+        "timeInterval": "1",
+        "useThemeColor": true,
+        "color": "#000000",
+        "threshold": "0.1",
+        "directions": "all",
+        "shape": "circle",
+        "centerAtRelease": true,
+        "x": 220,
+        "y": 60,
+        "wires": [
+            [
+                "f090de1b22f07f6a"
+            ]
+        ]
+    },
+    {
+        "id": "215614d6eecdffb4",
+        "type": "ui_slider",
+        "z": "0b366bacf2700117",
+        "name": "speedLR",
+        "label": "speedLR",
+        "tooltip": "",
+        "group": "3e82113f4af1de71",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "speedLR",
+        "topicType": "str",
+        "min": "300",
+        "max": "950",
+        "step": "50",
+        "className": "",
+        "x": 260,
+        "y": 240,
+        "wires": [
+            [
+                "ca101da8adda26d9"
+            ]
+        ]
+    },
+    {
+        "id": "4f19d3ae09d1a948",
+        "type": "ui_slider",
+        "z": "0b366bacf2700117",
+        "name": "speedZ",
+        "label": "speedZ",
+        "tooltip": "",
+        "group": "3e82113f4af1de71",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "outs": "end",
+        "topic": "speedZ",
+        "topicType": "str",
+        "min": "300",
+        "max": "950",
+        "step": "50",
+        "className": "",
+        "x": 260,
+        "y": 300,
+        "wires": [
+            [
+                "ca101da8adda26d9"
+            ]
+        ]
+    },
+    {
+        "id": "ca101da8adda26d9",
+        "type": "function",
+        "z": "0b366bacf2700117",
+        "name": "toJSON",
+        "func": "// Retrieve stored values or initialize with all required fields\nlet data = flow.get(\"controllerData\") || {\n    speedLR: 0,   // Initialize slider values\n    speedZ: 0,\n    X: 0,           // Joystick LR X\n    Y: 0,           // Joystick LR Y\n    Z: 0,           // Joystick Z\n    Automatic: false,\n    Calib: false,\n};\ndata.Calib = false;\n// Ensure msg.topic is properly defined\nif (typeof msg.topic !== \"string\") {\n    node.warn(\"Invalid topic: \" + JSON.stringify(msg.topic));\n    return null;\n}\n\n// Handle switch input (Mode)\nif (msg.topic === \"Automatic\") {\n    if (msg.payload === true) {\n        data.Automatic = true;\n    } else {\n        data.Automatic = false;\n    }\n}\n// Handle button presses (Calib, Zero)\nelse if (msg.topic === \"Calib\") {\n    data.Calib = msg.payload;\n}\n// Handle slider inputs (vitesseLR, vitesseZ)\nelse if (msg.topic === \"speedLR\") {\n    data.speedLR = msg.payload; // Expecting a number from slider\n}\nelse if (msg.topic === \"speedZ\") {\n    data.speedZ = msg.payload;  // Expecting a number from slider\n}\n// Handle joystick input (joystickLR)\nelse if (msg.topic === \"joystickLR\") {\n    if (typeof msg.payload === \"object\" && msg.payload.X !== undefined && msg.payload.Y !== undefined) {\n        data.X = msg.payload.X;\n        data.Y = msg.payload.Y;\n    } else {\n        node.warn(\"Invalid joystickLR payload: \" + JSON.stringify(msg.payload));\n        return null;\n    }\n}\n// Handle joystick input (joystickZ)\nelse if (msg.topic === \"joystickZ\") {\n    if (typeof msg.payload === \"object\" && msg.payload.Z !== undefined) {\n        data.Z = msg.payload.Z; // Extract Z from object\n    } else {\n        node.warn(\"Invalid joystickZ payload: \" + JSON.stringify(msg.payload));\n        return null;\n    }\n}\n// Ignore unknown topics\nelse {\n    node.warn(\"Unexpected topic: \" + msg.topic);\n    return null;\n}\n\n// Store updated values in flow context\nflow.set(\"controllerData\", data);\n\n// Set msg.payload with all required fields\nmsg.payload = {\n    speedLR: data.speedLR,\n    speedZ: data.speedZ,\n    axeX: data.X,\n    axeY: data.Y,\n    axeZ: data.Z,\n    Automatic: data.Automatic,\n    Calib: data.Calib,\n};\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 220,
+        "wires": [
+            [
+                "ac1d32ce2f73c08a",
+                "745ebbb06d3e1f5a"
+            ]
+        ]
+    },
+    {
+        "id": "ac1d32ce2f73c08a",
+        "type": "ui_text",
+        "z": "0b366bacf2700117",
+        "group": "3e82113f4af1de71",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "name": "JSON SENT",
+        "label": "JSON SENT",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 850,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "f090de1b22f07f6a",
+        "type": "function",
+        "z": "0b366bacf2700117",
+        "name": "Normaliser joystickXY",
+        "func": "// Extract joystick vector\nlet vector = msg.payload.vector || {x: 0, y: 0};\n\n// Convert joystick Y-axis: Up should be +1, Down should be -1\nlet X = vector.y;  \n\n// Convert joystick X-axis: Right should be +1, Left should be -1\nlet Y = -vector.x;   \n\n// Limit to 2 decimal places and convert back to number\nX = Number(X.toFixed(2));\nY = Number(Y.toFixed(2));\n\nmsg.topic = \"joystickLR\";\n// Output the normalized values\nmsg.payload = { X, Y };\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 60,
+        "wires": [
+            [
+                "ca101da8adda26d9"
+            ]
+        ]
+    },
+    {
+        "id": "576972a6e672a45b",
+        "type": "ui_switch",
+        "z": "0b366bacf2700117",
+        "name": "Automatic",
+        "label": "Automatic",
+        "tooltip": "",
+        "group": "3e82113f4af1de71",
+        "order": 6,
+        "width": 2,
+        "height": 2,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "Automatic",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 260,
+        "y": 380,
+        "wires": [
+            [
+                "ca101da8adda26d9"
+            ]
+        ]
+    },
+    {
+        "id": "b9271220e21c154b",
+        "type": "ui_button",
+        "z": "0b366bacf2700117",
+        "name": "Calib",
+        "group": "3e82113f4af1de71",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Calib Button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "Calib",
+        "topicType": "str",
+        "x": 250,
+        "y": 440,
+        "wires": [
+            [
+                "ca101da8adda26d9",
+                "8c75d19e0513e781"
+            ]
+        ]
+    },
+    {
+        "id": "ac36b53fd63fc65a",
+        "type": "ui_joystick",
+        "z": "0b366bacf2700117",
+        "name": "ZRotate",
+        "group": "3e82113f4af1de71",
+        "order": 8,
+        "width": 7,
+        "height": 7,
+        "trigger": "all",
+        "timeInterval": "1",
+        "useThemeColor": true,
+        "color": "#000000",
+        "threshold": 0.1,
+        "directions": "hor",
+        "shape": "circle",
+        "centerAtRelease": true,
+        "x": 210,
+        "y": 100,
+        "wires": [
+            [
+                "7d106b168e88b6b8"
+            ]
+        ]
+    },
+    {
+        "id": "7d106b168e88b6b8",
+        "type": "function",
+        "z": "0b366bacf2700117",
+        "name": "Normaliser JoystickZ",
+        "func": "// Extract joystick vector\nlet vector = msg.payload.vector || {x: 0, y: 0};\n\n// Convert joystick Y-axis: Up should be +1, Down should be -1\nlet Z = vector.x;  \n\nif (Z > 0) Z = 1;\nelse if (Z < 0) Z = -1;\nelse Z = 0;\n\nmsg.topic = \"joystickZ\";\n// Output the normalized values\nmsg.payload = { Z: Z };\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 100,
+        "wires": [
+            [
+                "ca101da8adda26d9"
+            ]
+        ]
+    },
+    {
+        "id": "8c75d19e0513e781",
+        "type": "debug",
+        "z": "0b366bacf2700117",
+        "name": "Pico debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e612b208065eb2f8",
+        "type": "serial out",
+        "z": "0b366bacf2700117",
+        "name": "Pico",
+        "serial": "2ff83ebeb8075421",
+        "x": 830,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "745ebbb06d3e1f5a",
+        "type": "change",
+        "z": "0b366bacf2700117",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload",
+                "pt": "msg",
+                "to": "UI_remote",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e0484f3d8cbdd55e",
+        "type": "inject",
+        "z": "0b366bacf2700117",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "UI_remote",
+        "payloadType": "global",
+        "x": 590,
+        "y": 400,
+        "wires": [
+            [
+                "e612b208065eb2f8"
+            ]
+        ]
+    },
+    {
+        "id": "b900018e1c3bc472",
+        "type": "function",
+        "z": "7db82bfc79c354bc",
+        "name": "isoler Yaw",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet yawValue = data.Mast.Yaw;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = yawValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 60,
+        "wires": [
+            [
+                "fe66c8a1aad51f50"
+            ]
+        ]
+    },
+    {
+        "id": "796f58941fe28d8c",
+        "type": "function",
+        "z": "7db82bfc79c354bc",
+        "name": "isoler Pitch",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet pitchValue = data.Mast.Pitch;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = pitchValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 100,
+        "wires": [
+            [
+                "03559441b817bae1"
+            ]
+        ]
+    },
+    {
+        "id": "84a3083753093747",
+        "type": "function",
+        "z": "7db82bfc79c354bc",
+        "name": "Isoler Roll",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet rollValue = data.Mast.Roll;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = rollValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 140,
+        "wires": [
+            [
+                "f47de96907288e45"
+            ]
+        ]
+    },
+    {
+        "id": "8da4266d94172f55",
+        "type": "function",
+        "z": "7db82bfc79c354bc",
+        "name": "Isoler AccX",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet accxValue = data.Mast.accx;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = accxValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 180,
+        "wires": [
+            [
+                "2a2b1b2690fe0cd1"
+            ]
+        ]
+    },
+    {
+        "id": "73910dc3af152326",
+        "type": "function",
+        "z": "7db82bfc79c354bc",
+        "name": "Isoler AccY",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet accyValue = data.Mast.accy;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = accyValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 220,
+        "wires": [
+            [
+                "562084d1d2478a41"
+            ]
+        ]
+    },
+    {
+        "id": "683eac56133c3bb8",
+        "type": "function",
+        "z": "7db82bfc79c354bc",
+        "name": "Isoler AccZ",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet acczValue = data.Mast.accz;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = acczValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 260,
+        "wires": [
+            [
+                "81fbb74202c36a8c"
+            ]
+        ]
+    },
+    {
+        "id": "fe66c8a1aad51f50",
+        "type": "ui_gauge",
+        "z": "7db82bfc79c354bc",
+        "name": "",
+        "group": "3bedf741dd91b4c6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Yaw",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "03559441b817bae1",
+        "type": "ui_gauge",
+        "z": "7db82bfc79c354bc",
+        "name": "",
+        "group": "3bedf741dd91b4c6",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Pitch",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "f47de96907288e45",
+        "type": "ui_gauge",
+        "z": "7db82bfc79c354bc",
+        "name": "",
+        "group": "3bedf741dd91b4c6",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Roll",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "2a2b1b2690fe0cd1",
+        "type": "ui_gauge",
+        "z": "7db82bfc79c354bc",
+        "name": "",
+        "group": "3bedf741dd91b4c6",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "AccX",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "562084d1d2478a41",
+        "type": "ui_gauge",
+        "z": "7db82bfc79c354bc",
+        "name": "",
+        "group": "3bedf741dd91b4c6",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "AccY",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "81fbb74202c36a8c",
+        "type": "ui_gauge",
+        "z": "7db82bfc79c354bc",
+        "name": "",
+        "group": "3bedf741dd91b4c6",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "AccZ",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "c24bacc5b970812c",
+        "type": "inject",
+        "z": "7db82bfc79c354bc",
+        "name": "Inject per second",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "SystemState",
+        "payloadType": "global",
+        "x": 170,
+        "y": 60,
+        "wires": [
+            [
+                "b900018e1c3bc472",
+                "796f58941fe28d8c",
+                "84a3083753093747",
+                "8da4266d94172f55",
+                "73910dc3af152326",
+                "683eac56133c3bb8"
+            ]
+        ]
+    },
+    {
+        "id": "8f5a40656fe31821",
+        "type": "function",
+        "z": "7db82bfc79c354bc",
+        "name": "isoler Yaw",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet yawValue = data.Boat.Yaw;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = yawValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 340,
+        "wires": [
+            [
+                "df42fe6c7242063d"
+            ]
+        ]
+    },
+    {
+        "id": "a789d599b189bd1a",
+        "type": "function",
+        "z": "7db82bfc79c354bc",
+        "name": "isoler Pitch",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet pitchValue = data.Boat.Pitch;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = pitchValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 380,
+        "wires": [
+            [
+                "5d77c20b3163c9cd"
+            ]
+        ]
+    },
+    {
+        "id": "5242acb40ae6cfcd",
+        "type": "function",
+        "z": "7db82bfc79c354bc",
+        "name": "Isoler Roll",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet rollValue = data.Boat.Roll;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = rollValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 420,
+        "wires": [
+            [
+                "ecb606f81f1dfae2"
+            ]
+        ]
+    },
+    {
+        "id": "050a155dfbcffc7f",
+        "type": "function",
+        "z": "7db82bfc79c354bc",
+        "name": "Isoler AccX",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet accxValue = data.Boat.accx;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = accxValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 460,
+        "wires": [
+            [
+                "438228d56d85eee1"
+            ]
+        ]
+    },
+    {
+        "id": "b6176801a139b805",
+        "type": "function",
+        "z": "7db82bfc79c354bc",
+        "name": "Isoler AccY",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet accyValue = data.Boat.accy;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = accyValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 500,
+        "wires": [
+            [
+                "d43a8e0734af524d"
+            ]
+        ]
+    },
+    {
+        "id": "ec9f0a82ec4b0b5d",
+        "type": "function",
+        "z": "7db82bfc79c354bc",
+        "name": "Isoler AccZ",
+        "func": "// Parse payload if it's a string\nlet data = (typeof msg.payload === \"string\") ? JSON.parse(msg.payload) : msg.payload;\n\n// Extract Mast Yaw (or Boat Yaw — depends on what you want)\nlet acczValue = data.Boat.accz;  // or data.Boat.Yaw\n\n// Send just the value to the next node\nmsg.payload = acczValue;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 540,
+        "wires": [
+            [
+                "92d350f7c72dfb34"
+            ]
+        ]
+    },
+    {
+        "id": "df42fe6c7242063d",
+        "type": "ui_gauge",
+        "z": "7db82bfc79c354bc",
+        "name": "",
+        "group": "7534d24eb23f23fa",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Yaw",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "5d77c20b3163c9cd",
+        "type": "ui_gauge",
+        "z": "7db82bfc79c354bc",
+        "name": "",
+        "group": "7534d24eb23f23fa",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Pitch",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ecb606f81f1dfae2",
+        "type": "ui_gauge",
+        "z": "7db82bfc79c354bc",
+        "name": "",
+        "group": "7534d24eb23f23fa",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Roll",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "438228d56d85eee1",
+        "type": "ui_gauge",
+        "z": "7db82bfc79c354bc",
+        "name": "",
+        "group": "7534d24eb23f23fa",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "AccX",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "d43a8e0734af524d",
+        "type": "ui_gauge",
+        "z": "7db82bfc79c354bc",
+        "name": "",
+        "group": "7534d24eb23f23fa",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "AccY",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "92d350f7c72dfb34",
+        "type": "ui_gauge",
+        "z": "7db82bfc79c354bc",
+        "name": "",
+        "group": "7534d24eb23f23fa",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "AccZ",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-100",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 650,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "748a854d08ae7323",
+        "type": "inject",
+        "z": "7db82bfc79c354bc",
+        "name": "Inject per second",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "SystemState",
+        "payloadType": "global",
+        "x": 170,
+        "y": 340,
+        "wires": [
+            [
+                "8f5a40656fe31821",
+                "a789d599b189bd1a",
+                "5242acb40ae6cfcd",
+                "050a155dfbcffc7f",
+                "b6176801a139b805",
+                "ec9f0a82ec4b0b5d"
+            ]
+        ]
+    }
+]
