@@ -1,27 +1,37 @@
 from machine import I2C, Pin
 from AS5600_Handler import AS5600
-import time
-import math
+import uasyncio as asyncio
 
-class WindVane :
-    def __init__(self) :
-        i2c = I2C(0, sda=Pin(0), scl=Pin(1), freq=100000)
+class WindVane:
+    def __init__(self):
+        i2c = I2C(0, sda=Pin(4), scl=Pin(5), freq=100000)
         self.sensor = AS5600(i2c)
-        self.zero_angle = self.sensor.get_angle()
+        self.zero_angle = 0  # default value, will be set in `initialize()`
         
-    def get_wind_direction(self) :
-        return ((self.zero_angle + self.sensor.get_angle()) % 360)
-        #In Degrees : 0 to 360
-    
-    def set_0(self) :
-        self.zero_angle = self.sensor.get_angle()
+    async def initialize(self):
+        self.zero_angle = await self.sensor.get_angle()
         
-windvane = WindVane()
+    async def get_wind_direction(self):
+        angle = await self.sensor.get_angle()
+        return (angle - self.zero_angle) % 360
 
-while True :
-    print(windvane.get_wind_direction())
-    time.sleep(0.1)
-        
+    async def set_0(self):
+        self.zero_angle = await self.sensor.get_angle()
+
+
+# Example usage:
+if __name__ == "__main__":     
+    async def main():
+        windvane = WindVane()
+        await windvane.initialize()
+
+        while True:
+            direction = await windvane.get_wind_direction()
+            print(f"Wind direction: {direction:.2f}°")
+            await asyncio.sleep(0.1)
+
+    asyncio.run(main())
+
         
         
         

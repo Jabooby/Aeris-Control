@@ -26,8 +26,8 @@ class TimeManager:
 class IMUSensor:
     """Handles IMU sensor readings and filtering."""
     
-    def __init__(self, i2c, weight_of_sensors=0.98):
-        self.bmi = bmi160.BMI160(i2c_0)
+    def __init__(self, i2c, weight_of_sensors=0.98, address=BMI160_I2C_ADDR_0):
+        self.bmi = bmi160.BMI160(i2c_0, address=address)
         
         self.bmi.acceleration_range = bmi160.ACCEL_RANGE_2G # the mapping of the values going from  + 2Gs to - 2Gs in 2^16 bits
         self.bmi.acceleration_output_data_rate = bmi160.BANDWIDTH_50 # rate a which data is sent 50Hz usually 100Hz
@@ -154,22 +154,23 @@ def update_json_file(roll, pitch, yaw, filename="imu_data.json"):
 
     with open(filename, "w") as f:
         json.dump(data, f)
-        
-# Create IMU Sensor object + Calibration
-imu_0 = IMUSensor(i2c_0)
-imu_0.auto_calibrate()
-time_manager = TimeManager()
+# Example usage:
+if __name__ == "__main__":        
+    # Create IMU Sensor object + Calibration
+    imu_0 = IMUSensor(i2c_0)
+    imu_0.auto_calibrate()
+    time_manager = TimeManager()
 
-# Initialize time tracking variable
-sum_time_delta = 0.0
+    # Initialize time tracking variable
+    sum_time_delta = 0.0
 
-while True:
-    time_manager.update()
-    imu_0.update(time_manager.get_time_delta())
-    accx, accy, accz = imu_0.accx, imu_0.accy, imu_0.accz
-    roll, pitch, yaw = imu_0.roll, imu_0.pitch, imu_0.yaw
-    update_json_file(roll, pitch, yaw)
-    time.sleep(0.5)
+    while True:
+        time_manager.update()
+        imu_0.update(time_manager.get_time_delta())
+        accx, accy, accz = imu_0.accx, imu_0.accy, imu_0.accz
+        roll, pitch, yaw = imu_0.roll, imu_0.pitch, imu_0.yaw
+        update_json_file(roll, pitch, yaw)
+        time.sleep(0.5)
     
   
 

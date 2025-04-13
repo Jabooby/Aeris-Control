@@ -8,6 +8,7 @@ import A4988_with_PIO_with_class as A4988
 import UART_JSON_Handler as UART_JSON
 import BMI160_Handler as BMI160
 import AS5600_Handler as AS5600
+import AERIS_Wind_Direction as WindVane
 from BMI_and_timeManager import *
 
 # ========================
@@ -43,12 +44,15 @@ class MotorController:
 
         # Initialize Stepper Motors
         self.motorZ = A4988.StepperControl(sm_id=0, stpPin=12, dirPin=13)
-        self.motorR = A4988.StepperControl(sm_id=1, stpPin=16, dirPin=17)
-        self.motorL = A4988.StepperControl(sm_id=4, stpPin=14, dirPin=15)
+        self.motorL = A4988.StepperControl(sm_id=1, stpPin=16, dirPin=17)
+        self.motorR = A4988.StepperControl(sm_id=4, stpPin=14, dirPin=15)
 
         # IMU Sensor
-        self.imu_0 = IMUSensor(i2c_0)
+        self.imu_0 = IMUSensor(i2c_0, address=BMI160.BMI160_I2C_ADDR_0) #sda=Pin(4), scl=Pin(5)
         self.imu_0.auto_calibrate()
+        self.imu_1 = IMUSensor(i2c_0, address=BMI160.BMI160_I2C_ADDR_1) #sda=Pin(4), scl=Pin(5)
+        self.imu_1.auto_calibrate()
+        self.wind = WindVane.WindVane()
         
         # Array creation optimization
         self.left_side_inv  = np.linalg.inv(np.array([[H_CRWNST * COS_M, H_CRWNST * COS_M], 
@@ -64,7 +68,7 @@ class MotorController:
             try:
                 #print("Waiting on data...")
                 self.JSONData = await self.uart.read_json()
-                print("✔️ JSON Received and stored:", self.JSONData)
+                #print("✔️ JSON Received and stored:", self.JSONData)
             except Exception as e:
                 print(f"❌ UART read error: {e}")
             await asyncio.sleep(0.1)
@@ -97,7 +101,9 @@ class MotorController:
     async def calculateNextPosition(self):
         """ Compute the next position for the motors based on joystick input. """
         self.imu_0.update(self.time_manager.get_time_delta())
+        self.imu_1.update(self.time_manager.get_time_delta())
         roll, pitch, yaw = self.imu_0.roll, self.imu_0.pitch, self.imu_0.yaw
+        
 
         JoystickX = self.JSONData.get("axeX", 0)
         JoystickY = -self.JSONData.get("axeY", 0)
@@ -123,9 +129,21 @@ class MotorController:
         motR, motL = M / normMN, N / normMN
 
         self.DataSending = {
-            "Yaw": yaw, "Pitch": pitch, "Roll": roll,
-            "motR": motR, "motL": motL,
-            "accx": self.imu_0.accx, "accy": self.imu_0.accy, "accz": self.imu_0.accz
+            "Mast":{
+                "Yaw": yaw, "Pitch": pitch, "Roll": roll,
+                "accx": self.imu_0.accx, "accy": self.imu_0.accy, "accz": self.imu_0.accz
+                },
+            "Boat":{
+                "Yaw": self.imu_1.yaw, "Pitch": self.imu_1.pitch, "Roll": self.imu_1.roll,
+                "accx": self.imu_1.accx, "accy": self.imu_1.accy, "accz": self.imu_1.accz
+                },
+            "MotorMath":{
+                "motR": motR, "motL": motL
+                },
+            "LeftMotor": self.motorL.state_as_json(),
+            "RightMotor": self.motorR.state_as_json(),
+            "ZMotor": self.motorZ.state_as_json(),
+            "WindVane": await self.wind.get_wind_direction()
         }
         await self.uart.send_json(self.DataSending)
 
@@ -154,13 +172,15 @@ class MotorController:
         self.motorL.reset_motor()
         #Reset/Calibrate IMU
         self.imu_0.auto_calibrate()
-            #imu_1
+        self.imu_1.auto_calibrate()
         #Reset/Calibrate encoder
+        self.wind.set_0()
 
     async def motorMOVE(self):
         """ Controls motors based on joystick input. """
         positionL, positionR = 0, 0
         stepZ, speedZ = 0, 0
+        speedL, speedR = 0, 0
 
         self.motorL.set_speed(DEFAULT_SPEED)
         self.motorR.set_speed(DEFAULT_SPEED)
@@ -180,18 +200,24 @@ class MotorController:
             #Moteur control
             try:
                 #Manual
+                #print("SpeedLR JSON:", self.JSONData.get("speedLR"))
                 if self.JSONData.get("Automatic") == False:
                     stepZ, speedZ = await self.motorZManual()
                     positionL, positionR = await self.calculateNextPosition()
                     speedL, speedR = self.JSONData.get("speedLR"), self.JSONData.get("speedLR")
+                    #print("SpeedL:", speedL, "speedR", speedR)
                 #Automatic
-                else:
+                elif self.JSONData.get("Automatic") == True:
                     print("Mode automatique")
+                else:
+                    print("Nothing received, staying in current mode...")
             except:
                 print("No automatic or manual JSON receivded... Keeping the configuration as is...")
                 stepZ, speedZ = (0,0)
                 positionL, positionR = (0,0)
-                
+            
+            self.motorL.set_speed(speedL)
+            self.motorR.set_speed(speedR)
             self.motorZ.set_step_and_speed(stepZ, speedZ)
             self.motorL.go_to_position(positionL)
             self.motorR.go_to_position(positionR)
